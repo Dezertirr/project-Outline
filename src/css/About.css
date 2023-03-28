@@ -1,3 +1,15 @@
+li {
+  list-style-type: none;
+}
+h3 {
+  color: #ffffff;
+}
+
+.about-text {
+  color: rgb(255, 255, 255, 0.7);
+  text-align: left;
+}
+
 .about {
   background: #1e1823;
 }
