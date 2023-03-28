@@ -13,9 +13,9 @@ ul {
   list-style-type: none;
 }
 .sellers-text {
+  display: inline-block;
   max-width: 407px;
   font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -23,26 +23,42 @@ ul {
   color: #111111;
 }
 .selleers-item {
-  text-decoration: none;
+  border-radius: 15px;
+  border-color: #fd9222;
+  overflow: hidden;
 }
 
 .sellers-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
+  margin-bottom: 32px;
 }
+
+/* @media screen and (min-width: 767px) and (max-width: 1199px) {
+  .sellers-list:last-child {
+    display: none;
+  }
+} */
 
 .section-title {
   margin-bottom: 50px;
 }
 
-.sellers-text-wrapper {
+/* .sellers-text-wrapper {
   display: flex;
-  align-content: space-between;
-}
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+} */
 
 .buy-now-btn {
+  display: inline-block;
   padding: 14px 40px;
   background: #fd9222;
   border-color: #fd9222;
   border-radius: 100px;
+}
+.sellers-item picture img {
+  border-radius: 15px;
 }
