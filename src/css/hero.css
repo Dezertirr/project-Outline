@@ -5,13 +5,13 @@
     background-position: center;
     margin-left: auto;
     margin-right: auto;
-    width: 335px;
-    height: 620px;
-    left: 20px;
-    top: 62px;
+    /* max-width: 335px;
+    height: 620px;  */
     border-radius: 30px;
     padding-top: 395px;
     padding-bottom: 80px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
@@ -60,11 +60,23 @@
     color: #ffffff; 
     width: 299px;
     height: 72px;
+    margin-bottom: 32px;
 }
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 768px) {
   .hero-title {
     font-size: 28px;
     line-height: 1.21;
+    width: 484px;
+    height: 102px;
+  }
+}
+.buttons-hero {
+    display: flex;
+}
+@media only screen and (min-width: 768px) {
+  .buttons-hero {
+    width: 341px;
+    height: 45px;
   }
 }
 .buy-btn {
@@ -83,13 +95,23 @@
     background: #FD9222;
     border-radius: 100px;
     border: 0;
+    margin-right: 14px;
 }
+@media only screen and (min-width: 768px) {
+  .buy-btn {
+    width: 144px;
+    height: 45px;
+    padding: 14px 40px;
+  }
+} 
+
+
 .made-btn {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
     color: #FFFFFF;
-   display: flex;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 12px 28px;
@@ -98,7 +120,40 @@
     height: 41px;
     border: 1px solid #FFFFFF;
     border-radius: 100px;
-    /* background-color: transparent; */
+    background-color: transparent;
+}
+@media only screen and (min-width: 768px) {
+  .made-btn {
+    width: 183px;
+    height: 45px;
+    padding: 14px 40px;
+    align-items: center;
+  }
+}
+
+.scroll-hero {
+    display: flex;
+    align-items: center;
+    min-width: 107px;
+    height: 28px;
+    margin-top: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .scroll-hero {
+    margin-left: auto;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+.scroll-hero{
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero-desc {
+    display: flex;
+    align-items: center;
+  }
 }
 .scroll {
     font-weight: 500;
@@ -106,4 +161,11 @@
     line-height: 1.28;   
     letter-spacing: -0.03em;    
     color: #FFFFFF;
+    margin-right: 12px;
+    
+}
+@media only screen and (min-width: 768px) {
+  .scroll {
+    margin-right: 14px;
+  }
 }
