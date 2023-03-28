@@ -153,12 +153,14 @@
   }
 }
 
-.scroll-hero {
+.scroll-hero-btn{
     display: flex;
     align-items: center;
     min-width: 107px;
     height: 28px;
     margin-top: 32px;
+    background: transparent;
+    border: 0;
 }
 @media only screen and (min-width: 768px) {
   .scroll-hero {
