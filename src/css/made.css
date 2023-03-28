@@ -1,0 +1,167 @@
+.made-section {
+  background-color: var(--white-main);
+}
+
+.made-titel {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+
+  color: var(--black-main);
+}
+.made-titel-right-part {
+  color: var(--orange-main);
+}
+
+@media only screen and (min-width: 768px) {
+  .made-titel {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+}
+
+.made-picture {
+  border-radius: 15px;
+}
+.picture-gradient {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .picture-gradient {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .made-saction-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .made-saction-content {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+}
+
+.resipe-description {
+  display: inline-block;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px 14px;
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .resipe-description {
+    max-width: 614px;
+    padding: 32px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .resipe-description {
+    max-width: 516px;
+  }
+}
+
+.list-description {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+
+  max-width: 307px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .list-description {
+    margin-bottom: 28px;
+  }
+}
+
+/* //////////////////Custom icon////////////////////// */
+
+.made-list-item {
+  color: var(--black-main);
+
+  max-width: 291px;
+  position: relative;
+}
+
+.made-list {
+  padding-left: 16px;
+  max-width: 307px;
+}
+
+@media only screen and (min-width: 768px) {
+  .made-list-item {
+    max-width: 464px;
+  }
+
+  .made-list {
+    max-width: 480px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .made-list-item {
+    max-width: 404px;
+  }
+
+  .made-list {
+    max-width: 451px;
+  }
+}
+
+.made-list-item::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #4c4c4c;
+  border-radius: 50%;
+  border: 1px solid #eceded;
+
+  top: 0;
+  left: -6px;
+  transform: translate(-100%, 50%);
+}
+
+.made-list-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .made-list-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+/* //////////////////////////////////////// */
+
+.picture-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  z-index: 1;
+  border-radius: 12px;
+}
