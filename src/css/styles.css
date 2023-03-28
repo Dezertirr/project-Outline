@@ -29,9 +29,40 @@
   --orange-main:#FD9222;
   --white-main:#FAFAFA;
 }
-
 body {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
 }
+
+.container {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  width: 100%;
+  padding-top: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+  }
+
+  .section {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1136px;
+  }
+
+  .section {
+    padding-top: 128px;
+  }
+}
+
