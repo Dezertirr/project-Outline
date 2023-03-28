@@ -1,21 +1,33 @@
-.header {
-  padding: 20px 0;
+.main-header {
+  display: flex;
+}
+.logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 36px;
+  margin-right: 216px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+
+  color: #111111;
 }
 
+.header-nav {
+  display: flex;
+}
 .nav-list {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  margin-right: 137px;
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+.nav-list-item:not(:last-child) {
+  margin-right: 24px;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.socials-list {
+  display: flex;
 }
