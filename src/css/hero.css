@@ -1,4 +1,5 @@
-.hero {
+
+.hero-cont {
     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/mob-bg_hero_@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,12 +18,12 @@
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .hero {
+    .hero-cont {
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/mob-bg_hero_@2x.jpg);
     }
 }
 @media only screen and (min-width: 768px) {
-    .hero {
+    .hero-cont {
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/tablet-bg_hero@1x.jpg);
         padding-top: 671px;
         padding-bottom: 40px;
@@ -31,14 +32,18 @@
     @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
     (min-resolution: 192dpi) and (min-width: 768px),
     (min-resolution: 2dppx) and (min-width: 768px) {
-        .hero {
+        .hero-cont {
             background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/tablet-bg_hero@2x.jpg);
         }
     }
+    .hero-cont {
+        padding-left: 40px;
+        padding-right: 40px;
+                        }
     
 }
 @media only screen and (min-width: 1200px) {
-    .hero {
+    .hero-cont {
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/desk-bg-hero_@1x.jpg);
         padding-top: 381px;
         padding-bottom: 40px;
@@ -47,10 +52,15 @@
     @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
     (min-resolution: 192dpi) and (min-width: 1200px),
     (min-resolution: 2dppx) and (min-width: 1200px) {
-        .hero {
+        .hero-cont {
             background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/hero/desk-bg-hero_@2x.jpg);
         }
     }
+    .hero-cont {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
 }
 .hero-title {
     font-weight: 500;
@@ -97,6 +107,11 @@
     border: 0;
     margin-right: 14px;
 }
+.buy-btn:hover,
+.buy-btn:focus {
+    color: #FD9222; 
+    background: #FCF1E0;
+}
 @media only screen and (min-width: 768px) {
   .buy-btn {
     width: 144px;
@@ -122,6 +137,13 @@
     border-radius: 100px;
     background-color: transparent;
 }
+.made-btn:hover,
+.made-btn:focus {
+    color: #FD9222;
+    border: 1px solid #FD9222;
+    background-color: #FFFFFF;
+}
+
 @media only screen and (min-width: 768px) {
   .made-btn {
     width: 183px;
