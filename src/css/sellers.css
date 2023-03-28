@@ -1,0 +1,49 @@
+.section-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+.sellers-text {
+  max-width: 407px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+.selleers-item {
+  text-decoration: none;
+}
+
+.sellers-list {
+  display: flex;
+  gap: 16px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+}
+
+.sellers-text-wrapper {
+  display: flex;
+  align-content: space-between;
+  flex-direction: ;
+}
+
+.buy-now-btn {
+  padding: 14px 40px;
+  background: #fd9222;
+  border-color: #fd9222;
+  border-radius: 100px;
+}
