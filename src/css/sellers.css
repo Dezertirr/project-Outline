@@ -56,8 +56,13 @@ ul {
   display: inline-block;
   padding: 14px 40px;
   background: #fd9222;
-  border-color: #fd9222;
+
   border-radius: 100px;
+  border-color: transparent;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
 }
 .sellers-item picture img {
   border-radius: 15px;
