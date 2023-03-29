@@ -7,48 +7,63 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/vanilla-app-template/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-4251b31b.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-5438820a.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav>
+  <div class="container main-header">
+    <nav class="header-nav">
       <a href="./index.html" class="logo"
-        >SIMPLY CHOCOLATE<svg class="" width="24" height="24">
-          <use href=""></use></svg
+        >SIMPLY CHOCOLATE<svg class="logo-icon" width="24" height="24">
+          <use href="../img/symbol-defs.svg#icon-chocolate-header"></use></svg
       ></a>
-      <ul class="nav">
-        <li><a href="">Home</a></li>
-        <li><a href="">How it&apos;s made?</a></li>
-        <li><a href="">Our products</a></li>
-        <li><a href="">Top sellers</a></li>
-        <li><a href="">Chocolate is loved</a></li>
+      <button class="header-burger" type="button">
+        <svg class="burger-icon" width="21" height="14">
+          <use href="../img/symbol-defs.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link current" href="./index.html">Home</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="">How it&apos;s made?</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="">Our products</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="">Top sellers</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="">Chocolate is loved</a>
+        </li>
       </ul>
     </nav>
-    <ul>
-      <li>
+    <ul class="socials-list">
+      <li class="socials-list-item">
         <a
-          class="socials-link"
-          href="https://twitter.com/?request_context=signup"
+          class="socials-list-link"
+          href="#"
           target="_blank"
           rel="noopener noreferer"
           aria-label="link to instagram"
         >
-          <svg class="socials-icon" width="16" height="16">
-            <use href="#"></use>
+          <svg class="header-socials-icon" width="24" height="24">
+            <use href="../img/symbol-defs.svg#icon-instagram"></use>
           </svg>
         </a>
       </li>
-      <li>
+      <li class="socials-list-item">
         <a
-          class="socials-link"
+          class="socials-list-link"
           href="#"
           target="_blank"
           rel="noopener noreferer"
           aria-label="link to twit"
         >
-          <svg class="socials-icon" width="16" height="16">
-            <use href="#"></use>
+          <svg class="header-socials-icon" width="24" height="24">
+            <use href="../img/symbol-defs.svg#icon-twitter"></use>
           </svg>
         </a>
       </li>
@@ -92,14 +107,17 @@
   </body>
 </html>
 
-    <!-- About section -->
+    <!-- About-section -->
 
-<section class="section about">
-  <div class="container">
-    <h2 class="vissuali-hidden">About</h2>
+<section class="about">
+  <div class="container-about">
+    <h2 class="visually-hidden">About</h2>
     <ul class="about-list">
-      <li class="about-list-item">
-        <svg class="about-icon" width="62" height="62"><use></use></svg>
+      <li class="about-list-item border">
+        <svg class="about-icon" width="37" height="37">
+          <use href="../img/symbol-defs.svg#icon-chocolate"></use>
+        </svg>
+
         <h3 class="about-title">Unsurpassed taste</h3>
         <p class="about-text">
           Crafted with the finest quality cocoa beans and a dedication to
@@ -108,8 +126,12 @@
           and discover a new level of chocolate bliss.
         </p>
       </li>
-      <li class="about-list-item">
-        <svg class="" width="62" height="62"><use></use></svg>
+
+      <li class="about-list-item border">
+        <svg class="about-icon" width="37" height="37">
+          <use href="../img/symbol-defs.svg#icon-coin"></use>
+        </svg>
+
         <h3 class="about-title">Affordable price</h3>
         <p class="about-text">
           Indulge in high-quality chocolate without breaking the bank with
@@ -119,8 +141,12 @@
           luxury today.
         </p>
       </li>
+
       <li class="about-list-item">
-        <svg class="" width="62" height="62"><use></use></svg>
+        <svg class="about-icon" width="37" height="37">
+          <use href="../img/symbol-defs.svg#icon-spoon"></use>
+        </svg>
+
         <h3 class="about-title">Own production</h3>
         <p class="about-text">
           We take pride in our own production process, ensuring that every step
@@ -367,18 +393,18 @@
       breakpoints: {
         '@0.00': {
           slidesPerView: 1,
-          spaceBetween: 38,
+          spaceBetween: 18,
         },
         '@0.75': {
-          slidesPerView: 2.5,
+          slidesPerView: 8,
           spaceBetween: 18,
         },
         '@1.00': {
-          slidesPerView: 2.5,
+          slidesPerView: 2,
           spaceBetween: 18,
         },
         '@1.50': {
-          slidesPerView: 3,
+          slidesPerView: 3.5,
           spaceBetween: 18,
         },
       },
@@ -486,52 +512,77 @@
   </body>
 </html>
 
-    <footer>
+    <footer class="footer">
   <div class="container">
-    <h2>Chocolate a delicious cure for a bad day</h2>
-    <p>Contact us</p>
-    <address>
-      <ul class="contacts-list">
-        <li class="">
-          <a href="tel:+380684439426" class="number-phone">+380 (68) 443-94-26</a>
-        </li>
-        <li class="contacts-list-item">
-          <a href="mailto:simplychoc@gmail.com" class="">simplychoc@gmail.com</a>
-        </li>
-      </ul>
-    </address>
-    <ul>
-      <li>
-        <a
-          class="socials-link"
-          href="https://twitter.com/?request_context=signup"
-          target="_blank"
-          rel="noopener noreferer"
-          aria-label="link to instagram">
-          <svg class="socials-icon" width="16" height="16">
-            <use href="#"></use>
-          </svg>
-        </a>
+    <div class="footer-box">
+      <h2 class="footer-title">
+        <span class="footer-accent">Chocolate</span> a delicious cure for a bad
+        day
+      </h2>
+      <div class="address-box">
+        <address>
+          <p class="address-title">Contact us</p>
+          <ul class="address-list">
+            <li class="address-list-item">
+              <a href="tel:+380684439426" class="address-link"
+                >+380 (68) 443-94-26</a
+              >
+            </li>
+            <li class="contacts-list-item">
+              <a href="mailto:simplychoc@gmail.com" class="address-link"
+                >simplychoc@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="footer-socials-list">
+          <li class="footer-socials-item">
+            <a
+              class="footer-socials-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferer"
+              aria-label="link to instagram"
+            >
+              <svg class="footer-socials-icon" width="24" height="24">
+                <use href="../img/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-socials-item">
+            <a
+              class="footer-socials-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferer"
+              aria-label="link to twit"
+            >
+              <svg class="footer-socials-icon" width="24" height="24">
+                <use href="../img/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-line"></div>
+    <ul class="footer-nav-list">
+      <li class="footer-nav-item">
+        <a class="footer-nav-link" href="">Home</a>
       </li>
-      <li>
-        <a
-          class="socials-link"
-          href="#"
-          target="_blank"
-          rel="noopener noreferer"
-          aria-label="link to twit">
-          <svg class="socials-icon" width="16" height="16">
-            <use href="#"></use>
-          </svg>
-        </a>
+      <li class="footer-nav-item">
+        <a class="footer-nav-link" href="">How it&apos;s made?</a>
       </li>
-    </ul>
-    <ul class="nav">
-      <li><a href="">Home</a></li>
-      <li><a href="">How it&apos;s made?</a></li>
-      <li><a href="">Our products</a></li>
-      <li><a href="">Top sellers</a></li>
-      <li><a href="">Chocolate is loved</a></li>
+      <li class="footer-nav-item">
+        <a class="footer-nav-link" href="">Our products</a>
+      </li>
+      <li class="footer-nav-item">
+        <a class="footer-nav-link" href="">Top sellers</a>
+      </li>
+      <li class="footer-nav-item">
+        <a class="footer-nav-link" href="">Chocolate is loved</a>
+      </li>
     </ul>
   </div>
 </footer>
