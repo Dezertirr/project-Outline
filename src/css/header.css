@@ -28,11 +28,16 @@ p {
   display: flex;
   justify-content: space-between;
 }
+
+.header {
+  padding: 20px 0;
+}
 .logo {
-  display: block;
+  display: flex;
+  gap: 4px;
   padding-top: 24px;
   padding-bottom: 36px;
-  margin-right: 216px;
+  margin-right: 188px;
   font-style: italic;
   font-weight: 700;
   font-size: 18px;
@@ -42,25 +47,72 @@ p {
 
   color: #111111;
 }
-.header {
-  padding: 20px 0;
+.logo-icon {
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
 }
 
-.header-nav,
-.socials-list {
+.header-nav {
   display: flex;
   align-items: center;
 }
+
 .nav-list {
   display: flex;
   gap: 24px;
 }
 
-.nav-link {
-  text-align: right;
+.nav-list-link {
   padding-top: 24px;
   padding-bottom: 24px;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  line-height: calc(16 / 14);
+  position: relative;
+}
+.current {
+  color: #fd9222;
+}
+
+.nav-list-link.current::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  display: block;
+  width: 24px;
+  height: 4px;
+  background-color: #fd9222;
+  border-radius: 2px;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus {
+  color: #fd9222;
+}
+
+.socials-list {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.socials-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 25%;
+}
+
+.header-socials-icon {
+  fill: #fafafa;
+  stroke: #111111;
+}
+
+.socials-list-link:hover .header-socials-icon,
+.socials-list-link:focus .header-socials-icon {
+  stroke: #fd9222;
 }
