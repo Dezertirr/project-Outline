@@ -54,10 +54,17 @@
 
 
 .subscribe-title {
-    font-weight: 600;
-    padding-bottom: 24px;
-    color: var(--white-main);
-    letter-spacing: -0.03em;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--white-main);
+  margin-bottom: 24px;
+  
 }
 
 @media only screen and (min-width: 376px) {
