@@ -10,7 +10,7 @@
     height: 620px;  */
     border-radius: 30px;
     padding-top: 395px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -80,8 +80,19 @@
     height: 102px;
   }
 }
+.hero-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;  
+}
+@media only screen and (max-width: 767px) {
+  .hero-desc {
+    flex-direction: column;
+  }
+}
 .buttons-hero {
     display: flex;
+   
 }
 @media only screen and (min-width: 768px) {
   .buttons-hero {
@@ -152,77 +163,73 @@
     align-items: center;
   }
 }
-
-
-.scroll-hero-btn{
-
-    min-width: 107px;
-    height: 28px;
+@media only screen and (max-width: 767px) {
+  .scroll-cont {
+    display: flex;
     margin-top: 32px;
-    background: transparent;
-    border: 0;
-    background: transparent;
-}
-@media only screen and (min-width: 768px) {
-  .scroll-hero-btn {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-top: 10px;
-    align-items: stretch;
   }
 }
-.scroll-hero-btn:hover,
-.scroll-hero-btn:focus {
-    color: #FD9222;
-}
 @media only screen and (min-width: 768px) {
-  .hero-desc {
+  .scroll-cont {
     display: flex;
-    align-items: center;
   }
 }
-.scroll-desc {
+@media only screen and (min-width: 1200px) {
+    .scroll-cont {
+    display: flex;
+    }
+}
+.scroll-btn-txt {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.28;   
-    letter-spacing: -0.03em;    
+    line-height: 1.29;
+    letter-spacing: -0.03em;
     color: #FFFFFF;
-    margin-right: 12px;
-    
+    background: transparent;
+
+}
+.scroll-btn-txt:hover,
+.scroll-btn-txt:focus {
+    color: #FD9222;;
 }
 @media only screen and (min-width: 768px) {
-  .scroll-desc {
+  .scroll-btn-txt {
     margin-right: 14px;
   }
 }
-.icon-btn {
+.scroll-btn {
     width: 28px;
     height: 28px;
-    background-color: #ffffff;
     border-radius: 50%;
-    padding: 6px; 
+    padding-top: 5px;
 }
 
+.scroll-btn:hover,
+.scroll-btn:focus {
+    background-color: #FD9222;
+    color: #FFFFFF;
+}
+.scroll-btn:hover .scroll-icon,
+.scroll-btn:focus .scroll-icon {
+    fill: #FFFFFF;
+}
 @media only screen and (min-width: 768px) {
-  .icon-btn {
+  .scroll-btn {
     width: 38px;
     height: 38px;
-    padding: 8px;
   }
 }
-.icon-btn:hover,
-.icon-btn:focus {
-    fill: #FD9222;
-    stroke: #FFFFFF;
-}
+
 .scroll-icon {
     width: 16px;
     height: 16px;
+    fill: #FD9222;
 }
+
 @media only screen and (min-width: 768px) {
   .scroll-icon {
     width: 22px;
     height: 22px;
   }
 }
+
