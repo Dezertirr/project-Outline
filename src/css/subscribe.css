@@ -93,3 +93,34 @@
     padding: 14px 40px;
   }
 }
+
+.subscribe-backdrop{
+  max-width: 311px;
+  
+}
+.subscribe-modal{
+
+  
+}
+.subscribe-form{
+  border-radius: 15px;
+  background-color:green ;
+  
+  
+}
+.subscribe-modal-img{
+  border-radius: 15px;
+}
+.subscribe-modal-title{
+  color: var(--black-main) ;
+}
+.subscribe-orange{
+  color: var(--orange-main);
+  
+}
+.subcribe-input{
+  
+}
+.subscribe-modal-button{
+  
+}

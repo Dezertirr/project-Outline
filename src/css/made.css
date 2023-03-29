@@ -93,6 +93,12 @@
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .list-description {
+    max-width: 350px;
+  }
+}
+
 /* //////////////////Custom icon////////////////////// */
 
 .made-list-item {
@@ -119,7 +125,7 @@
 
 @media only screen and (min-width: 1200px) {
   .made-list-item {
-    max-width: 404px;
+    max-width: 410px;
   }
 
   .made-list {
