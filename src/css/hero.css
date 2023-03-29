@@ -80,9 +80,19 @@
     height: 102px;
   }
 }
+.hero-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;  
+}
+@media only screen and (max-width: 767px) {
+  .hero-desc {
+    flex-direction: column;
+  }
+}
 .buttons-hero {
     display: flex;
-    position: relative;
+   
 }
 @media only screen and (min-width: 768px) {
   .buttons-hero {
@@ -153,24 +163,19 @@
     align-items: center;
   }
 }
-.scroll-cont {
-    display: inline-block;
+@media only screen and (max-width: 767px) {
+  .scroll-cont {
     margin-top: 32px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .scroll-cont {
     display: flex;
-    position: absolute;
-    bottom: -1%;
-    right: 12%
   }
 }
 @media only screen and (min-width: 1200px) {
     .scroll-cont {
     display: flex;
-    position: absolute;
-    bottom: 33%;
-    right: 12%
     }
 }
 .scroll-btn-txt {
