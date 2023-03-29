@@ -7,7 +7,7 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/vanilla-app-template/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-872998c6.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-6fc2deca.css">
   </head>
   <body>
     <header class="header">
@@ -78,14 +78,14 @@
             <button class="buy-btn" type="button">Buy now</button>
             <button class="made-btn" type="button">How it&#96;s made</button>
           </div>
-          <button class="scroll-hero-btn">
-            <strong class="scroll-desc">scroll down</strong>
-            <button class="icon-btn">
+          <div class="scroll-cont">
+            <button class="scroll-btn-txt">scroll down</button>
+            <button class="scroll-btn">
               <svg class="scroll-icon">
                 <use href="../img/symbol-defs.svg#icon-scroll"></use>
               </svg>
             </button>
-          </button>
+          </div>
         </div>
       </div>
     </section>
@@ -189,6 +189,20 @@
             alt="A metal bowl with liquid chocolate and a whisk"
           />
         </picture>
+
+        <button class="play-btn" type="button" data-video-open>
+          <svg class="play-icon" width="20" height="21">
+            <use href="../img/play.svg#icon-play"></use>
+            <!-- <use href="../img/symbol-defs.svg#icon-spoon"></use> -->
+          </svg>
+        </button>
+
+        <iframe
+          class="made-video video-is-hidden"
+          src="https://www.youtube.com/embed/jhOnA_80H94?&mute=1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          data-video
+        ></iframe>
       </div>
       <div class="resipe-description">
         <p class="list-description">
@@ -218,6 +232,8 @@
     </div>
   </div>
 </section>
+
+<script src="../video.js"></script>
 
     <link
   rel="stylesheet"
@@ -456,6 +472,16 @@
       <button class="subscribe-button" type="button">Subscribe</button>
     </div>
     </section>
+    <!-- <div class="subscribe-backdrop">
+      <div class="subscribe-modal">
+          <form class="subscribe-form">
+              <img class="subscribe-modal-img" srcset="../img/modal_new_chocolate/mob_@1x.jpg 1x, ../img/modal_new_chocolate/mob_@2x" alt="">
+              <h2 class="subscribe-modal-title">EXPLORE OUR <span class="subscribe-orange">&nbspNEW CHOCOLATE</span> FIRST!</h2>
+              <input class="subcribe-input" type="mail">
+              <button class="subscribe-modal-button" type="button">Sumbit</button>
+          </form>
+      </div>
+  </div> -->
   </body>
 </html>
 
@@ -466,14 +492,10 @@
     <address>
       <ul class="contacts-list">
         <li class="">
-          <a href="tel:+380684439426" class="number-phone"
-            >+380 (68) 443-94-26</a
-          >
+          <a href="tel:+380684439426" class="number-phone">+380 (68) 443-94-26</a>
         </li>
         <li class="contacts-list-item">
-          <a href="mailto:simplychoc@gmail.com" class=""
-            >simplychoc@gmail.com</a
-          >
+          <a href="mailto:simplychoc@gmail.com" class="">simplychoc@gmail.com</a>
         </li>
       </ul>
     </address>
@@ -484,8 +506,7 @@
           href="https://twitter.com/?request_context=signup"
           target="_blank"
           rel="noopener noreferer"
-          aria-label="link to instagram"
-        >
+          aria-label="link to instagram">
           <svg class="socials-icon" width="16" height="16">
             <use href="#"></use>
           </svg>
@@ -497,8 +518,7 @@
           href="#"
           target="_blank"
           rel="noopener noreferer"
-          aria-label="link to twit"
-        >
+          aria-label="link to twit">
           <svg class="socials-icon" width="16" height="16">
             <use href="#"></use>
           </svg>
