@@ -100,18 +100,18 @@
     padding: 14px 40px;
   }
 }
-
+/*----MODAL-SUBSCRIBE----*/
 .subscribe-backdrop{
   max-width: 311px;
   
 }
 .subscribe-modal{
-
+position: relative;
   
 }
 .subscribe-form{
   border-radius: 15px;
-  background-color:green ;
+  background-color:var(--white-main) ;
   
   
 }
@@ -119,15 +119,36 @@
   border-radius: 15px;
 }
 .subscribe-modal-title{
-  color: var(--black-main) ;
+  color: var(--black-main);
+  padding: 32px 24px 24px 24px;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
 }
 .subscribe-orange{
   color: var(--orange-main);
   
 }
 .subcribe-input{
-  
+  padding: 14px 18px;
+  width: 263px;
+  margin:0 24px 32px 24px;
+  border-radius: 25px;
+  border-color: #ffffff1a;
+  background-color: var(--white-main);
 }
 .subscribe-modal-button{
-  
+  position: absolute;
+  padding: 14px 22px;
+  color: white;
+  background-color: var(--orange-main);
+  border-radius: 100px;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+transform: translateX(-125%) translateY(4%);
 }
