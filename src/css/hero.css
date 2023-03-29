@@ -80,9 +80,19 @@
     height: 102px;
   }
 }
+.hero-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;  
+}
+@media only screen and (max-width: 767px) {
+  .hero-desc {
+    flex-direction: column;
+  }
+}
 .buttons-hero {
     display: flex;
-    position: relative;
+   
 }
 @media only screen and (min-width: 768px) {
   .buttons-hero {
@@ -153,24 +163,20 @@
     align-items: center;
   }
 }
-.scroll-cont {
-    display: inline-block;
+@media only screen and (max-width: 767px) {
+  .scroll-cont {
+    display: flex;
     margin-top: 32px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .scroll-cont {
     display: flex;
-    position: absolute;
-    bottom: -1%;
-    right: 12%
   }
 }
 @media only screen and (min-width: 1200px) {
     .scroll-cont {
     display: flex;
-    position: absolute;
-    bottom: 33%;
-    right: 12%
     }
 }
 .scroll-btn-txt {
@@ -197,12 +203,16 @@
     border-radius: 50%;
     padding-top: 5px;
 }
+
 .scroll-btn:hover,
 .scroll-btn:focus {
     background-color: #FD9222;
     stroke: #FFFFFF;
     color: #FFFFFF;
-
+}
+.scroll-btn:hover .scroll-btn,
+.scroll-btn:focus .scroll-btn {
+    fill: #FFFFFF;
 }
 @media only screen and (min-width: 768px) {
   .scroll-btn {
