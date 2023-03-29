@@ -161,16 +161,16 @@
   .scroll-cont {
     display: flex;
     position: absolute;
-    bottom: 8%;
-    right: 20%
+    bottom: -1%;
+    right: 12%
   }
 }
 @media only screen and (min-width: 1200px) {
     .scroll-cont {
     display: flex;
     position: absolute;
-    bottom: 39%;
-    right: 15%
+    bottom: 33%;
+    right: 12%
     }
 }
 .scroll-btn-txt {
@@ -184,9 +184,7 @@
 }
 .scroll-btn-txt:hover,
 .scroll-btn-txt:focus {
-    color: #FD9222;
-    border: transparent;
-    outline: transparent;
+    color: #FD9222;;
 }
 @media only screen and (min-width: 768px) {
   .scroll-btn-txt {
