@@ -1,0 +1,39 @@
+li {
+  list-style-type: none;
+}
+h3 {
+  color: #ffffff;
+}
+
+.about-text {
+  color: rgb(255, 255, 255, 0.7);
+  text-align: left;
+}
+
+.about {
+  background: #1e1823;
+}
+
+.about-icon {
+  margin-bottom: 22px;
+}
+.about-title {
+  margin-bottom: 18px;
+}
+
+.about-list-item {
+  row-gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-list-item {
+    row-gap: 32px;
+    column-gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-list-item {
+    column-gap: 70px;
+  }
+}
