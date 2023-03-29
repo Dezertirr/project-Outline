@@ -36,6 +36,20 @@
             alt="A metal bowl with liquid chocolate and a whisk"
           />
         </picture>
+
+        <button class="play-btn" type="button" data-video-open>
+          <svg class="play-icon" width="20" height="21">
+            <use href="../img/play.svg#icon-play"></use>
+            <!-- <use href="../img/symbol-defs.svg#icon-spoon"></use> -->
+          </svg>
+        </button>
+
+        <iframe
+          class="made-video video-is-hidden"
+          src="https://www.youtube.com/embed/jhOnA_80H94?&mute=1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          data-video
+        ></iframe>
       </div>
       <div class="resipe-description">
         <p class="list-description">
@@ -65,3 +79,5 @@
     </div>
   </div>
 </section>
+
+<script src="../video.js"></script>
