@@ -4,9 +4,19 @@
   | default @import url()
   |============================
 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('./reset.css');
 @import url('./vite-promo.css');
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./About.css');
+@import url('./taste.css');
+@import url('./made.css');
+@import url('./product.css');
+@import url('./sellers.css');
+@import url('./revives.css');
+@import url('./subscribe.css');
+@import url('./footer.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,4 +32,50 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --black-main: #111111;
+  --dark-purple-main: #1E1823;
+  --orange-main:#FD9222;
+  --white-main:#FAFAFA;
 }
+body {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em
+}
+
+.container {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  width: 100%;
+  padding-top: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+  }
+
+  .section {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1136px;
+  }
+
+  .section {
+    padding-top: 128px;
+  }
+}
+
