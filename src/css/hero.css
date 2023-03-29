@@ -210,9 +210,15 @@
     height: 38px;
   }
 }
+
 .scroll-icon {
     width: 16px;
     height: 16px;
+    fill: #FD9222;
+}
+.scroll-icon:hover,
+.scroll-icon:focus {
+    fill: #FFFFFF;
 }
 
 @media only screen and (min-width: 768px) {
