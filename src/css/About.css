@@ -22,11 +22,6 @@
   background: #1e1823;
 }
 
-.container-about {
-  max-width: 375px;
-  padding: 20px;
-}
-
 .about-icon {
   margin-bottom: 22px;
   border: 1px solid rgba(255, 255, 255, 0.5);
