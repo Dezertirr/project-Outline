@@ -165,7 +165,8 @@
 }
 @media only screen and (max-width: 767px) {
   .scroll-cont {
-
+    display: flex;
+    margin-top: 32px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -202,12 +203,16 @@
     border-radius: 50%;
     padding-top: 5px;
 }
+
 .scroll-btn:hover,
 .scroll-btn:focus {
     background-color: #FD9222;
     stroke: #FFFFFF;
     color: #FFFFFF;
-
+}
+.scroll-btn:hover .scroll-btn,
+.scroll-btn:focus .scroll-btn {
+    fill: #FFFFFF;
 }
 @media only screen and (min-width: 768px) {
   .scroll-btn {
