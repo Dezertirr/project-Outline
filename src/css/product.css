@@ -40,6 +40,7 @@
   height: 397px;
   text-align: center;
 }
+
 .swiper-wrapper {
   display: flex;
 }
@@ -56,7 +57,7 @@
   align-items: center;
   border-radius: 15px;
   flex-direction: column;
-
+  border: 1px solid rgba(17, 17, 17, 0.1);
   height: 364px;
   max-width: 335px;
   min-width: 335px;
@@ -69,7 +70,6 @@
     flex-direction: column;
     height: 364px;
     max-width: 335px;
-
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -94,6 +94,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .product-name {
   text-transform: uppercase;
 }
