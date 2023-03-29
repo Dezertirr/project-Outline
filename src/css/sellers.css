@@ -35,22 +35,18 @@ ul {
   margin-bottom: 32px;
 }
 
-/* @media screen and (min-width: 767px) and (max-width: 1199px) {
-  .sellers-list:last-child {
-    display: none;
-  }
-} */
-
 .section-title {
   margin-bottom: 50px;
 }
 
-/* .sellers-text-wrapper {
+.sellers-text-wrapper {
   display: flex;
+  margin-top: 0;
+
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
-} */
+}
 
 .buy-now-btn {
   display: inline-block;
