@@ -207,11 +207,10 @@
 .scroll-btn:hover,
 .scroll-btn:focus {
     background-color: #FD9222;
-    stroke: #FFFFFF;
     color: #FFFFFF;
 }
-.scroll-btn:hover .scroll-btn,
-.scroll-btn:focus .scroll-btn {
+.scroll-btn:hover .scroll-icon,
+.scroll-btn:focus .scroll-icon {
     fill: #FFFFFF;
 }
 @media only screen and (min-width: 768px) {
@@ -225,10 +224,6 @@
     width: 16px;
     height: 16px;
     fill: #FD9222;
-}
-.scroll-icon:hover,
-.scroll-icon:focus {
-    fill: #FFFFFF;
 }
 
 @media only screen and (min-width: 768px) {
