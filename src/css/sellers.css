@@ -3,45 +3,39 @@
 @import url('./vite-promo.css');
 @import url('./styles.css');
 
+ul {
+  list-style-type: none;
+}
+
 .section-title {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
-ul {
-  list-style-type: none;
-}
 .sellers-text {
   display: inline-block;
   max-width: 407px;
-  font-family: 'Montserrat';
+
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.28;
   letter-spacing: -0.02em;
   color: #111111;
 }
-.selleers-item {
+.sellers-item {
   border-radius: 15px;
-  border-color: #fd9222;
   overflow: hidden;
 }
 
 .sellers-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 32px;
-}
 
-.section-title {
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .sellers-text-wrapper {
@@ -56,7 +50,7 @@ ul {
 .buy-now-btn {
   display: inline-block;
   padding: 14px 40px;
-  background: #fd9222;
+  background: var(--orange-main);
 
   border-radius: 100px;
   border-color: transparent;
@@ -67,4 +61,79 @@ ul {
 }
 .sellers-item picture img {
   border-radius: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .desktop-container {
+    display: none;
+  }
+
+  .sellers-item {
+    max-width: 335px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+
+  .buy-now-btn {
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-title {
+    margin-bottom: 32px;
+  }
+  .desktop-container {
+    display: none;
+  }
+
+  .sellers-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 344px;
+  }
+  p {
+    width: 306px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+  img {
+    margin-bottom: 32px;
+  }
+
+  .buy-now-btn {
+    margin-left: auto;
+  }
+
+  .sellers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-tablet-container {
+    display: none;
+  }
+
+  .section-title {
+    margin-bottom: 50px;
+  }
+
+  .sellers-text {
+    max-width: 407px;
+  }
+
+  .sellers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 }
