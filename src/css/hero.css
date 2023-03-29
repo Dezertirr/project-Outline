@@ -184,7 +184,9 @@
 }
 .scroll-btn-txt:hover,
 .scroll-btn-txt:focus {
-    color: #FD9222;;
+    color: #FD9222;
+    border: transparent;
+    outline: transparent;
 }
 @media only screen and (min-width: 768px) {
   .scroll-btn-txt {
@@ -228,75 +230,3 @@
   }
 }
 
-/* .scroll-hero-btn{
-
-    min-width: 107px;
-    height: 28px;
-    margin-top: 32px;
-    background: transparent;
-    border: 0;
-    background: transparent;
-}
-@media only screen and (min-width: 768px) {
-  .scroll-hero-btn {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-top: 10px;
-    align-items: stretch;
-  }
-}
-.scroll-hero-btn:hover,
-.scroll-hero-btn:focus {
-    color: #FD9222;
-}
-@media only screen and (min-width: 768px) {
-  .hero-desc {
-    display: flex;
-    align-items: center;
-  }
-}
-.scroll-desc {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.28;   
-    letter-spacing: -0.03em;    
-    color: #FFFFFF;
-    margin-right: 12px;
-    
-}
-@media only screen and (min-width: 768px) {
-  .scroll-desc {
-    margin-right: 14px;
-  }
-}
-.icon-btn {
-    width: 28px;
-    height: 28px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    padding: 6px; 
-}
-
-@media only screen and (min-width: 768px) {
-  .icon-btn {
-    width: 38px;
-    height: 38px;
-    padding: 8px;
-  }
-}
-.icon-btn:hover,
-.icon-btn:focus {
-    fill: #FD9222;
-    stroke: #FFFFFF;
-}
-.scroll-icon {
-    width: 16px;
-    height: 16px;
-}
-@media only screen and (min-width: 768px) {
-  .scroll-icon {
-    width: 22px;
-    height: 22px;
-  }
-} */
