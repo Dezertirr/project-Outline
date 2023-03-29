@@ -11,8 +11,8 @@
     border-radius: 30px;
     padding-top: 395px;
     padding-bottom: 80px;
-    /* padding-left: 20px;
-    padding-right: 20px; */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
@@ -123,7 +123,7 @@
 
 .made-btn {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.21;
     color: #FFFFFF;
     display: flex;
@@ -154,8 +154,7 @@
 }
 
 .scroll-hero-btn{
-    display: flex;
-    align-items: center;
+
     min-width: 107px;
     height: 28px;
     margin-top: 32px;
@@ -165,8 +164,11 @@
 }
 @media only screen and (min-width: 768px) {
   .scroll-hero-btn {
+    display: flex;
+    align-items: center;
     margin-left: auto;
     margin-top: 10px;
+    align-items: stretch;
   }
 }
 .scroll-hero-btn:hover,
@@ -176,10 +178,10 @@
 @media only screen and (min-width: 768px) {
   .hero-desc {
     display: flex;
-    align-items: stretch;
+    align-items: center;
   }
 }
-.scroll {
+.scroll-desc {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28;   
@@ -189,26 +191,37 @@
     
 }
 @media only screen and (min-width: 768px) {
-  .scroll {
+  .scroll-desc {
     margin-right: 14px;
   }
 }
-.scroll-icon {
+.icon-btn {
     width: 28px;
     height: 28px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 6px; 
+}
+
+@media only screen and (min-width: 768px) {
+  .icon-btn {
+    width: 38px;
+    height: 38px;
+    padding: 8px;
+  }
+}
+.icon-btn:hover,
+.icon-btn:focus {
+    fill: #FD9222;
+    stroke: #FFFFFF;
+}
+.scroll-icon {
+    width: 16px;
+    height: 16px;
 }
 @media only screen and (min-width: 768px) {
   .scroll-icon {
-    width: 38px;
-    height: 38px;
+    width: 22px;
+    height: 22px;
   }
-}
-.scroll-icon {
-    fill: #FFFFFF;
-    border: transparent;
-}
-.scroll-icon:hover,
-.scroll-icon:focus {
-    fill: #FD9222;
-
 }
