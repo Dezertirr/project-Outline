@@ -56,7 +56,7 @@
   align-items: center;
   border-radius: 15px;
   flex-direction: column;
-
+  border: 1px solid rgba(17, 17, 17, 0.1);
   height: 364px;
   max-width: 335px;
   min-width: 335px;
