@@ -212,6 +212,7 @@
 .scroll-btn:hover .scroll-icon,
 .scroll-btn:focus .scroll-icon {
     fill: #FFFFFF;
+
 }
 @media only screen and (min-width: 768px) {
   .scroll-btn {
