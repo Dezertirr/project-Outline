@@ -59,11 +59,23 @@
   flex-direction: column;
   border: 1px solid rgba(17, 17, 17, 0.1);
   height: 364px;
-  max-width: 335px;
-  min-width: 335px;
-
+  /* max-width: 335px;
+  min-width: 335px; */
+  width: 335px;
   font-size: 18px;
   background: #fff;
+}
+@media screen and (min-width: 768px) {
+  .swiper-slide {
+    width: 270px;
+    min-width: 270px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .swiper-slide {
+    width: 270px;
+    min-width: 270px;
+  }
 }
 /* .swiper-slide {
     display: flex;
