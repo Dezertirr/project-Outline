@@ -1,39 +1,108 @@
-li {
-  list-style-type: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-h3 {
+
+.advantages {
+  width: 100%;
+
+  background: #1e1823;
+}
+.about {
+  padding: 20px 0;
+}
+.about-title {
+  margin-bottom: 18px;
+  font-size: 18px;
+  line-height: calc(22 / 18);
   color: #ffffff;
 }
 
 .about-text {
   color: rgb(255, 255, 255, 0.7);
   text-align: left;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: -0.02em;
 }
 
-.about {
-  background: #1e1823;
-}
-
-.about-icon {
+.about-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
   margin-bottom: 22px;
 }
-.about-title {
-  margin-bottom: 18px;
+.about-icon {
+  margin: auto auto;
 }
 
 .about-list-item {
-  row-gap: 20px;
+  margin-bottom: 20px;
+  max-width: 302px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 32px;
+    justify-content: space-between;
+  }
+  .about {
+    padding: 50px 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .about-list-item {
-    row-gap: 32px;
-    column-gap: 32px;
+    margin-bottom: 0;
+    max-width: 302px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .about-list {
+    justify-content: center;
+  }
+
+  .about {
+    padding: 50px 0px;
+  }
+
   .about-list-item {
-    column-gap: 70px;
+    position: relative;
+    max-width: 308px;
+    column-gap: 88px;
+    row-gap: 0;
+  }
+
+  .about-list-item:last-child {
+    margin-right: 0;
+  }
+
+  .border::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 263px;
+    top: 125px;
+    right: 0;
+    width: 124px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: rotate(90deg);
   }
 }
