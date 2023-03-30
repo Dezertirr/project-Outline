@@ -35,17 +35,18 @@
   -webkit-text-size-adjust: 100%;
 
   --black-main: #111111;
-  --dark-purple-main: #1E1823;
-  --orange-main:#FD9222;
-  --white-main:#FAFAFA;
+  --dark-purple-main: #1e1823;
+  --orange-main: #fd9222;
+  --white-main: #fafafa;
 }
+
 body {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: -0.02em
+  letter-spacing: -0.02em;
 }
 
 .container {
@@ -53,8 +54,7 @@ body {
   max-width: 335px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+
 }
 
 .section {
@@ -65,8 +65,7 @@ body {
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 704px;
-    padding-left: 32px;
-    padding-right: 32px;
+
   }
 
   .section {
@@ -83,4 +82,3 @@ body {
     padding-top: 128px;
   }
 }
-
