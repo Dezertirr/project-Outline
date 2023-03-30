@@ -1,55 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+<div
+  class="feedback-thanks-modal feedback-thanks-is-hidden"
+  data-feedback-thanks
+>
+  <button
+    class="close-feedback-thanks-modal-btn"
+    type="button"
+    data-feedback-thanks-close
+  >
+    <svg class="close-feedback-thanks-modal-icon" width="16" height="16">
+      <use href="../img/symbol-defs.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="feedback-thanks-titel">thank you for&nbsp;your&nbsp;feedback!</h2>
+  <p class="feedback-thanks-text">We are so happy to hear from you!</p>
+
+  <picture>
+    <source
+      srcset="
+        ../img/thanks_chocolate/chocolate-tab-desk@1x.png 1x,
+        ../img/thanks_chocolate/chocolate-tab-desk@2x.png 2x
+      "
+      media="(min-width:768px)"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <div class="feedback-thanks-modal" data-feedback-thanks>
-      <button
-        class="close-feedback-thanks-modal-btn"
-        type="button"
-        data-feedback-thanks-close
-      >
-        <svg class="close-feedback-thanks-modal-icon" width="16" height="16">
-          <use href="../img/symbol-defs.svg#icon-close"></use>
-        </svg>
-      </button>
-      <h2 class="feedback-thanks-titel">
-        thank you for&nbsp;your&nbsp;feedback!
-      </h2>
-      <p class="feedback-thanks-text">We are so happy to hear from you!</p>
+    <source
+      srcset="
+        ../img/thanks_chocolate/chocolate-mob@1x.png 1x,
+        ../img/thanks_chocolate/chocolate-mob@2x.png 2x
+      "
+      media="(max-width:767px)"
+    />
 
-      <picture>
-        <source
-          srcset="
-            ../img/thanks_chocolate/chocolate-tab-desk@1x.png 1x,
-            ../img/thanks_chocolate/chocolate-tab-desk@1x.png 2x
-          "
-          media="(min-width:1200px)"
-        />
-
-        <source
-          srcset="
-            ../img/thanks_chocolate/chocolate-mob@1x.png 1x,
-            ../img/thanks_chocolate/chocolate-mob@2x.png 2x
-          "
-          media="(max-width:767px)"
-        />
-
-        <img
-          class="feedback-thanks-img"
-          src="../img/thanks_chocolate/chocolate-mob@1x.png"
-          alt="Pice of chocolate"
-        />
-      </picture>
-    </div>
-  </body>
-</html>
+    <img
+      class="feedback-thanks-img"
+      src="../img/thanks_chocolate/chocolate-mob@1x.png"
+      alt="Pice of chocolate"
+    />
+  </picture>
+</div>
