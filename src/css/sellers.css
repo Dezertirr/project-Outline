@@ -3,11 +3,11 @@
 @import url('./vite-promo.css');
 @import url('./styles.css');
 
-ul {
+.sellers-list {
   list-style-type: none;
 }
 
-.section-title {
+.sellers-section-title {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.17;
@@ -47,7 +47,7 @@ ul {
   align-items: start;
 }
 
-.buy-now-btn {
+.sellers-buy-now-btn {
   display: inline-block;
   padding: 14px 40px;
   background: var(--orange-main);
@@ -59,12 +59,12 @@ ul {
   line-height: 22px;
   color: #ffffff;
 }
-.sellers-item picture img {
+.sellers-item .sellers-picture .sellers-img {
   border-radius: 15px;
 }
 
 @media screen and (max-width: 767px) {
-  .desktop-container {
+  .sellers-desktop-container {
     display: none;
   }
 
@@ -75,17 +75,23 @@ ul {
     align-items: center;
   }
 
-  /* img {
+
+
+  
+
+  .sellers-img {
+
     margin-top: 32px;
     margin-bottom: 20px;
-  } */
-}
+  }  
+ 
+
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .section-title {
+  .sellers-section-title {
     margin-bottom: 32px;
   }
-  .desktop-container {
+  .sellers-desktop-container {
     display: none;
   }
 
@@ -94,17 +100,20 @@ ul {
     flex-direction: column;
     max-width: 344px;
   }
-  /* p {
+
+
+  .sellers-section-text {
+
     width: 306px;
     font-size: 14px;
     line-height: 1.28;
   }
 
-  img {
+  .sellers-img {
     margin-bottom: 32px;
   } */
 
-  .buy-now-btn {
+  .sellers-buy-now-btn {
     margin-left: auto;
   }
 
@@ -116,11 +125,11 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
-  .mobile-tablet-container {
+  .sellers-mobile-tablet-container {
     display: none;
   }
 
-  .section-title {
+  .sellers-section-title {
     margin-bottom: 50px;
   }
 
