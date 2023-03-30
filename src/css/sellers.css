@@ -30,6 +30,7 @@
   letter-spacing: -0.02em;
   color: #111111;
 }
+
 .sellers-item {
   border-radius: 15px;
   overflow: hidden;
@@ -56,7 +57,9 @@
   padding: 14px 40px;
   background: var(--orange-main);
 
+
   min-width: 109px;
+
   border-radius: 100px;
   border-color: transparent;
   font-weight: 600;
@@ -71,6 +74,7 @@
   background-color: #fcf1e0;
   color: #fd9222;
 }
+
 .sellers-item .sellers-picture .sellers-img {
   border-radius: 15px;
 }
@@ -83,9 +87,11 @@
   .sellers-item:last-child {
     display: none;
   }
+  
   .desk-btn {
     display: none;
   }
+
 
   .sellers-item {
     max-width: 335px;
@@ -107,10 +113,12 @@
   }
 }
 /* ---------------------T A B L E T --------------------- */
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .sellers-section-title {
     margin-bottom: 32px;
   }
+
   .sellers-desktop-text-hide {
     display: none;
   }
@@ -127,7 +135,9 @@
     flex-direction: column;
     max-width: 344px;
   }
+
   .sellers-text {
+
     width: 306px;
     font-size: 14px;
     line-height: 1.28;
@@ -135,7 +145,7 @@
 
   .sellers-img {
     margin-bottom: 32px;
-  }
+  } */
 
   .sellers-buy-now-btn {
     margin-left: auto;

@@ -1,9 +1,24 @@
+.sub-section{
+  padding-top: 62px;
+  padding-bottom: 63px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .sub-section {
+    padding-top: 72px;
+    padding-bottom: 72px
+  }
+}
 
 .subscribe-container {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1200px;
+
 }
 
 .subscribe-text-container {
@@ -12,8 +27,7 @@
 }
 
 @media only screen and (min-width: 376px) {
-  .subscribe-text-container
-   {
+  .subscribe-text-container {
     max-width: 467px;
   }
 }
@@ -23,7 +37,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
 }
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .bg-sub-img {
       background-image:linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/mob_@2x.jpg); ;
@@ -45,6 +61,7 @@
     .bg-sub-img {
         background-image:linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/desc_@1x.jpg) ;
     }
+
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)  {
     .bg-sub-img {
         background-image:linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/tabl_@2x.jpg)
@@ -52,12 +69,17 @@
   }
 }
 
-
 .subscribe-title {
-    font-weight: 600;
-    padding-bottom: 24px;
-    color: var(--white-main);
-    letter-spacing: -0.03em;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--white-main);
+  margin-bottom: 24px;
 }
 
 @media only screen and (min-width: 376px) {
@@ -75,7 +97,7 @@
 
 .subscribe-button {
     color: var(--white-main);
-    margin: 0 auto 62px auto;
+    margin: 0 auto 0 auto;
     padding: 12px 28px;
     border-radius: 100px;
     background-color: var(--orange-main);
@@ -93,3 +115,4 @@
     padding: 14px 40px;
   }
 }
+/*----MODAL-SUBSCRIBE----*/

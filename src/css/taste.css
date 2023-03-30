@@ -1,0 +1,221 @@
+.section-taste{
+    background-color: var(--white-main);
+}
+.taste-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.taste-header {
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--black-main);
+    text-align: center;
+    width: 283px;
+    margin-bottom: 24px;
+}
+
+.color-taste {
+    color: var(--orange-main);
+}
+
+.taste-text {
+    text-align: center;
+    color: var(--black-main);
+    
+}
+
+/* ////////////////////ANIMATION //////////////////*/
+
+.card-taste {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 335px;
+    height: 270px;
+
+    /*  set 3d properties  */
+    transform-style: preserve-3d;
+    perspective: 800px;
+    cursor: context-menu;
+}
+
+.card-taste {
+    margin-bottom: 20px;
+}
+
+.bottom{
+    margin-bottom: 0;
+}
+
+/* SIDES */
+.card-taste .front,
+.card-taste .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+}
+
+.card-taste .front-2 {
+    background-color: var(--white-main);
+    border: 1px solid var(--orange-main);
+}
+
+.front-2 .title-taste {
+    color: var(--black-main);
+}
+
+.card-taste .front-1 {
+    background-color: var(--orange-main);
+}
+
+.card-taste .front-3 {
+    background-color: var(--dark-purple-main);
+}
+
+.card-taste .back {
+    background-color: var(--white-main);
+    transform: rotateY(180deg);
+}
+
+.card-taste:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.card-taste:hover .back {
+    transform: rotateY(0deg);
+}
+
+/* CONTENTS */
+.card-taste .contents {
+    width: 100%;
+    height: 100%;
+    color: var(--white-main);
+    transform: translateZ(100px) scale(0.86);
+    overflow: hidden;
+}
+
+.card-taste .front .img-taste {
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.card-taste .contents .title-taste {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.card-taste .contents .subtitle-taste {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--black-main);
+}
+
+.card-taste .contents .text-taste {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: var(--black-main);
+}
+
+.card-taste .contents .list-taste {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.card-taste .contents .btn-taste {
+    display: block;
+    padding: 6px 16px;
+    font-size: 10px;
+    line-height: 1.2;
+    color: var(--black-main);
+    background: transparent;
+    border-radius: 35px;
+    border: 1px solid var(--orange-main);
+    cursor: pointer;
+}
+
+.card-taste .contents .btn-taste.active-taste {
+    color: var(--white-main);
+    background: var(--orange-main);
+    border: transparent;
+}
+
+/* ////////////////TABLET////////////////// */
+@media only screen and (min-width: 768px) {
+    
+    .taste-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .taste-header {
+        font-size: 24px;
+        line-height: calc(28/24);
+        width: 411px;
+        margin-bottom: 28px;
+    }
+    .taste-text {
+         margin-bottom: 50px;
+         width: 486px;
+    }
+    .card-taste{
+        width: 336px;
+        height: 270px;
+        margin-bottom: 0;
+    }
+    .card-taste:nth-child(even) {
+        margin-right: 32px;
+    }
+    .left{
+        margin-bottom: 32px;
+    }
+    .header-text {
+        margin-bottom: 50px;
+    }        
+}
+
+/* //////////////DESKTOP//////////////// */
+@media only screen and (min-width: 1200px) {
+    
+    .taste-container {
+        flex-direction: row;
+    }
+    .header-text{
+        width: 100%;
+    }
+    .card-taste:not(:last-child){
+        margin-right: 18px;
+    }
+    .card-taste{
+        width: 270px;
+        height: 270px;
+        margin-bottom: 0;
+    }
+}
