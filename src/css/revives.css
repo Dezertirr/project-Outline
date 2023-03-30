@@ -8,11 +8,11 @@
   height: 100%;
   transform: translate(1);
 }
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-}
+} */
 .backdrop.is-hidden > .modal {
   transform: translate(-50%, -50%);
 }
@@ -191,6 +191,7 @@
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
   padding-left: 18px;
+  padding-top: 14px;
   outline: 4px solid transparent;
 }
 @media only screen and (min-width: 768px) {
