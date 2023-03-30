@@ -1,4 +1,6 @@
-
+.section-taste{
+    background-color: var(--white-main);
+}
 .taste-container {
     display: flex;
     flex-direction: column;
