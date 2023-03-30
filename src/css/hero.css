@@ -12,6 +12,20 @@
   }
 }
 
+.hero {
+  padding-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero {
+    padding-bottom: 100px;
+  }
+}
+
 .hero-cont {
   background-image: linear-gradient(
       180deg,
@@ -45,6 +59,7 @@
       url(../img/hero/mob-bg_hero_@2x.jpg);
   }
 }
+
 @media only screen and (min-width: 768px) {
   .hero-cont {
     background-image: linear-gradient(
@@ -103,6 +118,7 @@
     padding-right: 40px;
   }
 }
+
 .hero-title {
   font-weight: 500;
   font-size: 20px;
@@ -113,6 +129,7 @@
   height: 72px;
   margin-bottom: 32px;
 }
+
 @media only screen and (min-width: 768px) {
   .hero-title {
     font-size: 28px;
@@ -121,26 +138,31 @@
     height: 102px;
   }
 }
+
 .hero-desc {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 @media only screen and (max-width: 767px) {
   .hero-desc {
     flex-direction: column;
     align-items: flex-start;
   }
 }
+
 .buttons-hero {
   display: flex;
 }
+
 @media only screen and (min-width: 768px) {
   .buttons-hero {
     width: 341px;
     height: 45px;
   }
 }
+
 .buy-btn {
   font-weight: 600;
   font-size: 14px;
@@ -159,11 +181,13 @@
   border: 0;
   margin-right: 14px;
 }
+
 .buy-btn:hover,
 .buy-btn:focus {
   color: #fd9222;
   background: #fcf1e0;
 }
+
 @media only screen and (min-width: 768px) {
   .buy-btn {
     width: 144px;
@@ -188,6 +212,7 @@
   border-radius: 100px;
   background-color: transparent;
 }
+
 .made-btn:hover,
 .made-btn:focus {
   color: #fd9222;
@@ -203,6 +228,7 @@
     align-items: center;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .scroll-btn {
     display: flex;
@@ -213,6 +239,7 @@
     padding: 0;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .scroll-btn {
     display: flex;
@@ -222,6 +249,7 @@
     padding: 0;
   }
 }
+
 .scroll-btn-txt {
   font-weight: 500;
   font-size: 14px;
@@ -231,24 +259,29 @@
   background: transparent;
   max-width: 78px;
 }
+
 .scroll-btn:hover .scroll-btn-txt,
 .scroll-btn:focus .scroll-btn-txt {
   color: #fd9222;
 }
+
 .scroll-icon {
   width: 28px;
   height: 28px;
   border-radius: 50%;
   padding-top: 5px;
+
   margin-left: 12px;
   padding: 0;
 }
+
 @media only screen and (min-width: 768px) {
   .scroll-icon {
     width: 38px;
     height: 38px;
   }
 }
+
 .scroll-btn:hover .scroll-icon,
 .scroll-btn:focus .scroll-icon {
   --color1: #fd9222;

@@ -1,128 +1,41 @@
-/* 375-mob
-768-tablet
-1200-desktop */
 
-
-.taste-container{
+.taste-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-/* .taste-block{
+
+.header-text{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-bottom: 32px;
-} */
-.taste-header{
-        font-size: 20px;
-        line-height: calc(24/20);
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
-        color: var(--black-main);
-        text-align: center;
-        width: 283px;
-        margin-bottom: 24px;
 }
-.color-taste{
-    color: var(--orange-main);
-}
-.taste-text{
-    text-align: center;
-    color: var(--black-main);
-}
-/* .card-set{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 32px;
-    row-gap: 20px;
-    padding-left: 0;
-    
-}
-.card-item{
-    outline: 1px solid var(--orange-main);
-    outline-offset: -1px;
-    border-radius: 15px;
-    padding: 28px;
-    position: relative;
-    overflow: hidden;
-    width: 335px;
-    height: 270px;
-} */
-/* .product{
-    margin-top: 25px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: var(--black-main);
-}
-.card-1{
-    background-color: var(--orange-main);
-}
-.card-3{
-    background-color: var(--dark-purple-main);
-}
-.product2{
-    color: var(--white-main);
-} */
-/* .overlay-link>img{
-    margin: 0 auto;
-}
-.overlay {
-    background-color: var(--white-main);
-    padding: 28px;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.overlay-link:hover .overlay,
-.overlay-link:focus .overlay {
-    transform: translateY(0);
-}
-.overlay-link{
-    display: block;
-    text-decoration: none;
-}
-.overlay-text{
-    color: var(--black-main);
-}
-.overlay-header{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: calc(22/18);
+
+.taste-header {
+    font-size: 20px;
+    line-height: calc(24/20);
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: var(--black-main);
-    margin-bottom: 8px;
-} */
-/* .buttons-line{
-    display: flex;
-    flex-direction: row;
-    gap: 6px;
-    margin-bottom: 14px;
+    text-align: center;
+    width: 283px;
+    margin-bottom: 24px;
 }
-.button{
-padding: 6px 16px;
-height: 24px;
-border: none;
-background-color: var(--orange-main);
-border-radius: 35px;
-font-size: 10px;
-line-height: calc(12/10);
-color: var(--white-main);
-cursor: pointer;
+
+.color-taste {
+    color: var(--orange-main);
 }
-.button2{
-    background-color: var(--white-main);
-    border: 1px solid var(--orange-main);
+
+.taste-text {
+    text-align: center;
     color: var(--black-main);
-} */
+    
+}
 
-/* ////////////////////ANIMATION //////////*/
+/* ////////////////////ANIMATION //////////////////*/
 
-.card {
+.card-taste {
     position: relative;
     display: flex;
     width: 100%;
@@ -135,9 +48,17 @@ cursor: pointer;
     cursor: context-menu;
 }
 
+.card-taste {
+    margin-bottom: 20px;
+}
+
+.bottom{
+    margin-bottom: 0;
+}
+
 /* SIDES */
-.card .front,
-.card .back {
+.card-taste .front,
+.card-taste .back {
     position: absolute;
     top: 0;
     left: 0;
@@ -146,93 +67,153 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     padding: 28px;
-
     border-radius: 15px;
     backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: transform 0.8s ease-in-out;
 }
 
-.card .front {
-    background-color: #fd9222;
+.card-taste .front-2 {
+    background-color: var(--white-main);
+    border: 1px solid var(--orange-main);
 }
 
-.card .back {
-    background-color: #ffffff;
+.front-2 .title-taste {
+    color: var(--black-main);
+}
+
+.card-taste .front-1 {
+    background-color: var(--orange-main);
+}
+
+.card-taste .front-3 {
+    background-color: var(--dark-purple-main);
+}
+
+.card-taste .back {
+    background-color: var(--white-main);
     transform: rotateY(180deg);
 }
 
-.card:hover .front {
+.card-taste:hover .front {
     transform: rotateY(-180deg);
 }
 
-.card:hover .back {
+.card-taste:hover .back {
     transform: rotateY(0deg);
 }
 
 /* CONTENTS */
-.card .contents {
+.card-taste .contents {
     width: 100%;
     height: 100%;
-    color: #fff;
+    color: var(--white-main);
     transform: translateZ(100px) scale(0.86);
+    overflow: hidden;
 }
 
-.card .front .img {
+.card-taste .front .img-taste {
     margin: 0 auto;
     margin-bottom: 25px;
 }
 
-.card .contents .title {
+.card-taste .contents .title-taste {
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
     text-transform: uppercase;
 }
 
-.card .contents .subtitle {
+.card-taste .contents .subtitle-taste {
     margin-bottom: 8px;
-
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-
-    color: #111111;
+    color: var(--black-main);
 }
 
-.card .contents .text {
+.card-taste .contents .text-taste {
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-
-    color: #111111;
+    color: var(--black-main);
 }
 
-.card .contents .list {
+.card-taste .contents .list-taste {
     display: flex;
     align-items: center;
     gap: 6px;
-
     margin-bottom: 14px;
 }
 
-.card .contents .btn {
+.card-taste .contents .btn-taste {
     display: block;
     padding: 6px 16px;
-
     font-size: 10px;
     line-height: 1.2;
-    color: #111111;
-
+    color: var(--black-main);
     background: transparent;
     border-radius: 35px;
-    border: 1px solid #fd9222;
+    border: 1px solid var(--orange-main);
     cursor: pointer;
 }
 
-.card .contents .btn.active {
-    color: #ffffff;
-    background: #fd9222;
+.card-taste .contents .btn-taste.active-taste {
+    color: var(--white-main);
+    background: var(--orange-main);
     border: transparent;
+}
+
+/* ////////////////TABLET////////////////// */
+@media only screen and (min-width: 768px) {
+    
+    .taste-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .taste-header {
+        font-size: 24px;
+        line-height: calc(28/24);
+        width: 411px;
+        margin-bottom: 28px;
+    }
+    .taste-text {
+         margin-bottom: 50px;
+         width: 486px;
+    }
+    .card-taste{
+        width: 336px;
+        height: 270px;
+        margin-bottom: 0;
+    }
+    .card-taste:nth-child(even) {
+        margin-right: 32px;
+    }
+    .left{
+        margin-bottom: 32px;
+    }
+    .header-text {
+        margin-bottom: 50px;
+    }        
+}
+
+/* //////////////DESKTOP//////////////// */
+@media only screen and (min-width: 1200px) {
+    
+    .taste-container {
+        flex-direction: row;
+    }
+    .header-text{
+        width: 100%;
+    }
+    .card-taste:not(:last-child){
+        margin-right: 18px;
+    }
+    .card-taste{
+        width: 270px;
+        height: 270px;
+        margin-bottom: 0;
+    }
 }
