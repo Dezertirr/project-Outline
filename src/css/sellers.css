@@ -2,8 +2,12 @@
 @import url('./reset.css');
 @import url('./vite-promo.css');
 @import url('./styles.css');
+/* <!-- =========================================SELLERS SECTION========================================= --> */
+.sellers-desktop-container .sellers-mobile-tablet-container {
+  background-color: #fff;
+}
 
-.sellers-list {
+.sellers-mobile-tablet-text {
   list-style-type: none;
 }
 
@@ -48,23 +52,38 @@
 }
 
 .sellers-buy-now-btn {
-  display: inline-block;
+  justify-content: center;
   padding: 14px 40px;
   background: var(--orange-main);
 
+  min-width: 109px;
   border-radius: 100px;
   border-color: transparent;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
+  transition: color 500ms linear, background-color 500ms linear;
+}
+
+.sellers-buy-now-btn:hover,
+.sellers-buy-now-btn:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
 .sellers-item .sellers-picture .sellers-img {
   border-radius: 15px;
 }
-
+/* ---------------------M O B I L E --------------------- */
 @media screen and (max-width: 767px) {
-  .sellers-desktop-container {
+  .sellers-desktop-text-hide {
+    display: none;
+  }
+
+  .sellers-item:last-child {
+    display: none;
+  }
+  .desk-btn {
     display: none;
   }
 
@@ -79,13 +98,27 @@
     margin-top: 32px;
     margin-bottom: 20px;
   }
-}
 
+  .sellers-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+/* ---------------------T A B L E T --------------------- */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .sellers-section-title {
     margin-bottom: 32px;
   }
-  .sellers-desktop-container {
+  .sellers-desktop-text-hide {
+    display: none;
+  }
+  .sellers-item:last-child {
+    display: none;
+  }
+
+  .desk-btn {
     display: none;
   }
 
@@ -94,7 +127,7 @@
     flex-direction: column;
     max-width: 344px;
   }
-  .sellers-section-text {
+  .sellers-text {
     width: 306px;
     font-size: 14px;
     line-height: 1.28;
@@ -114,9 +147,9 @@
     gap: 16px;
   }
 }
-
+/* ---------------------D E S K T O P --------------------- */
 @media screen and (min-width: 1200px) {
-  .sellers-mobile-tablet-container {
+  .sellers-mobile-tablet-text {
     display: none;
   }
 
@@ -133,4 +166,8 @@
     flex-wrap: wrap;
     gap: 16px;
   }
+  .tab-mob-btn {
+    display: none;
+  }
 }
+/* <!-- =========================================/SELLERS SECTION========================================= --> */
