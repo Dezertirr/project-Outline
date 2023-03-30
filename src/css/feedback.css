@@ -1,0 +1,11 @@
+.feedback-thanks-modal {
+  width: 311px;
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fd9222;
+  border-radius: 15px;
+  padding: 84px, 24px, 178px, 58px;
+}
