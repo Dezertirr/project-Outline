@@ -13,12 +13,13 @@
 
 .advantages {
   width: 100%;
-
   background: #1e1823;
 }
+
 .about {
   padding: 20px 0;
 }
+
 .about-title {
   margin-bottom: 18px;
   font-size: 18px;
@@ -44,6 +45,7 @@
   border-radius: 50%;
   margin-bottom: 22px;
 }
+
 .about-icon {
   margin: auto auto;
 }

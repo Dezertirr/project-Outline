@@ -26,6 +26,7 @@
   letter-spacing: -0.02em;
   color: #111111;
 }
+
 .sellers-item {
   border-radius: 15px;
   overflow: hidden;
@@ -51,7 +52,6 @@
   display: inline-block;
   padding: 14px 40px;
   background: var(--orange-main);
-
   border-radius: 100px;
   border-color: transparent;
   font-weight: 600;
@@ -59,6 +59,7 @@
   line-height: 22px;
   color: #ffffff;
 }
+
 .sellers-item .sellers-picture .sellers-img {
   border-radius: 15px;
 }
@@ -67,6 +68,7 @@
   .sellers-desktop-container {
     display: none;
   }
+}
 
   .sellers-item {
     max-width: 335px;
@@ -75,22 +77,17 @@
     align-items: center;
   }
 
-
-
-  
-
   .sellers-img {
 
     margin-top: 32px;
     margin-bottom: 20px;
   }  
  
-
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .sellers-section-title {
     margin-bottom: 32px;
   }
+
   .sellers-desktop-container {
     display: none;
   }
@@ -100,7 +97,6 @@
     flex-direction: column;
     max-width: 344px;
   }
-
 
   .sellers-section-text {
 

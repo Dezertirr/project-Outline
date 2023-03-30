@@ -25,6 +25,7 @@
     margin-bottom: 50px;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .footer-box {
     margin-bottom: 47px;
@@ -41,6 +42,7 @@
     gap: 50px;
   }
 }
+
 .footer-title {
   width: 300px;
   font-weight: 500;
@@ -61,7 +63,6 @@
 
 .address-title {
   margin-bottom: 14px;
-
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -152,7 +153,6 @@
   padding-bottom: 24px;
   font-weight: 500;
   line-height: calc(16 / 14);
-
   color: #ffffff;
 }
 

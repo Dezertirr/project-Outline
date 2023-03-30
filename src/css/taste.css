@@ -4,12 +4,14 @@
     flex-direction: column;
     align-items: center;
 }
+
 .header-text{
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-bottom: 32px;
 }
+
 .taste-header {
     font-size: 20px;
     line-height: calc(24/20);
@@ -30,6 +32,7 @@
     color: var(--black-main);
     
 }
+
 /* ////////////////////ANIMATION //////////////////*/
 
 .card-taste {
@@ -48,9 +51,11 @@
 .card-taste {
     margin-bottom: 20px;
 }
+
 .bottom{
     margin-bottom: 0;
 }
+
 /* SIDES */
 .card-taste .front,
 .card-taste .back {
@@ -62,7 +67,6 @@
     display: flex;
     flex-direction: column;
     padding: 28px;
-
     border-radius: 15px;
     backface-visibility: hidden;
     transform-style: preserve-3d;
@@ -146,11 +150,9 @@
 .card-taste .contents .btn-taste {
     display: block;
     padding: 6px 16px;
-
     font-size: 10px;
     line-height: 1.2;
     color: var(--black-main);
-
     background: transparent;
     border-radius: 35px;
     border: 1px solid var(--orange-main);
