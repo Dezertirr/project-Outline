@@ -11,6 +11,10 @@
   overflow: hidden;
 }
 
+.advantages {
+  background: #1e1823;
+}
+
 .about-title {
   margin-bottom: 18px;
   font-size: 18px;
@@ -27,9 +31,12 @@
 }
 
 .about {
-  background: #1e1823;
+  padding: 20px;
 }
 .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 62px;
   height: 62px;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -42,7 +49,7 @@
 
 .about-list-item {
   margin-bottom: 20px;
-  max-width: 336px;
+  max-width: 302px;
 }
 
 @media screen and (min-width: 768px) {
@@ -57,7 +64,7 @@
 
 @media screen and (min-width: 768px) {
   .about-list-item {
-    max-width: 308px;
+    max-width: 302px;
   }
 }
 
