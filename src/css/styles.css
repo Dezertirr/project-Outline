@@ -24,6 +24,7 @@
 @import url('./thank-you');
 @import url('./buy-now');
 @import url('./feedback.css');
+@import url('./mobile_menu.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -71,7 +72,6 @@ body {
     max-width: 704px;
   }
 
-
   .section {
     padding-top: 100px;
   }
@@ -81,7 +81,6 @@ body {
   .container {
     max-width: 1136px;
   }
-
 
   .section {
     padding-top: 128px;
