@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/vanilla-app-template/assets/index-dd33a03d.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-3b29ab99.css">
+    <script type="module" crossorigin src="/vanilla-app-template/assets/index-60803b9c.js"></script>
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-1fb93df8.css">
   </head>
   <body>
     <header class="header">
@@ -86,7 +86,7 @@
       <button class="scroll-btn">
         <p class="scroll-btn-txt">scroll down</p>
         <svg class="scroll-icon">
-          <use href="/vanilla-app-template/assets/symbol-defs-54ea6ea4.svg#scroll"></use>
+          <use href="/vanilla-app-template/assets/symbol-defs-e6ee2032.svg#scroll"></use>
         </svg>
       </button>
     </div>
@@ -102,7 +102,7 @@
       <li class="about-list-item border">
         <div class="about-icon-box">
           <svg class="about-icon" width="32" height="32">
-            <use href="/vanilla-app-template/assets/symbol-defs-54ea6ea4.svg#icon-chocolate"></use>
+            <use href="/vanilla-app-template/assets/symbol-defs-e6ee2032.svg#icon-chocolate"></use>
           </svg>
         </div>
         <h3 class="about-title">Unsurpassed taste</h3>
@@ -117,7 +117,7 @@
       <li class="about-list-item border">
         <div class="about-icon-box">
           <svg class="about-icon" width="37" height="37">
-            <use href="/vanilla-app-template/assets/symbol-defs-54ea6ea4.svg#icon-coin"></use>
+            <use href="/vanilla-app-template/assets/symbol-defs-e6ee2032.svg#icon-coin"></use>
           </svg>
         </div>
         <h3 class="about-title">Affordable price</h3>
@@ -133,7 +133,7 @@
       <li class="about-list-item">
         <div class="about-icon-box">
           <svg class="about-icon" width="37" height="37">
-            <use href="/vanilla-app-template/assets/symbol-defs-54ea6ea4.svg#icon-spoon"></use>
+            <use href="/vanilla-app-template/assets/symbol-defs-e6ee2032.svg#icon-spoon"></use>
           </svg>
         </div>
         <h3 class="about-title">Own production</h3>
@@ -701,48 +701,64 @@
 
 </html>
       <!-- modal form -->
-<div class="backdrop is-hidden">
+<div class="backdrop is-hidden" review-modal>
   <div class="modal">
-    <button class="review-close-btn" type="button">
+    <button class="review-close-btn" type="button" review-modal-close>
       <svg class="review-close-icon" width="24px" height="24px">
-        <use href="../img/symbol-defs.svg#review-close"></use>
+        <use href="../img/symbol-defs.svg#"></use>
       </svg>
     </button>
     <form class="review-form">
-      <strong class="modal-review"
+      <strong class="modal-review-title"
         >leave a review about
         <span class="strong-orang">our chocolate</span></strong
       >
-      <label class="modal-review-field" for="">
+      <label class="modal-review-field">
         <input
           class="modal-review-input"
           type="text"
           placeholder="Name"
+          name="user_name"
+          minlength="2"
           requiered
         />
       </label>
-      <label class="modal-review-field" for="">
+      <label class="modal-review-field">
         <input
           class="modal-review-input"
           type="text"
           placeholder="Enter your email"
+          name="user_email"
+          title="example@gmail.com"
           requiered
         />
       </label>
-      <label class="modal-review-field" for="">
-        <input
-          class="modal-review-input"
-          type="text"
-          placeholder="Phone number"
-          requiered
-        />
+      <label class="modal-review-field">
+        <span class="modal-review-input-wrapper">
+          <input
+            class="modal-review-input input-ukr"
+            type="text"
+            placeholder="Phone number"
+            name="user_number"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+            requiered
+          />
+          <svg class="review-input-icon" width="24px" height="24px">
+            <use href="../img/symbol-defs.svg#icon-ukraine"></use>
+          </svg>
+          <p class="input-numb">+380</p>
+        </span>
       </label>
       <textarea
         class="user-form-review"
         name="user-review"
         placeholder="Enter text"
+        name="user_text"
       ></textarea>
-      <button class="send-btn" type="submit"></button>
+      <button class="send-btn" type="submit" data-feedback-thanks-open>
+        Send
+      </button>
     </form>
   </div>
 </div>
