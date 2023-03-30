@@ -1,9 +1,17 @@
 .sub-section{
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding-top: 62px;
+  padding-bottom: 63px;
   max-width: 1200px;
   margin: 0 auto;
 }
+
+@media only screen and (min-width: 768px) {
+  .sub-section {
+    padding-top: 72px;
+    padding-bottom: 72px
+  }
+}
+
 .subscribe-container {
     text-align: center;
     display: flex;
