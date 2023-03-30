@@ -29,12 +29,15 @@
 .about {
   background: #1e1823;
 }
-
-.about-icon {
-  margin-bottom: 22px;
+.icon {
+  width: 62px;
+  height: 62px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
-  padding: 12px;
+  margin-bottom: 22px;
+}
+.about-icon {
+  margin: auto auto;
 }
 
 .about-list-item {
