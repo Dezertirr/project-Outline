@@ -1,15 +1,15 @@
 .hero {
-  margin-top: 32px;
-  margin-bottom: 72px;
+  padding-top: 32px;
+  padding-bottom: 72px;
 }
 @media only screen and (min-width: 768px) {
   .hero {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .hero {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 }
 .hero-cont {
