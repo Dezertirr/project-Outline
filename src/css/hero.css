@@ -1,3 +1,16 @@
+.hero {
+  padding-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero {
+    padding-bottom: 100px;
+  }
+}
 
 .hero {
   padding-bottom: 72px;
@@ -220,6 +233,7 @@
     flex-direction: row;
     background: transparent;
     align-items: center;
+    padding: 0;
   }
 }
 .scroll-btn-txt {
@@ -229,6 +243,8 @@
   letter-spacing: -0.03em;
   color: #ffffff;
   background: transparent;
+
+  max-width: 78px;
 }
 .scroll-btn:hover .scroll-btn-txt,
 .scroll-btn:focus .scroll-btn-txt {
@@ -239,16 +255,6 @@
   height: 28px;
   border-radius: 50%;
   padding-top: 5px;
-
-  background-color: #ffffff;
-  margin-left: 12px;
-  fill: #fd9222;
-}
-.scroll-btn:hover .scroll-icon,
-.scroll-btn:focus .scroll-icon {
-  background-color: #fd9222;
-  color: #ffffff;
-  fill: #ffffff;
 
   margin-left: 12px;
   padding: 0;
@@ -263,5 +269,4 @@
 .scroll-btn:focus .scroll-icon {
   --color1: #fd9222;
   --color2: #ffffff;
-
 }
