@@ -50,11 +50,9 @@ body {
 }
 
 .container {
-  min-width: 320px;
   max-width: 335px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .section {
@@ -65,8 +63,8 @@ body {
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 704px;
-
   }
+
 
   .section {
     padding-top: 100px;
@@ -77,6 +75,7 @@ body {
   .container {
     max-width: 1136px;
   }
+
 
   .section {
     padding-top: 128px;
