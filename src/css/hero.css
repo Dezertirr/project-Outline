@@ -12,6 +12,20 @@
   }
 }
 
+.hero {
+  padding-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero {
+    padding-bottom: 100px;
+  }
+}
+
 .hero-cont {
   background-image: linear-gradient(
       180deg,
@@ -229,6 +243,7 @@
   letter-spacing: -0.03em;
   color: #ffffff;
   background: transparent;
+
   max-width: 78px;
 }
 .scroll-btn:hover .scroll-btn-txt,
@@ -240,6 +255,7 @@
   height: 28px;
   border-radius: 50%;
   padding-top: 5px;
+
   margin-left: 12px;
   padding: 0;
 }
