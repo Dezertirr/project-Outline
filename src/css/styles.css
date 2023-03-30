@@ -18,6 +18,13 @@
 @import url('./revives.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
+@import url('./buy-now');
+@import url('./explore');
+@import url('./leave-review');
+@import url('./thank-you');
+@import url('./buy-now');
+@import url('./feedback.css');
+@import url('./mobile_menu.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -53,18 +60,17 @@ body {
   max-width: 335px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .section {
   width: 100%;
-  padding-top: 72px;
+  padding-top: 72px
 }
+
 
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 704px;
-
   }
 
   .section {

@@ -1,4 +1,3 @@
-/* ________________________________HEADER */
 .main-header {
   display: flex;
   align-items: center;
@@ -22,6 +21,7 @@
     padding-bottom: 24px;
   }
 }
+
 .logo {
   display: flex;
   gap: 4px;
@@ -85,13 +85,13 @@
 
   color: #111111;
 }
+
 .current {
   color: #fd9222;
 }
 
 .nav-list-link.current::after {
   content: '';
-
   position: absolute;
   left: 0;
   bottom: 1px;
@@ -144,6 +144,7 @@
   height: 14px;
   stroke: rgba(17, 17, 17, 1);
 }
+
 @media only screen and (min-width: 768px) {
   .burger-icon {
     width: 24px;
