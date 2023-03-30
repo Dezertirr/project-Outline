@@ -1,3 +1,9 @@
+.sub-section{
+  padding-top: 72px;
+  padding-bottom: 72px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .subscribe-container {
     text-align: center;
     display: flex;
@@ -13,8 +19,7 @@
 }
 
 @media only screen and (min-width: 376px) {
-  .subscribe-text-container
-   {
+  .subscribe-text-container {
     max-width: 467px;
   }
 }
