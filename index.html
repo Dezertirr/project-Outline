@@ -7,7 +7,7 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/vanilla-app-template/assets/index-abef54e7.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-387c0449.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-cac1269c.css">
   </head>
   <body>
     <header class="header">
@@ -86,7 +86,7 @@
       <button class="scroll-btn">
         <p class="scroll-btn-txt">scroll down</p>
         <svg class="scroll-icon">
-          <use href="/vanilla-app-template/assets/symbol-defs-1d828f9a.svg#scroll"></use>
+          <use href="/vanilla-app-template/assets/symbol-defs-54ea6ea4.svg#scroll"></use>
         </svg>
       </button>
     </div>
@@ -102,7 +102,7 @@
       <li class="about-list-item border">
         <div class="about-icon-box">
           <svg class="about-icon" width="32" height="32">
-            <use href="/vanilla-app-template/assets/symbol-defs-1d828f9a.svg#icon-chocolate"></use>
+            <use href="/vanilla-app-template/assets/symbol-defs-54ea6ea4.svg#icon-chocolate"></use>
           </svg>
         </div>
         <h3 class="about-title">Unsurpassed taste</h3>
@@ -117,7 +117,7 @@
       <li class="about-list-item border">
         <div class="about-icon-box">
           <svg class="about-icon" width="37" height="37">
-            <use href="/vanilla-app-template/assets/symbol-defs-1d828f9a.svg#icon-coin"></use>
+            <use href="/vanilla-app-template/assets/symbol-defs-54ea6ea4.svg#icon-coin"></use>
           </svg>
         </div>
         <h3 class="about-title">Affordable price</h3>
@@ -133,7 +133,7 @@
       <li class="about-list-item">
         <div class="about-icon-box">
           <svg class="about-icon" width="37" height="37">
-            <use href="/vanilla-app-template/assets/symbol-defs-1d828f9a.svg#icon-spoon"></use>
+            <use href="/vanilla-app-template/assets/symbol-defs-54ea6ea4.svg#icon-spoon"></use>
           </svg>
         </div>
         <h3 class="about-title">Own production</h3>
@@ -687,7 +687,53 @@
 </body>
 
 </html>
-      
+      <!-- modal form -->
+<div class="backdrop is-hidden">
+  <div class="modal">
+    <button class="review-close-btn" type="button">
+      <svg class="review-close-icon" width="24px" height="24px">
+        <use href="../img/symbol-defs.svg#review-close"></use>
+      </svg>
+    </button>
+    <form class="review-form">
+      <strong class="modal-review"
+        >leave a review about
+        <span class="strong-orang">our chocolate</span></strong
+      >
+      <label class="modal-review-field" for="">
+        <input
+          class="modal-review-input"
+          type="text"
+          placeholder="Name"
+          requiered
+        />
+      </label>
+      <label class="modal-review-field" for="">
+        <input
+          class="modal-review-input"
+          type="text"
+          placeholder="Enter your email"
+          requiered
+        />
+      </label>
+      <label class="modal-review-field" for="">
+        <input
+          class="modal-review-input"
+          type="text"
+          placeholder="Phone number"
+          requiered
+        />
+      </label>
+      <textarea
+        class="user-form-review"
+        name="user-review"
+        placeholder="Enter text"
+      ></textarea>
+      <button class="send-btn" type="submit"></button>
+    </form>
+  </div>
+</div>
+
       <!DOCTYPE html>
 <html lang="en">
   <head>
