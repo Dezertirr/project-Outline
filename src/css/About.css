@@ -10,6 +10,14 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.about-title {
+  margin-bottom: 18px;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  color: #ffffff;
+}
+
 .about-text {
   color: rgb(255, 255, 255, 0.7);
   text-align: left;
@@ -27,12 +35,6 @@
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   padding: 12px;
-}
-.about-title {
-  margin-bottom: 18px;
-  font-size: 18px;
-  line-height: calc(22 / 18);
-  color: #ffffff;
 }
 
 .about-list-item {
@@ -53,18 +55,6 @@
 @media screen and (min-width: 768px) {
   .about-list-item {
     max-width: 308px;
-  }
-
-  .container-about {
-    max-width: 768px;
-    padding: 32px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container-about {
-    max-width: 1200px;
-    padding: 50px;
   }
 }
 
