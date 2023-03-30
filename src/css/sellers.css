@@ -75,10 +75,10 @@ ul {
     align-items: center;
   }
 
-  img {
+  /* img {
     margin-top: 32px;
     margin-bottom: 20px;
-  }
+  } */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -94,7 +94,7 @@ ul {
     flex-direction: column;
     max-width: 344px;
   }
-  p {
+  /* p {
     width: 306px;
     font-size: 14px;
     line-height: 1.28;
@@ -102,7 +102,7 @@ ul {
 
   img {
     margin-bottom: 32px;
-  }
+  } */
 
   .buy-now-btn {
     margin-left: auto;
