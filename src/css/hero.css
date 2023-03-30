@@ -83,11 +83,12 @@
 .hero-desc {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;  
+    align-items: center; 
 }
 @media only screen and (max-width: 767px) {
   .hero-desc {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 .buttons-hero {
@@ -164,20 +165,20 @@
   }
 }
 @media only screen and (max-width: 767px) {
-  .scroll-cont {
+  .scroll-btn {
     display: flex;
+    align-items: center;
     margin-top: 32px;
+    background: transparent;
   }
-}
+} 
 @media only screen and (min-width: 768px) {
-  .scroll-cont {
+  .scroll-btn  {
     display: flex;
+    background: transparent;
+    align-items: center;
+
   }
-}
-@media only screen and (min-width: 1200px) {
-    .scroll-cont {
-    display: flex;
-    }
 }
 .scroll-btn-txt {
     font-weight: 500;
@@ -186,51 +187,25 @@
     letter-spacing: -0.03em;
     color: #FFFFFF;
     background: transparent;
-
 }
-.scroll-btn-txt:hover,
-.scroll-btn-txt:focus {
-    color: #FD9222;;
+.scroll-btn:hover .scroll-btn-txt,
+.scroll-btn:focus .scroll-btn-txt {
+    color: #FD9222;
 }
-@media only screen and (min-width: 768px) {
-  .scroll-btn-txt {
-    margin-right: 14px;
-  }
-}
-.scroll-btn {
+.scroll-icon {
     width: 28px;
     height: 28px;
     border-radius: 50%;
     padding-top: 5px;
-}
-
-.scroll-btn:hover,
-.scroll-btn:focus {
-    background-color: #FD9222;
-    color: #FFFFFF;
+    background-color: #ffffff;
+    margin-left: 12px;
+    fill: #FD9222;
 }
 .scroll-btn:hover .scroll-icon,
 .scroll-btn:focus .scroll-icon {
-    fill: #FFFFFF;
-
-}
-@media only screen and (min-width: 768px) {
-  .scroll-btn {
-    width: 38px;
-    height: 38px;
-  }
+        background-color: #FD9222;
+        color: #FFFFFF;
+        fill: #FFFFFF;
 }
 
-.scroll-icon {
-    width: 16px;
-    height: 16px;
-    fill: #FD9222;
-}
-
-@media only screen and (min-width: 768px) {
-  .scroll-icon {
-    width: 22px;
-    height: 22px;
-  }
-}
 
