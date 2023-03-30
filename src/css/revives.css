@@ -1,0 +1,68 @@
+/* ==========modal form======= */
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: 311px;
+  width: 100%;
+  height: 471px;
+  padding: 32px 24px;
+  background: #fafafa;
+  border-radius: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .modal {
+    max-width: 517px;
+    height: 631px;
+  }
+}
+.review-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+.review-close-btn:hover,
+.review-close-btn:focus {
+  fill: #fd9222;
+}
+.review-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-review-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+  margin-bottom: 32px;
+}
+.strong-orang {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fd9222;
+}
+.modal-review-field {
+  margin-bottom: 14px;
+}
+.modal-review-input {
+  width: 100%;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  outline: 4px solid transparent;
+}
+.modal-review-input:focus {
+  border-color: #fd9222;
+}
