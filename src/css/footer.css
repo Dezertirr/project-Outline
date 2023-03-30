@@ -1,3 +1,35 @@
+.container {
+  min-width: 320px;
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  width: 100%;
+  padding-top: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+  }
+
+  .section {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1136px;
+  }
+
+  .section {
+    padding-top: 128px;
+  }
+}
+
 /*__________________________________________________ footer */
 .footer {
   padding: 32px 0;
@@ -13,8 +45,8 @@
 .footer-box {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 32px;
-  margin-bottom: 32px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -22,7 +54,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 50px;
   }
 }
 @media only screen and (min-width: 1200px) {
