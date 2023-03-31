@@ -16,6 +16,10 @@
   position: absolute;
   top: 24px;
   right: 24px;
+  background-color: transparent;
+}
+.modal-close-btn-icon {
+  stroke: #111;
 }
 .modal-buy-section-title {
   text-align: center;
@@ -57,6 +61,11 @@
   background: #fafafa;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: #111111;
 }
 
 .modal-buy-section-form {
