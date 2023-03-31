@@ -1,23 +1,19 @@
 <link rel="stylesheet" href="../css/styles.css" />
 <link rel="stylesheet" href="../css/header.css" />
 <header class="header">
-  <div class="container main-header">
+  <div class="container mobile-container main-header">
     <nav class="header-nav">
       <a href="./index.html" class="logo"
         >SIMPLY CHOCOLATE<svg class="logo-icon" width="24" height="24">
           <use href="../img/symbol-defs.svg#icon-chocolate-header"></use></svg
       ></a>
-      <button class="header-burger" type="button">
-        <svg class="burger-icon" width="21" height="14">
-          <use href="../img/symbol-defs.svg#icon-burger"></use>
-        </svg>
-      </button>
+
       <ul class="nav-list">
         <li class="nav-list-item">
-          <a class="nav-list-link current" href="./index.html">Home</a>
+          <a class="nav-list-link current" href="../index.html">Home</a>
         </li>
         <li class="nav-list-item">
-          <a class="nav-list-link" href="">How it&apos;s made?</a>
+          <a class="nav-list-link" href="#how-made">How it&apos;s made?</a>
         </li>
         <li class="nav-list-item">
           <a class="nav-list-link" href="">Our products</a>
@@ -59,5 +55,10 @@
         </a>
       </li>
     </ul>
+    <button class="header-burger js-open-menu" type="button">
+      <svg class="burger-icon" width="21" height="14">
+        <use href="../img/symbol-defs.svg#icon-burger"></use>
+      </svg>
+    </button>
   </div>
 </header>
