@@ -35,7 +35,7 @@
 .reviews-photo {
   width: 80px !important;
   position: absolute;
-  bottom: 130px;
+  bottom: 160px;
   border-radius: 50%;
 }
 @media screen and (min-width: 1200px) {
@@ -104,7 +104,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   margin-bottom: 72px;
 }
 @media screen (min-width: 768px) {
@@ -115,5 +115,16 @@
 @media screen (min-width: 1200px) {
   .button-wrapper {
     margin-bottom: 128px;
+  }
+}
+.swiper-pagination.rev {
+  position: static;
+  padding-top: 20px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .swiper-pagination.rev {
+    padding-top: 31px;
+    margin-bottom: 50px;
   }
 }
