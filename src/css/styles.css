@@ -93,6 +93,12 @@ body {
   pointer-events: none;
   transform: translate(0);
 }
+
+.animation-standart-button {
+}
+
+
+
 .animation-button-buy {
 	animation: animation-button-buy 0.9s both;
 }
