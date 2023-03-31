@@ -77,7 +77,7 @@
 
 @media screen and (min-width: 1200px) {
   .about-list {
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .about {
