@@ -157,14 +157,12 @@
   border: none;
   background-color: #ffffff;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 0px;
+  right: 0px;
 }
 
 @media only screen and (min-width: 768px) {
   .header-burger {
-    top: 24px;
-    right: 32px;
   }
 }
 
