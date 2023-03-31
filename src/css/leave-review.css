@@ -6,6 +6,7 @@
   z-index: 100;
   width: 100%;
   height: 100%;
+  background: rgba(46, 47, 66, 0.4);
   transform: translate(1);
 }
 /* .backdrop.is-hidden {
@@ -51,6 +52,7 @@
 .review-close-btn:hover,
 .review-close-btn:focus {
   stroke: #fd9222;
+  outline: transparent;
 }
 /* modal form */
 .review-form {
@@ -72,12 +74,14 @@
   text-transform: uppercase;
   color: #111111;
   margin-bottom: 32px;
+  max-width: 255px;
+  height: 48px;
 }
 @media only screen and (min-width: 768px) {
   .modal-review-title {
     font-size: 24px;
     line-height: 1.17;
-    width: 298px;
+    max-width: 298px;
     height: 56px;
   }
 }
