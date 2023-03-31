@@ -81,6 +81,7 @@
   padding-bottom: 24px;
   font-weight: 500;
   line-height: calc(16 / 14);
+  position: relative;
 
   color: #111111;
 }
