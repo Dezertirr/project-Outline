@@ -35,7 +35,7 @@
 .reviews-photo {
   width: 80px !important;
   position: absolute;
-  bottom: 130px;
+  bottom: 160px;
   border-radius: 50%;
 }
 @media screen and (min-width: 1200px) {
