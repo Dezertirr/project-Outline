@@ -23,16 +23,32 @@
             </svg></button>
         <h2 class="section-title modal-buy-section-title"><span style="color: #FD9222;">BUY</span> NOW</h2>
         <ul class="modal-buy-section-list">
-            <li class="modal-buy-section-item"><img class="modal-buy-section-img"
-                    src="../img/modal_buy_order/choc-slice_@1x.jpg" alt="several cubes of chocolate">
+            <li class="modal-buy-section-item">
+                <picture>
+                    <source
+                        srcset="../img/modal_buy_order/choc-slice_@1x.jpg 1x, ../img/modal_buy_order/choc-slice_@2x.jpg 2x" />
+                    <img class="modal-buy-section-img" src="../img/modal_buy_order/choc-slice_@1x.jpg"
+                        alt="several cubes of chocolate">
+                </picture>
                 <p class="weight-for-order">100 g</p>
             </li>
-            <li class="modal-buy-section-item"><img class="modal-buy-section-img"
-                    src="../img/modal_buy_order/white-choc_@1x.jpg" alt="white and milk chocolate">
+            <li class="modal-buy-section-item">
+                <picture>
+                    <source
+                        srcset="../img/modal_buy_order/white-choc_@1x.jpg 1x, ../img/modal_buy_order/white-choc_@2x.jpg 2x" />
+                    <img class="modal-buy-section-img" src="../img/modal_buy_order/white-choc_@1x.jpg"
+                        alt="white and milk chocolate">
+                </picture>
+
                 <p class="weight-for-order">200 g</p>
             </li>
-            <li class="modal-buy-section-item"><img class="modal-buy-section-img"
-                    src="../img/modal_buy_order/choc_@1x.jpg" alt="chocolate bar">
+
+            <li class="modal-buy-section-item">
+                <picture>
+                    <source srcset="../img/modal_buy_order/choc_@1x.jpg 1x, ../img/modal_buy_order/choc_@2x.jpg 2x" />
+                    <img class="modal-buy-section-img" src="../img/modal_buy_order/choc_@1x.jpg" alt="chocolate bar">
+                </picture>
+
                 <p class="weight-for-order">300 g</p>
             </li>
         </ul>
@@ -44,18 +60,18 @@
             </div>
             <label class="modal-buy-now-label" for=""><span>Email</span></label>
             <div class="">
-                <input class="modal-buy-now-input" type="text" placeholder="Enter your email">
+                <input class="modal-buy-now-input" type="email" placeholder="Enter your email">
             </div>
             <label class="modal-buy-now-label" for=""><span>Phone number</span></label>
             <div class="modal-buy-now-input-wrapper">
-                <input class="modal-buy-now-input modal-phone-input" type="text" placeholder="+380 | Phone number">
+                <input class="modal-buy-now-input modal-phone-input" type="tel" placeholder="+380 | Phone number">
                 <svg class="modal-buy-now-icon-flag" width="32" height="32">
                     <use href="../img/symbol-defs.svg#icon-ukraine"></use>
                 </svg>
             </div>
             <label class="modal-buy-now-label" for=""><span>Card number</span></label>
             <div class="modal-buy-now-input-wrapper">
-                <input class="modal-buy-now-input" type="text" placeholder="Enter  card">
+                <input class="modal-buy-now-input" type="number" placeholder="Enter  card">
                 <svg class="modal-buy-now-icon-mastercard" width="32" height="32">
                     <use href="../img/symbol-defs.svg#mastercard"></use>
                 </svg>
@@ -67,7 +83,7 @@
             <button class="modal-buy-now-btn" type="button">Submit</button>
     </div>
     </form>
+    <script src="../js/buy-now.js"></script>
 </body>
-
 
 </html>

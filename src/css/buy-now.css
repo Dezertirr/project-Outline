@@ -99,6 +99,24 @@
   color: rgba(64, 64, 64, 0.3);
 }
 
+.modal-phone-input {
+  position: relative;
+  color: rgba(64, 64, 64, 0.3);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.modal-phone-input::placeholder {
+  padding-left: 50px;
+  color: rgba(64, 64, 64, 0.3);
+}
+/* .modal-phone-input::before {
+  content: '+380 ';
+  color: #111111;
+  position: absolute;
+  left: 50px;
+} */
+
 .modal-buy-now-name {
   display: flex;
   width: 100%;
@@ -116,21 +134,22 @@
 }
 .modal-buy-now-icon-flag {
   position: absolute;
-  top: 50%;
-  left: 14px;
+  top: 45%;
+  left: 24px;
   transform: translate(0, -50%);
 }
 
 .modal-buy-now-icon-mastercard {
   position: absolute;
-  top: 50%;
-  left: 14px;
+  top: 45%;
+  right: 24px;
   transform: translate(0, -50%);
 }
 .modal-buy-now-textarea {
   width: 100%;
   height: 137px;
   margin-bottom: 18px;
+  resize: none;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
   padding: 22px 24px;
@@ -151,6 +170,10 @@
   color: #ffffff;
   background: #fd9222;
   border-radius: 100px;
+  width: 133px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
   border-color: transparent;
   transition: color 500ms linear, background-color 500ms linear;
 }
