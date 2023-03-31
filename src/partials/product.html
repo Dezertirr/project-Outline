@@ -113,7 +113,7 @@
           <button class="product-button">54 UAH</button>
         </li>
       </ul>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination product"></div>
     </div>
   </div>
 
@@ -128,20 +128,16 @@
         clickable: true,
       },
       breakpoints: {
-        '@0.00': {
+        320: {
           slidesPerView: 1,
           spaceBetween: 18,
         },
-        '@0.75': {
-          slidesPerView: 8,
-          spaceBetween: 18,
-        },
-        '@1.00': {
+        768: {
           slidesPerView: 2,
-          spaceBetween: 18,
+          spaceBetween: 16,
         },
-        '@1.50': {
-          slidesPerView: 3.5,
+        1200: {
+          slidesPerView: 4,
           spaceBetween: 18,
         },
       },

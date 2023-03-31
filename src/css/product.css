@@ -48,7 +48,7 @@
 
 .photo {
   align-items: center;
-  padding-top: 32px;
+  /* padding-top: 32px; */
   padding-left: 52px;
   padding-right: 52px;
   padding-bottom: 8px;
@@ -133,4 +133,19 @@
   background: #fafafa;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
+}
+.swiper-pagination.product {
+  position: static;
+  padding-top: 20px;
+  margin-bottom: 72px;
+}
+@media screen and (min-width: 768px) {
+  .swiper-pagination.product {
+    padding-top: 32px;
+    margin-bottom: 100px;
+  }
+}
+.swiper-pagination.product {
+  padding-top: 32px;
+  margin-bottom: 128px;
 }
