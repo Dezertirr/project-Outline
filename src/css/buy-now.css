@@ -16,6 +16,8 @@
   position: absolute;
   top: 24px;
   right: 24px;
+  stroke: #111111;
+  background-color: transparent;
 }
 .modal-buy-section-title {
   text-align: center;
@@ -31,8 +33,6 @@
 }
 
 .modal-buy-section-item {
-  /* box-sizing: border-box; */
-  /* margin: 0; */
   padding: 24px 20px 18px 20px;
   width: 160px;
   height: 196px;
@@ -57,6 +57,9 @@
   background: #fafafa;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .modal-buy-section-form {
@@ -108,6 +111,22 @@
   margin: 0;
 }
 
+.modal-buy-now-input-wrapper {
+  position: relative;
+}
+.modal-buy-now-icon-flag {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translate(0, -50%);
+}
+
+.modal-buy-now-icon-mastercard {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translate(0, -50%);
+}
 .modal-buy-now-textarea {
   width: 100%;
   height: 137px;
@@ -133,4 +152,11 @@
   background: #fd9222;
   border-radius: 100px;
   border-color: transparent;
+  transition: color 500ms linear, background-color 500ms linear;
+}
+
+.modal-buy-now-btn:hover,
+.modal-buy-now-btn:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
