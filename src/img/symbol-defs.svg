@@ -45,5 +45,12 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M21 7l-14 14"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M7 7l14 14"></path>
 </symbol>
+<symbol id="mastercard" viewBox="0 0 47 32">
+<path fill="#fafafa" style="fill: var(--color1, #fafafa)" d="M4.267 0.533h38.4c2.062 0 3.733 1.671 3.733 3.733v23.467c0 2.062-1.671 3.733-3.733 3.733h-38.4c-2.062 0-3.733-1.671-3.733-3.733v-23.467c0-2.062 1.671-3.733 3.733-3.733z"></path>
+<path fill="#ed0006" style="fill: var(--color2, #ed0006)" d="M23.467 23.29c-1.704 1.462-3.915 2.345-6.331 2.345-5.39 0-9.76-4.396-9.76-9.818s4.37-9.818 9.76-9.818c2.416 0 4.627 0.883 6.331 2.345 1.704-1.462 3.915-2.345 6.331-2.345 5.391 0 9.76 4.395 9.76 9.818s-4.37 9.818-9.76 9.818c-2.416 0-4.627-0.883-6.331-2.345z"></path>
+<path fill="#f9a000" style="fill: var(--color3, #f9a000)" d="M23.467 23.29c2.099-1.801 3.429-4.48 3.429-7.472s-1.331-5.672-3.429-7.472c1.704-1.462 3.915-2.345 6.331-2.345 5.391 0 9.76 4.395 9.76 9.818s-4.37 9.818-9.76 9.818c-2.416 0-4.627-0.883-6.331-2.345z"></path>
+<path fill="#ff5e00" style="fill: var(--color4, #ff5e00)" d="M23.467 23.29c2.099-1.801 3.429-4.48 3.429-7.472s-1.331-5.672-3.429-7.472c-2.099 1.801-3.429 4.48-3.429 7.472s1.331 5.672 3.429 7.472z"></path>
+<path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.0667" d="M4.267 0.533h38.4c2.062 0 3.733 1.671 3.733 3.733v23.467c0 2.062-1.671 3.733-3.733 3.733h-38.4c-2.062 0-3.733-1.671-3.733-3.733v-23.467c0-2.062 1.671-3.733 3.733-3.733z"></path>
+</symbol>
 </defs>
 </svg>
