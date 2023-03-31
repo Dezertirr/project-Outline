@@ -10,6 +10,8 @@
   border-radius: 15px;
   padding: 84px 24px 178px 58px;
 
+  z-index: 100;
+  transform-origin: left;
   scale: 1;
   transition: scale 250ms linear, opacity 250ms linear, visibility 250ms linear;
   opacity: 1;
@@ -19,7 +21,9 @@
 
 .feedback-thanks-modal.feedback-thanks-is-hidden {
   scale: 0;
+
   visibility: hidden;
+
   pointer-events: none;
 }
 
