@@ -16,10 +16,8 @@
   position: absolute;
   top: 24px;
   right: 24px;
+  stroke: #111111;
   background-color: transparent;
-}
-.modal-close-btn-icon {
-  stroke: #111;
 }
 .modal-buy-section-title {
   text-align: center;
@@ -35,8 +33,6 @@
 }
 
 .modal-buy-section-item {
-  /* box-sizing: border-box; */
-  /* margin: 0; */
   padding: 24px 20px 18px 20px;
   width: 160px;
   height: 196px;
@@ -63,9 +59,7 @@
   border-radius: 100px;
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.2;
-
-  color: #111111;
+  line-height: 17px;
 }
 
 .modal-buy-section-form {
@@ -105,6 +99,10 @@
   color: rgba(64, 64, 64, 0.3);
 }
 
+.modal-phone-input::placeholder {
+  padding-left: 50px;
+}
+
 .modal-buy-now-name {
   display: flex;
   width: 100%;
@@ -117,6 +115,22 @@
   margin: 0;
 }
 
+.modal-buy-now-input-wrapper {
+  position: relative;
+}
+.modal-buy-now-icon-flag {
+  position: absolute;
+  top: 45%;
+  left: 24px;
+  transform: translate(0, -50%);
+}
+
+.modal-buy-now-icon-mastercard {
+  position: absolute;
+  top: 45%;
+  right: 24px;
+  transform: translate(0, -50%);
+}
 .modal-buy-now-textarea {
   width: 100%;
   height: 137px;
@@ -141,5 +155,15 @@
   color: #ffffff;
   background: #fd9222;
   border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
   border-color: transparent;
+  transition: color 500ms linear, background-color 500ms linear;
+}
+
+.modal-buy-now-btn:hover,
+.modal-buy-now-btn:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }

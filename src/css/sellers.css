@@ -32,6 +32,7 @@
 }
 
 .sellers-item {
+  border-radius: 15px;
   overflow: hidden;
 }
 
@@ -154,6 +155,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+  }
+  .tab-mob-btn {
   }
 }
 /* ---------------------D E S K T O P --------------------- */
