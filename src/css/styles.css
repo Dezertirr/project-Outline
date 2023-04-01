@@ -97,7 +97,9 @@ body {
 .animation-standart-button {
 }
 
-
+.is-hidden {
+  display: block;
+}
 
 .animation-button-buy {
 	animation: animation-button-buy 0.9s both;
