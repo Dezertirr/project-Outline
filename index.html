@@ -7,19 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     <script type="module" crossorigin src="/vanilla-app-template/assets/index-054dd8c0.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-3aac6607.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-c80172f7.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header anchor" id="home">
   <div class="container mobile-container main-header">
     <nav class="header-nav">
       <a href="./index.html" class="logo"
         >SIMPLY CHOCOLATE<svg class="logo-icon" width="24" height="24">
-          <use href="../img/symbol-defs.svg#icon-chocolate-header"></use></svg></a>
+          <use href="../img/symbol-defs.svg#icon-chocolate-header"></use></svg
+      ></a>
 
       <ul class="nav-list">
         <li class="nav-list-item">
-          <a class="nav-list-link current" href="../index.html">Home</a>
+          <a class="nav-list-link current" href="#home">Home</a>
         </li>
         <li class="nav-list-item">
           <a class="nav-list-link" href="#how-made">How it&apos;s made?</a>
@@ -40,7 +41,7 @@
       <li class="socials-list-item">
         <a
           class="socials-list-link"
-          href="#"
+          href="https://www.instagram.com/"
           target="_blank"
           rel="noopener noreferer"
           aria-label="link to instagram"
@@ -53,7 +54,7 @@
       <li class="socials-list-item">
         <a
           class="socials-list-link"
-          href="#"
+          href="https://twitter.com/i/flow/login"
           target="_blank"
           rel="noopener noreferer"
           aria-label="link to twit"
@@ -73,7 +74,7 @@
 </header>
 
     <main>
-      <section class="hero">
+      <section class="hero anchor">
   <div class="container hero-cont">
     <h1 class="hero-title">
       Treat yourself or a loved one to our finest ingredients for a moment of
@@ -151,7 +152,7 @@
 
       <!--/////////////// TASTE SECTION///////// -->
 
-<section class="section section-taste" id="taste-section">
+<section class="section-taste" id="taste-section">
   <div class="container taste-container">
     <div class="header-text">
       <h3 class="taste-header">
@@ -362,7 +363,7 @@
   </div>
 </section>
 
-      <section class="section made-section" id="how-made">
+      <section class="made-section anchor" id="how-made">
   <div class="container">
     <h2 class="made-titel">
       how it&#884;s <span class="made-titel-right-part">made?</span>
@@ -434,7 +435,7 @@
   </div>
 </section>
 
-      <section class="section products-section" id="our-products">
+      <section class="products-section anchor" id="our-products">
   <div class="container">
     <h2 class="product-tittle">Our <span>pRODUCTS</span></h2>
 
@@ -577,64 +578,113 @@
   </script>
 </section>
 
-      
-    <!-- =========================================SELLERS SECTION========================================= -->
-    <section class="container  sellers-desktop-container" id="sellers">
-        <h2 class="sellers-section-title"><span style="color: #fd9222">Top</span> Sellers</h2>
-        <ul class="sellers-list">
-            <li class="sellers-item">
-                <picture class="sellers-picture">
-                    <source srcset="../img/top_sellers/desc-nuts_@1x.jpg 1x, ../img/top_sellers/desc-nuts_@2x.jpg 2x"
-                        media="(min-width: 1200px)" />
-                    <source srcset="../img/top_sellers/tabl-nuts_@1x.jpg 1x, ../img/top_sellers/tabl-nuts_@2x.jpg 2x"
-                        media="(max-width: 1199px)" />
-                    <source srcset="../img/top_sellers/mob-nuts_@1x.jpg 1x, ../img/top_sellers/mob-nuts_@2x.jpg 2x"
-                        media="(max-width: 767px)" />
-                    <img class="sellers-img" src="../img/top_sellers/desc-nuts_@1x.jpg" alt="nuts chocolate" width="368"
-                        height="464">
-                </picture>
-                <p class="sellers-text sellers-mobile-tablet-text">Crazy enough chocolate originates from a bean just
-                    like the coffee bean called
-                    Cacao. Cacao has been around for thousands of years and was first discovered by the Native American
-                    tribe called the Mayans.</p>
-            </li>
-            <li class="sellers-item">
-                <picture class="sellers-picture">
-                    <source srcset="../img/top_sellers/desc-milk_@1x.jpg 1x, ../img/top_sellers/desc-milk_@2x.jpg 2x"
-                        media="(min-width: 1200px)" />
-                    <source srcset="../img/top_sellers/tabl-milk_@1x.jpg 1x, ../img/top_sellers/tabl-milk_@2x.jpg 2x"
-                        media="(max-width: 1199px)" />
-                    <source srcset="../img/top_sellers/mob-milk_@1x.jpg 1x, ../img/top_sellers/mob-milk_@2x.jpg 2x"
-                        media="(max-width: 767px)" />
-                    <img class="sellers-img" src="../img/top_sellers/desc-milk_@1x.jpg" alt="milk chocolate" width="368"
-                        height="464">
+      <!-- =========================================SELLERS SECTION========================================= -->
+<section class="container sellers-desktop-container anchor" id="sellers">
+  <h2 class="sellers-section-title">
+    <span style="color: #fd9222">Top</span> Sellers
+  </h2>
+  <ul class="sellers-list">
+    <li class="sellers-item">
+      <picture class="sellers-picture">
+        <source
+          srcset="
+            ../img/top_sellers/desc-nuts_@1x.jpg 1x,
+            ../img/top_sellers/desc-nuts_@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ../img/top_sellers/tabl-nuts_@1x.jpg 1x,
+            ../img/top_sellers/tabl-nuts_@2x.jpg 2x
+          "
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ../img/top_sellers/mob-nuts_@1x.jpg 1x,
+            ../img/top_sellers/mob-nuts_@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="sellers-img"
+          src="../img/top_sellers/desc-nuts_@1x.jpg"
+          alt="nuts chocolate"
+          width="368"
+          height="464"
+        />
+      </picture>
+      <p class="sellers-text sellers-mobile-tablet-text">
+        Crazy enough chocolate originates from a bean just like the coffee bean
+        called Cacao. Cacao has been around for thousands of years and was first
+        discovered by the Native American tribe called the Mayans.
+      </p>
+    </li>
+    <li class="sellers-item">
+      <picture class="sellers-picture">
+        <source
+          srcset="
+            ../img/top_sellers/desc-milk_@1x.jpg 1x,
+            ../img/top_sellers/desc-milk_@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ../img/top_sellers/tabl-milk_@1x.jpg 1x,
+            ../img/top_sellers/tabl-milk_@2x.jpg 2x
+          "
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ../img/top_sellers/mob-milk_@1x.jpg 1x,
+            ../img/top_sellers/mob-milk_@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="sellers-img"
+          src="../img/top_sellers/desc-milk_@1x.jpg"
+          alt="milk chocolate"
+          width="368"
+          height="464"
+        />
+      </picture>
+      <button type="button" class="sellers-buy-now-btn tab-mob-btn">
+        Buy now
+      </button>
+    </li>
+    <li class="sellers-item">
+      <picture class="sellers-picture">
+        <source
+          srcset="
+            ../img/top_sellers/desc-choc_@1x.jpg 1x,
+            ../img/top_sellers/desc-choc_@2x.jpg 2x
+          "
+        />
 
-                </picture>
-                <button type="button" class="sellers-buy-now-btn tab-mob-btn">Buy now</button>
-            </li>
-            <li class="sellers-item">
-                <picture class="sellers-picture">
-                    <source
-                        srcset="../img/top_sellers/desc-choc_@1x.jpg 1x, ../img/top_sellers/desc-choc_@2x.jpg  2x" />
-
-                    <img class="sellers-img" src="../img/top_sellers/desc-choc_@1x.jpg" alt="dark chocolate" width="368"
-                        height="464">
-                </picture>
-            </li>
-        </ul>
-        <div class="sellers-text-wrapper container">
-            <p class="sellers-text sellers-desktop-text-hide">Crazy enough chocolate originates from a bean just like
-                the
-                coffee bean called
-                Cacao.
-                Cacao has been around
-                for
-                thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
-            <button type="button" class="sellers-buy-now-btn  desk-btn">Buy now</button>
-        </div>
-
-    </section>
-    <!-- =========================================/SELLERS SECTION========================================= -->
+        <img
+          class="sellers-img"
+          src="../img/top_sellers/desc-choc_@1x.jpg"
+          alt="dark chocolate"
+          width="368"
+          height="464"
+        />
+      </picture>
+    </li>
+  </ul>
+  <div class="sellers-text-wrapper container">
+    <p class="sellers-text sellers-desktop-text-hide">
+      Crazy enough chocolate originates from a bean just like the coffee bean
+      called Cacao. Cacao has been around for thousands of years and was first
+      discovered by the Native American tribe called the Mayans.
+    </p>
+    <button type="button" class="sellers-buy-now-btn desk-btn">Buy now</button>
+  </div>
+</section>
+<!-- =========================================/SELLERS SECTION========================================= -->
 
       <link
   rel="stylesheet"
@@ -643,7 +693,7 @@
 <link rel="stylesheet" href="../css/revives.css" />
 
 <!-- Swiper -->
-<section class="reviews-section" id="reviews">
+<section class="reviews-section anchor" id="reviews">
   <div class="container">
     <div class="rev swiper myswipernav">
       <div class="swiper-wrapper">
@@ -794,21 +844,22 @@
   });
 </script>
 
-      
-    <section class="bg-sub-img sub-section" id="subscribe">
-        <div class="subscribe-container container ">
-            <div class="subscribe-text-container">
-      <h2 class="subscribe-title">EXPLORE OUR NEW <br>CHOCOLATE FIRST</h2>
+      <section class="bg-sub-img sub-section" id="subscribe">
+  <div class="subscribe-container container">
+    <div class="subscribe-text-container">
+      <h2 class="subscribe-title">EXPLORE OUR NEW <br />CHOCOLATE FIRST</h2>
       <p class="subscribe-text">
         From the velvety texture to the rich and complex flavor, our New
         Chocolate is a true indulgence that will leave you craving more. Made
         with only the finest ingredients and handcrafted with the utmost care,
         each piece is a work of art that is sure to please.
-      </p></div>
-      <button class="subscribe-button" type="button" data-modal-explore-open>Subscribe</button>
+      </p>
     </div>
-    </section>
-
+    <button class="subscribe-button" type="button" data-modal-explore-open>
+      Subscribe
+    </button>
+  </div>
+</section>
 
     </main>
     <footer class="footer">
@@ -839,7 +890,7 @@
           <li class="footer-socials-item">
             <a
               class="footer-socials-link"
-              href="#"
+              href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferer"
               aria-label="link to instagram"
@@ -852,7 +903,7 @@
           <li class="footer-socials-item">
             <a
               class="footer-socials-link"
-              href="#"
+              href="https://twitter.com/i/flow/login"
               target="_blank"
               rel="noopener noreferer"
               aria-label="link to twit"
@@ -868,7 +919,7 @@
     <div class="footer-line"></div>
     <ul class="footer-nav-list">
       <li class="footer-nav-item">
-        <a class="footer-nav-link" href="../index.html">Home</a>
+        <a class="footer-nav-link" href="#home">Home</a>
       </li>
       <li class="footer-nav-item">
         <a class="footer-nav-link" href="#how-made">How it&apos;s made?</a>
@@ -1225,28 +1276,30 @@
       <use href="../img/symbol-defs.svg#icon-x-close"></use>
     </svg>
   </button>
-  <ul class="menu-nav-list">
-    <li class="menu-nav-item">
-      <a class="menu-nav-link" href="../index.html">Home</a>
-    </li>
-    <li class="menu-nav-item">
-      <a class="menu-nav-link" href="#how-made">How it&apos;s made?</a>
-    </li>
-    <li class="menu-nav-item">
-      <a class="menu-nav-link" href="#our-products">Our products</a>
-    </li>
-    <li class="menu-nav-item">
-      <a class="menu-nav-link" href="#sellers">Top sellers</a>
-    </li>
-    <li class="menu-nav-item">
-      <a class="menu-nav-link" href="#reviews">Chocolate is loved</a>
-    </li>
-  </ul>
+  <nav class="nav">
+    <ul class="menu-nav-list">
+      <li class="menu-nav-item">
+        <a class="menu-nav-link active" href="#home">Home</a>
+      </li>
+      <li class="menu-nav-item">
+        <a class="menu-nav-link" href="#how-made">How it&apos;s made?</a>
+      </li>
+      <li class="menu-nav-item">
+        <a class="menu-nav-link" href="#our-products">Our products</a>
+      </li>
+      <li class="menu-nav-item">
+        <a class="menu-nav-link" href="#sellers">Top sellers</a>
+      </li>
+      <li class="menu-nav-item">
+        <a class="menu-nav-link" href="#reviews">Chocolate is loved</a>
+      </li>
+    </ul>
+  </nav>
   <ul class="menu-socials-list">
     <li class="menu-socials-item">
       <a
         class="menu-socials-link"
-        href="#"
+        href="https://www.instagram.com/"
         target="_blank"
         rel="noopener noreferer"
         aria-label="link to instagram"
@@ -1259,7 +1312,7 @@
     <li class="menu-socials-item">
       <a
         class="menu-socials-link"
-        href="#"
+        href="https://twitter.com/i/flow/login"
         target="_blank"
         rel="noopener noreferer"
         aria-label="link to twit"
@@ -1271,13 +1324,41 @@
     </li>
   </ul>
 </div>
-<script
+<!-- не удалять  -->
+<!-- <script
   defer
   src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
   integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
   crossorigin="anonymous"
-></script>
+></script> -->
 <script defer src="../js/mobile_menu.js"></script>
+
+<!-- скрипт на активное состояние меню при скроле секций -->
+<script>
+  window.addEventListener('scroll', () => {
+    let scrollDistance = window.scrollY;
+
+    if (window.innerWidth > 320) {
+      document.querySelectorAll('.anchor').forEach((el, i) => {
+        if (
+          el.offsetTop - document.querySelector('.nav').clientHeight <=
+          scrollDistance
+        ) {
+          document.querySelectorAll('.nav a').forEach(el => {
+            if (el.classList.contains('active')) {
+              el.classList.remove('active');
+            }
+          });
+
+          document
+            .querySelectorAll('.nav li')
+            [i].querySelector('a')
+            .classList.add('active');
+        }
+      });
+    }
+  });
+</script>
 
     
   </body>
