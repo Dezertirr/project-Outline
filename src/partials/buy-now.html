@@ -1,57 +1,84 @@
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal Buy Now</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/About.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/buy-now.css">
-</head>
-
-<body>
-    <div class="modal-buy-section-container" sellers-data-modal>
+<div class="sellers-backdrop is-hidden-sellers" sellers-data-modal>
+    <div class="modal-buy-section-container ">
         <button type="button" class="modal-buy-close-btn" sellers-data-modal-close>
 
             <svg width="28" height="28" class="modal-close-btn-icon">
                 <use href="./img/symbol-defs.svg#icon-close"></use>
             </svg></button>
         <h2 class="section-title modal-buy-section-title"><span style="color: #FD9222;">BUY</span> NOW</h2>
-        <ul class="modal-buy-section-list">
-            <li class="modal-buy-section-item">
-                <picture>
-                    <source
-                        srcset="./img/modal_buy_order/choc-slice_@1x.jpg 1x, ./img/modal_buy_order/choc-slice_@2x.jpg 2x" />
-                    <img class="modal-buy-section-img" src="./img/modal_buy_order/choc-slice_@1x.jpg"
-                        alt="several cubes of chocolate">
-                </picture>
-                <p class="weight-for-order">100 g</p>
-            </li>
-            <li class="modal-buy-section-item">
-                <picture>
-                    <source
-                        srcset="./img/modal_buy_order/white-choc_@1x.jpg 1x, ./img/modal_buy_order/white-choc_@2x.jpg 2x" />
-                    <img class="modal-buy-section-img" src="./img/modal_buy_order/white-choc_@1x.jpg"
-                        alt="white and milk chocolate">
-                </picture>
 
-                <p class="weight-for-order">200 g</p>
-            </li>
+        <div class="sellers-swiper-desctop">
+            <ul class="modal-buy-section-list">
+                <li class="modal-buy-section-item">
+                    <picture>
+                        <source
+                            srcset="../img/modal_buy_order/choc-slice_@1x.jpg 1x, ../img/modal_buy_order/choc-slice_@2x.jpg 2x" />
+                        <img class="modal-buy-section-img" src="../img/modal_buy_order/choc-slice_@1x.jpg"
+                            alt="several cubes of chocolate">
+                    </picture>
+                    <p class="weight-for-order">100 g</p>
+                </li>
+                <li class="modal-buy-section-item">
+                    <picture>
+                        <source
+                            srcset="../img/modal_buy_order/white-choc_@1x.jpg 1x, ../img/modal_buy_order/white-choc_@2x.jpg 2x" />
+                        <img class="modal-buy-section-img" src="../img/modal_buy_order/white-choc_@1x.jpg"
+                            alt="white and milk chocolate">
+                    </picture>
+                    <p class="weight-for-order">200 g</p>
+                </li>
+                <li class="modal-buy-section-item">
+                    <picture>
+                        <source
+                            srcset="../img/modal_buy_order/choc_@1x.jpg 1x, ../img/modal_buy_order/choc_@2x.jpg 2x" />
+                        <img class="modal-buy-section-img" src="../img/modal_buy_order/choc_@1x.jpg"
+                            alt="chocolate bar">
+                    </picture>
+                    <p class="weight-for-order">300 g</p>
+                </li>
+            </ul>
+        </div>
+        <!-- ---------------------------------SVIPER----------------------------------------------------------- -->
+        <div class="sellers-swiper-mobile sellers-swiperbuy">
+            <ul class="swiper-wrapper buy">
+                <li class="modal-buy-section-item swiper-slide">
+                    <picture>
+                        <source
+                            srcset="../img/modal_buy_order/choc-slice_@1x.jpg 1x, ../img/modal_buy_order/choc-slice_@2x.jpg 2x" />
+                        <img class="modal-buy-section-img" src="../img/modal_buy_order/choc-slice_@1x.jpg"
+                            alt="several cubes of chocolate">
+                    </picture>
+                    <p class="weight-for-order">100 g</p>
+                </li>
 
-            <li class="modal-buy-section-item">
-                <picture>
-                    <source srcset="./img/modal_buy_order/choc_@1x.jpg 1x, ./img/modal_buy_order/choc_@2x.jpg 2x" />
-                    <img class="modal-buy-section-img" src="./img/modal_buy_order/choc_@1x.jpg" alt="chocolate bar">
-                </picture>
+                <li class="modal-buy-section-item  swiper-slide">
+                    <picture>
+                        <source
+                            srcset="../img/modal_buy_order/white-choc_@1x.jpg 1x, ../img/modal_buy_order/white-choc_@2x.jpg 2x" />
+                        <img class="modal-buy-section-img" src="../img/modal_buy_order/white-choc_@1x.jpg"
+                            alt="white and milk chocolate">
+                    </picture>
 
-                <p class="weight-for-order">300 g</p>
-            </li>
-        </ul>
+
+                    <p class="weight-for-order">200 g</p>
+                </li>
+                <li class="modal-buy-section-item swiper-slide">
+                    <picture>
+                        <source
+                            srcset="../img/modal_buy_order/choc_@1x.jpg 1x, ../img/modal_buy_order/choc_@2x.jpg 2x" />
+                        <img class="modal-buy-section-img" src="../img/modal_buy_order/choc_@1x.jpg"
+                            alt="chocolate bar">
+                    </picture>
+
+
+                    <p class="weight-for-order">300 g</p>
+                </li>
+            </ul>
+            <div class="sellers-swiper-pagination"></div>
+        </div>
+        <!-- ---------------------------------/SVIPER----------------------------------------------------------- -->
+
+
         <form class="modal-buy-section-form">
             <label class="modal-buy-now-label" for=""><span>Personal information</span></label>
             <div class="modal-buy-now-name">
@@ -64,7 +91,7 @@
             </div>
             <label class="modal-buy-now-label" for=""><span>Phone number</span></label>
             <div class="modal-buy-now-input-wrapper">
-                <input class="modal-buy-now-input modal-phone-input" type="tel" placeholder="|     Phone number">
+                <input class="modal-buy-now-input modal-phone-input" type="tel" placeholder="Phone number">
                 <svg class="modal-buy-now-icon-flag" width="32" height="32">
                     <use href="./img/symbol-defs.svg#icon-ukraine"></use>
                 </svg>
@@ -81,6 +108,21 @@
                     class="modal-form-input-description">Comment</span></label>
             <textarea id="feedback" class="modal-buy-now-textarea " name="message-user"
                 placeholder="Enter text"></textarea>
-            <button class="modal-buy-now-btn" type="button">Submit</button>
+            <button class="modal-buy-now-btn" type="button" data-thanks-open>Submit</button>
     </div>
-    </form>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js%22%3E"></script>
+
+<script>
+    var swiper = new Swiper('.sellers-swiperbuy', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: '.sellers-swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+
+</form>
