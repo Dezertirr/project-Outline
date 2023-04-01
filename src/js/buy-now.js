@@ -1,5 +1,15 @@
+// ---------------BUY NOW BUTTON-----------------
+(() => {
+  const refs = {
+    openModalBtnSellers: document.querySelector('[sellers-data-modal-open]'),
+    closeModalBtnSellers: document.querySelector('[sellers-data-modal-close]'),
+    modalSellers: document.querySelector('[sellers-data-modal]'),
+  };
 
-  const input = document.getElementById('inputid'); const value = input.value;
-  const placeholder = value.substr(0,4); input.setAttribute('placeholder',
-  placeholder);
+  refs.openModalBtnSellers.addEventListener('click', toggleModalSellers);
+  refs.closeModalBtnSellers.addEventListener('click', toggleModalSellers);
 
+  function toggleModalSellers() {
+    refs.modalSellers.classList.toggle('is-hidden-sellers');
+  }
+})();

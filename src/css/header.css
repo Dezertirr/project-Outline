@@ -16,6 +16,7 @@
 }
 
 .header {
+  background-color: #e2e2e2;
   padding-top: 20px;
   padding-bottom: 14px;
 }
@@ -36,7 +37,6 @@
 .logo {
   display: flex;
   gap: 4px;
-  font-style: italic;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.3;
