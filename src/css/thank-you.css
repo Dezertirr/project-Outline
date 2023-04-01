@@ -1,0 +1,128 @@
+.thanks-backdrop {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+
+  transition: scale 250ms linear, visibility 250ms linear;
+}
+
+.thanks-modal {
+  width: 311px;
+  height: 350px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fd9222;
+  border-radius: 15px;
+  transform-origin: left;
+  scale: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.thanks-backdrop.thanks-is-hidden {
+  scale: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .thanks-modal {
+    width: 516px;
+    height: 414px;
+  }
+}
+
+.thanks-img {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+
+.close-thanks-modal-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 14px;
+  right: 14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #fcf1e0;
+  border-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .close-thanks-modal-btn {
+    top: 24px;
+    right: 24px;
+  }
+}
+
+.close-thanks-modal-icon {
+  stroke: #d44528;
+}
+
+.close-thanks-modal-btn:hover,
+.close-thanks-modal-btn:focus {
+  scale: 1.42;
+  outline-color: transparent;
+}
+
+.thanks-box-text {
+  font-family: montserrat;
+  min-height: 96px;
+  margin-top: 84px;
+  margin-left: 68px;
+  margin-right: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .thanks-box-text {
+    font-family: montserrat;
+    min-height: 96px;
+    margin-top: 154px;
+    margin-left: 163px;
+    margin-right: 44px;
+  }
+}
+
+.thanks-titel {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-transform: uppercase;
+  color: #fcf1e0;
+  width: 229px;
+  margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .thanks-titel {
+    font-size: 24px;
+    width: 276px;
+  }
+}
+
+.thanks-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: calc(16 / 14);
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+  .thanks-text {
+    font-size: 18px;
+    width: 300px;
+  }
+}
