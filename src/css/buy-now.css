@@ -117,6 +117,13 @@
   left: 50px;
 } */
 
+/* .modal-buy-now-icon-flag::after {
+  content: '+380 ';
+  color: #111111;
+  position: absolute;
+  left: 50px;
+} */
+
 .modal-buy-now-name {
   display: flex;
   width: 100%;
