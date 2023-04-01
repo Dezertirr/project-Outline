@@ -6,8 +6,8 @@
     <link rel="icon" type="image/svg+xml" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAHYAAAB2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAS6L/LEmm/49Jpf/USaX/9Eml//RJpf/USab/j0em/ysAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVqv8GSKX/lEml//xJpf//SaX//0ml//9Jpf//SaX//0ml//9Jpf/8SaT/klWq/wYAAAAAAAAAAAAAAABVqv8GSaX/vUml//9Jpf//SaX//0ml//9Jpf//SaX//0ml//9Jpf//SaX//0ml//9Jpf+8Var/BgAAAAAAAAAASqT/lUml//9Jpf//SaX//0qm//+Gw///arX//0ml//9Jpf//SaX//0ml//9Jpf//SaX//0mk/5IAAAAAS6L/LEml//xJpf//SaX//0ql//+AwP//eb3//2u2//9isf//TKb//0ml//9Jpf//SaX//0ml//9Jpf/8R6b/K0ml/5BJpf//SaX//0qm//+Fwv//eb3//0ml//9rtv//sdn//4rF//9Jpf//SaX//0ml//9Jpf//SaX//0ql/45Jpf/VSaX//0ml//+Fw///er3//0ml//9isf//qNT//0ml//+h0f//Uqr//0ml//9Jpf//SaX//0ml//9Jpf/USaX/8kml//9Jpf//bLb//2q1//9Jpf//nc///1Cp//+h0P//nc7//3y+//9Tqv//SaX//0ml//9Jpf//SaX/80ml//JJpf//SaX//0ml//9jsv//stn//2q1//+i0P//nc7//3m9//+g0P//eLz//1Oq//9Jpf//SaX//0ml//NJpf/VSaX//0ml//9Jpf//ZrP//4LB//+g0P//ms3//3q9//+k0v//cbn//6bT//+Bwf//SaX//0ml//9Jpf/USqX/kUml//9Jpf//SaX//0ml//9Uqv//Vaz//4PC//+dzv//cbj//6rV//+BwP//Wa3//0ml//9Jpf//Sab/j0qk/y1Jpf/9SaX//0ml//9Jpf//SaX//0ml//9Qqf//gMD//6PR//+AwP//Wa3//0ml//9Jpf//SaX//Eui/ywAAAAASaX/l0ml//9Jpf//SaX//0ml//9Jpf//SaX//1Cp//+Bwf//V6z//0ml//9Jpf//SaX//0il/5QAAAAAAAAAAEm2/wdIpf++SaX//0ml//9Jpf//SaX//0ml//9Jpf//SaX//0ml//9Jpf//SaX//0ml/71Vqv8GAAAAAAAAAAAAAAAASbb/B0ml/5ZJpf/9SaX//0ml//9Jpf//SaX//0ml//9Jpf//SaX//Uqk/5VVqv8GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASqT/LUml/5BJpf/USaX/9Eml//RJpf/USaX/kEui/ywAAAAAAAAAAAAAAAAAAAAA8A8AAMADAACAAQAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAIABAADAAwAA8A8AAA==" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/vanilla-app-template/assets/index-999bcf27.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-9ca0bd06.css">
+    <script type="module" crossorigin src="/vanilla-app-template/assets/index-054dd8c0.js"></script>
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-3aac6607.css">
   </head>
   <body>
     <header class="header">
@@ -1037,7 +1037,79 @@
   </div>
 </div> -->
 
-    
+    <!-- ============== HTML Кнопка з атрибутом для відкриття модалки -->
+
+<!-- <button type="button" class="open-thanks-modal" data-thanks-open>
+      Submit
+    </button> -->
+
+<!-- ================CSS для кнопки відкриття модалки без позиціювання -->
+<!-- .open-thanks-modal {
+  width: 133px;
+  height: 45px;
+  background-color: #fd9222;
+  border-radius: 100px;
+  border-color: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+}
+
+.open-thanks-modal:hover,
+.open-thanks-modal:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+  outline-color: transparent;
+} -->
+
+<div class="thanks-backdrop thanks-is-hidden" data-thanks>
+  <div class="thanks-modal">
+    <button
+      class="close-thanks-modal-btn"
+      type="button"
+      data-thanks-close
+      review-modal-close
+    >
+      <svg class="close-thanks-modal-icon" width="16" height="16">
+        <use href="../img/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="thanks-box-text">
+      <h2 class="thanks-titel">thank you!</h2>
+      <p class="thanks-text">
+        We are glad that you ordered our chocolate and we are giving you a 20%
+        discount on all our products.
+      </p>
+    </div>
+
+    <picture>
+      <source
+        srcset="
+          ../img/thanks_chocolate/chocolate-mob@1x.png 1x,
+          ../img/thanks_chocolate/chocolate-mob@2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
+
+      <source
+        srcset="
+          ../img/thanks_chocolate/chocolate-tab-desk@1x.png 1x,
+          ../img/thanks_chocolate/chocolate-tab-desk@2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <img
+        class="thanks-img"
+        src="../img/thanks_chocolate/chocolate-mob@1x.png"
+        alt="Pice of chocolate"
+      />
+    </picture>
+  </div>
+</div>
+
     
     <div class="modal-buy-section-container">
         <button type="button" class="modal-buy-close-btn" data-modal-close>
