@@ -4,13 +4,16 @@
 @import url('./styles.css');
 /* <!-- =========================================SELLERS SECTION========================================= --> */
 .sellers-desktop-container .sellers-mobile-tablet-container {
-  background-color: #fff;
+  background-color: #fafafa;
 }
 
 .sellers-mobile-tablet-text {
   list-style-type: none;
 }
 
+.color-top {
+  color: var(--orange-main);
+}
 .sellers-section-title {
   font-weight: 600;
   font-size: 24px;
@@ -155,8 +158,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-  }
-  .tab-mob-btn {
   }
 }
 /* ---------------------D E S K T O P --------------------- */

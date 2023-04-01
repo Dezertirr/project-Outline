@@ -17,11 +17,11 @@
 @import url('./revives.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
-@import url('./buy-now');
-@import url('./explore');
-@import url('./leave-review');
-@import url('./thank-you');
-@import url('./buy-now');
+@import url('./buy-now.css');
+@import url('./explore.css');
+@import url('./leave-review.css');
+@import url('./thank-you.css');
+@import url('./buy-now.css');
 @import url('./feedback.css');
 @import url('./mobile_menu.css');
 

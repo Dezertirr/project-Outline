@@ -1,16 +1,33 @@
 
-    <div class="modal-buy-section-container">
-        <button type="button" class="modal-buy-close-btn" data-modal-close>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Buy Now</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/About.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/buy-now.css">
+</head>
+
+<body>
+    <div class="modal-buy-section-container" sellers-data-modal>
+        <button type="button" class="modal-buy-close-btn" sellers-data-modal-close>
+
             <svg width="28" height="28" class="modal-close-btn-icon">
-                <use href="../img/symbol-defs.svg#icon-close"></use>
+                <use href="./img/symbol-defs.svg#icon-close"></use>
             </svg></button>
         <h2 class="section-title modal-buy-section-title"><span style="color: #FD9222;">BUY</span> NOW</h2>
         <ul class="modal-buy-section-list">
             <li class="modal-buy-section-item">
                 <picture>
                     <source
-                        srcset="../img/modal_buy_order/choc-slice_@1x.jpg 1x, ../img/modal_buy_order/choc-slice_@2x.jpg 2x" />
-                    <img class="modal-buy-section-img" src="../img/modal_buy_order/choc-slice_@1x.jpg"
+                        srcset="./img/modal_buy_order/choc-slice_@1x.jpg 1x, ./img/modal_buy_order/choc-slice_@2x.jpg 2x" />
+                    <img class="modal-buy-section-img" src="./img/modal_buy_order/choc-slice_@1x.jpg"
                         alt="several cubes of chocolate">
                 </picture>
                 <p class="weight-for-order">100 g</p>
@@ -18,8 +35,8 @@
             <li class="modal-buy-section-item">
                 <picture>
                     <source
-                        srcset="../img/modal_buy_order/white-choc_@1x.jpg 1x, ../img/modal_buy_order/white-choc_@2x.jpg 2x" />
-                    <img class="modal-buy-section-img" src="../img/modal_buy_order/white-choc_@1x.jpg"
+                        srcset="./img/modal_buy_order/white-choc_@1x.jpg 1x, ./img/modal_buy_order/white-choc_@2x.jpg 2x" />
+                    <img class="modal-buy-section-img" src="./img/modal_buy_order/white-choc_@1x.jpg"
                         alt="white and milk chocolate">
                 </picture>
 
@@ -28,8 +45,8 @@
 
             <li class="modal-buy-section-item">
                 <picture>
-                    <source srcset="../img/modal_buy_order/choc_@1x.jpg 1x, ../img/modal_buy_order/choc_@2x.jpg 2x" />
-                    <img class="modal-buy-section-img" src="../img/modal_buy_order/choc_@1x.jpg" alt="chocolate bar">
+                    <source srcset="./img/modal_buy_order/choc_@1x.jpg 1x, ./img/modal_buy_order/choc_@2x.jpg 2x" />
+                    <img class="modal-buy-section-img" src="./img/modal_buy_order/choc_@1x.jpg" alt="chocolate bar">
                 </picture>
 
                 <p class="weight-for-order">300 g</p>
@@ -47,16 +64,17 @@
             </div>
             <label class="modal-buy-now-label" for=""><span>Phone number</span></label>
             <div class="modal-buy-now-input-wrapper">
-                <input class="modal-buy-now-input modal-phone-input" type="tel" placeholder="+380 | Phone number">
+                <input class="modal-buy-now-input modal-phone-input" type="tel" placeholder="|     Phone number">
                 <svg class="modal-buy-now-icon-flag" width="32" height="32">
-                    <use href="../img/symbol-defs.svg#icon-ukraine"></use>
+                    <use href="./img/symbol-defs.svg#icon-ukraine"></use>
                 </svg>
+                <span class="code-number">+380</span>
             </div>
             <label class="modal-buy-now-label" for=""><span>Card number</span></label>
             <div class="modal-buy-now-input-wrapper">
                 <input class="modal-buy-now-input" type="number" placeholder="Enter  card">
                 <svg class="modal-buy-now-icon-mastercard" width="32" height="32">
-                    <use href="../img/symbol-defs.svg#mastercard"></use>
+                    <use href="./img/symbol-defs.svg#mastercard"></use>
                 </svg>
             </div>
             <label class="modal-buy-now-label " for="feedback"><span

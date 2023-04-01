@@ -105,12 +105,31 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+  padding-left: 149px;
 }
 .modal-phone-input::placeholder {
-  padding-left: 50px;
+  /* position: absolute; */
+  /* padding-left: 102px; */
   color: rgba(64, 64, 64, 0.3);
 }
+
+.code-number {
+  position: absolute;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  top: 45%;
+  left: 74px;
+  transform: translate(0, -50%);
+}
 /* .modal-phone-input::before {
+  content: '+380 ';
+  color: #111111;
+  position: absolute;
+  left: 50px;
+} */
+
+/* .modal-buy-now-icon-flag::after {
   content: '+380 ';
   color: #111111;
   position: absolute;
