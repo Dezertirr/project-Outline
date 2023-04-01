@@ -1,18 +1,16 @@
-
 // ---------------BUY NOW BUTTON-----------------
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[sellers-data-modal-open]'),
-    closeModalBtn: document.querySelector('[sellers-data-modal-close]'),
-    modal: document.querySelector('[sellers-data-modal]'),
+    openModalBtnSellers: document.querySelector('[sellers-data-modal-open]'),
+    closeModalBtnSellers: document.querySelector('[sellers-data-modal-close]'),
+    modalSellers: document.querySelector('[sellers-data-modal]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtnSellers.addEventListener('click', toggleModalSellers);
+  refs.closeModalBtnSellers.addEventListener('click', toggleModalSellers);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+  function toggleModalSellers() {
+    refs.modalSellers.classList.toggle('is-hidden-sellers');
   }
 })();
-// ---------------SUBMIT BUTTON-----------------
-
+// ---------------SLIDER IN BUY NOW MOBILE-----------------
