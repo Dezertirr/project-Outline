@@ -1,39 +1,44 @@
 <div
-  class="feedback-thanks-modal feedback-thanks-is-hidden"
+  class="feedback-thanks-backdrop feedback-thanks-is-hidden"
   data-feedback-thanks
 >
-  <button
-    class="close-feedback-thanks-modal-btn"
-    type="button"
-    data-feedback-thanks-close
-  >
-    <svg class="close-feedback-thanks-modal-icon" width="16" height="16">
-      <use href="../img/symbol-defs.svg#icon-close"></use>
-    </svg>
-  </button>
-  <h2 class="feedback-thanks-titel">thank you for&nbsp;your&nbsp;feedback!</h2>
-  <p class="feedback-thanks-text">We are so happy to hear from you!</p>
+  <div class="feedback-thanks-modal">
+    <button
+      class="close-feedback-thanks-modal-btn"
+      type="button"
+      data-feedback-thanks-close
+      review-modal-close
+    >
+      <svg class="close-feedback-thanks-modal-icon" width="16" height="16">
+        <use href="../img/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="feedback-thanks-titel">
+      thank you for&nbsp;your&nbsp;feedback!
+    </h2>
+    <p class="feedback-thanks-text">We are so happy to hear from you!</p>
 
-  <picture>
-    <source
-      srcset="
-        ../img/thanks_chocolate/chocolate-tab-desk@1x.png 1x,
-        ../img/thanks_chocolate/chocolate-tab-desk@2x.png 2x
-      "
-      media="(min-width:768px)"
-    />
-    <source
-      srcset="
-        ../img/thanks_chocolate/chocolate-mob@1x.png 1x,
-        ../img/thanks_chocolate/chocolate-mob@2x.png 2x
-      "
-      media="(max-width:767px)"
-    />
+    <picture>
+      <source
+        srcset="
+          ../img/thanks_chocolate/chocolate-tab-desk@1x.png 1x,
+          ../img/thanks_chocolate/chocolate-tab-desk@2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ../img/thanks_chocolate/chocolate-mob@1x.png 1x,
+          ../img/thanks_chocolate/chocolate-mob@2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
 
-    <img
-      class="feedback-thanks-img"
-      src="../img/thanks_chocolate/chocolate-mob@1x.png"
-      alt="Pice of chocolate"
-    />
-  </picture>
+      <img
+        class="feedback-thanks-img"
+        src="../img/thanks_chocolate/chocolate-mob@1x.png"
+        alt="Pice of chocolate"
+      />
+    </picture>
+  </div>
 </div>
