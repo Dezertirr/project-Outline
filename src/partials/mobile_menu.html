@@ -6,28 +6,30 @@
       <use href="../img/symbol-defs.svg#icon-x-close"></use>
     </svg>
   </button>
-  <ul class="menu-nav-list">
-    <li class="menu-nav-item">
-      <a class="menu-nav-link" href="../index.html">Home</a>
-    </li>
-    <li class="menu-nav-item">
-      <a class="menu-nav-link" href="#how-made">How it&apos;s made?</a>
-    </li>
-    <li class="menu-nav-item">
-      <a class="menu-nav-link" href="#our-products">Our products</a>
-    </li>
-    <li class="menu-nav-item">
-      <a class="menu-nav-link" href="#sellers">Top sellers</a>
-    </li>
-    <li class="menu-nav-item">
-      <a class="menu-nav-link" href="#reviews">Chocolate is loved</a>
-    </li>
-  </ul>
+  <nav class="nav">
+    <ul class="menu-nav-list">
+      <li class="menu-nav-item">
+        <a class="menu-nav-link active" href="#home">Home</a>
+      </li>
+      <li class="menu-nav-item">
+        <a class="menu-nav-link" href="#how-made">How it&apos;s made?</a>
+      </li>
+      <li class="menu-nav-item">
+        <a class="menu-nav-link" href="#our-products">Our products</a>
+      </li>
+      <li class="menu-nav-item">
+        <a class="menu-nav-link" href="#sellers">Top sellers</a>
+      </li>
+      <li class="menu-nav-item">
+        <a class="menu-nav-link" href="#reviews">Chocolate is loved</a>
+      </li>
+    </ul>
+  </nav>
   <ul class="menu-socials-list">
     <li class="menu-socials-item">
       <a
         class="menu-socials-link"
-        href="#"
+        href="https://www.instagram.com/"
         target="_blank"
         rel="noopener noreferer"
         aria-label="link to instagram"
@@ -40,7 +42,7 @@
     <li class="menu-socials-item">
       <a
         class="menu-socials-link"
-        href="#"
+        href="https://twitter.com/i/flow/login"
         target="_blank"
         rel="noopener noreferer"
         aria-label="link to twit"
@@ -52,10 +54,38 @@
     </li>
   </ul>
 </div>
-<script
+<!-- не удалять  -->
+<!-- <script
   defer
   src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
   integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
   crossorigin="anonymous"
-></script>
+></script> -->
 <script defer src="../js/mobile_menu.js"></script>
+
+<!-- скрипт на активное состояние меню при скроле секций -->
+<script>
+  window.addEventListener('scroll', () => {
+    let scrollDistance = window.scrollY;
+
+    if (window.innerWidth > 320) {
+      document.querySelectorAll('.anchor').forEach((el, i) => {
+        if (
+          el.offsetTop - document.querySelector('.nav').clientHeight <=
+          scrollDistance
+        ) {
+          document.querySelectorAll('.nav a').forEach(el => {
+            if (el.classList.contains('active')) {
+              el.classList.remove('active');
+            }
+          });
+
+          document
+            .querySelectorAll('.nav li')
+            [i].querySelector('a')
+            .classList.add('active');
+        }
+      });
+    }
+  });
+</script>
