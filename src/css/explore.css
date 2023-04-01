@@ -1,14 +1,20 @@
 .subscribe-backdrop{
-    max-width: 311px;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    background-color: var(--modal-bg);
     height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--modal-bg);
+    z-index: 10;
     animation: open-modal 1500ms ease-in both;
   }
   
   .subscribe-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 311px;
+    transform: translateX(-50%) translateY(-50%);
   }
   
   .subscribe-form{
