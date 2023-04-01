@@ -64,7 +64,7 @@
   position: relative;
 }
 
-.menu-nav-link:hover::after {
+.menu-nav-link.active::after {
   content: '';
   position: absolute;
   left: 0;
@@ -76,12 +76,7 @@
   border-radius: 2px;
 }
 
-.current {
-  color: #fd9222;
-}
-
-.menu-nav-link:hover,
-.menu-nav-link:focus {
+.active {
   color: #fd9222;
 }
 
