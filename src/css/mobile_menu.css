@@ -56,11 +56,28 @@
   margin-bottom: 24px;
 }
 .menu-nav-link {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-weight: 500;
   line-height: calc(16 / 14);
   color: #ffffff;
+  position: relative;
+}
+
+.menu-nav-link:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  display: block;
+  width: 24px;
+  height: 1px;
+  background-color: #fd9222;
+  border-radius: 2px;
+}
+
+.current {
+  color: #fd9222;
 }
 
 .menu-nav-link:hover,
@@ -83,6 +100,12 @@
   width: 22px;
   height: 22px;
   border-radius: 25%;
+}
+
+.menu-socials-link .menu-socials-icon:hover,
+.menu-socials-link .menu-socials-icon:focus,
+.menu-socials-link .menu-socials-icon:active {
+  stroke: #fd9222;
 }
 
 .menu-socials-icon {
