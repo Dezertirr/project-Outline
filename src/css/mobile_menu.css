@@ -64,7 +64,7 @@
   position: relative;
 }
 
-.menu-nav-link.active::after {
+.menu-nav-link:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -76,7 +76,7 @@
   border-radius: 2px;
 }
 
-.active {
+.menu-nav-link:hover {
   color: #fd9222;
 }
 
