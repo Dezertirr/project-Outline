@@ -36,7 +36,6 @@
 .logo {
   display: flex;
   gap: 4px;
-  font-style: italic;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.3;
