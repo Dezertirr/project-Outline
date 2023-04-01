@@ -13,4 +13,3 @@
     refs.modalSellers.classList.toggle('is-hidden-sellers');
   }
 })();
-// ---------------SLIDER IN BUY NOW MOBILE-----------------
