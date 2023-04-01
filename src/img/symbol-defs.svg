@@ -6,10 +6,13 @@
 <symbol id="icon-twitter" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M30.667 4c-1.2 0.856-2.591 1.552-4.084 2.013l-0.103 0.027c-1.101-1.261-2.712-2.053-4.507-2.053-3.299 0-5.973 2.674-5.973 5.973 0 0.028 0 0.056 0.001 0.084l-0-0.004v1.333c-0.109 0.003-0.238 0.005-0.367 0.005-2.331 0-4.53-0.561-6.471-1.555l0.080 0.037c-2.093-1.053-4.56-3.563-5.908-5.48 0 0-4.667 12.953 7.333 18.287-2.442 1.677-5.462 2.679-8.716 2.679-0.217 0-0.433-0.004-0.648-0.013l0.031 0.001c12 6.667 26.667 0 26.667-15.333 0-0.372-0.037-0.741-0.107-1.107 1.323-1.305 2.293-2.963 2.758-4.822l0.015-0.071z"></path>
 </symbol>
-<symbol id="icon-play" viewBox="0 0 32 32">
-<path fill="#f5f4f4" style="fill: var(--color1, #f5f4f4)" d="M10.909 24v-15.273l14.545 7.636-14.545 7.636z"></path>
-<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.7273" d="M31.636 16c0 8.636-7.001 15.636-15.636 15.636s-15.636-7.001-15.636-15.636c0-8.636 7.001-15.636 15.636-15.636s15.636 7.001 15.636 15.636z"></path>
-</symbol>
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:2000%;height:2000%;overflow:hidden">
+  <defs>
+    <symbol id="icon-play" viewBox="0 0 30 30">
+      <path d="M2.825.19 29.174 16 2.825 31.81z"/>
+    </symbol>
+  </defs>
+</svg>
 <symbol id="icon-burger" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.5" d="M4 16h24M4 8h24M4 24h24"></path>
 </symbol>
