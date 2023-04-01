@@ -1,0 +1,72 @@
+<!-- ============== HTML Кнопка з атрибутом для відкриття модалки -->
+
+<!-- <button type="button" class="open-thanks-modal" data-thanks-open>
+      Submit
+    </button> -->
+
+<!-- ================CSS для кнопки відкриття модалки без позиціювання -->
+<!-- .open-thanks-modal {
+  width: 133px;
+  height: 45px;
+  background-color: #fd9222;
+  border-radius: 100px;
+  border-color: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+}
+
+.open-thanks-modal:hover,
+.open-thanks-modal:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+  outline-color: transparent;
+} -->
+
+<div class="thanks-backdrop thanks-is-hidden" data-thanks>
+  <div class="thanks-modal">
+    <button
+      class="close-thanks-modal-btn"
+      type="button"
+      data-thanks-close
+      review-modal-close
+    >
+      <svg class="close-thanks-modal-icon" width="16" height="16">
+        <use href="../img/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="thanks-box-text">
+      <h2 class="thanks-titel">thank you!</h2>
+      <p class="thanks-text">
+        We are glad that you ordered our chocolate and we are giving you a 20%
+        discount on all our products.
+      </p>
+    </div>
+
+    <picture>
+      <source
+        srcset="
+          ../img/thanks_chocolate/chocolate-mob@1x.png 1x,
+          ../img/thanks_chocolate/chocolate-mob@2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
+
+      <source
+        srcset="
+          ../img/thanks_chocolate/chocolate-tab-desk@1x.png 1x,
+          ../img/thanks_chocolate/chocolate-tab-desk@2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <img
+        class="thanks-img"
+        src="../img/thanks_chocolate/chocolate-mob@1x.png"
+        alt="Pice of chocolate"
+      />
+    </picture>
+  </div>
+</div>
