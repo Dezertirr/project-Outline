@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/vanilla-app-template/assets/index-8c7edc1b.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-20baeda9.css">
+    <script type="module" crossorigin src="/vanilla-app-template/assets/index-999bcf27.js"></script>
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-3b222793.css">
   </head>
   <body>
     <link rel="stylesheet" href="../css/styles.css" />
@@ -843,7 +843,7 @@
         with only the finest ingredients and handcrafted with the utmost care,
         each piece is a work of art that is sure to please.
       </p></div>
-      <button class="subscribe-button" type="button" data-modal-open>Subscribe</button>
+      <button class="subscribe-button" type="button" data-modal-explore-open>Subscribe</button>
     </div>
     </section>
 
@@ -950,16 +950,32 @@
             </svg></button>
         <h2 class="section-title modal-buy-section-title"><span style="color: #FD9222;">BUY</span> NOW</h2>
         <ul class="modal-buy-section-list">
-            <li class="modal-buy-section-item"><img class="modal-buy-section-img"
-                    src="../img/modal_buy_order/choc-slice_@1x.jpg" alt="several cubes of chocolate">
+            <li class="modal-buy-section-item">
+                <picture>
+                    <source
+                        srcset="../img/modal_buy_order/choc-slice_@1x.jpg 1x, ../img/modal_buy_order/choc-slice_@2x.jpg 2x" />
+                    <img class="modal-buy-section-img" src="../img/modal_buy_order/choc-slice_@1x.jpg"
+                        alt="several cubes of chocolate">
+                </picture>
                 <p class="weight-for-order">100 g</p>
             </li>
-            <li class="modal-buy-section-item"><img class="modal-buy-section-img"
-                    src="../img/modal_buy_order/white-choc_@1x.jpg" alt="white and milk chocolate">
+            <li class="modal-buy-section-item">
+                <picture>
+                    <source
+                        srcset="../img/modal_buy_order/white-choc_@1x.jpg 1x, ../img/modal_buy_order/white-choc_@2x.jpg 2x" />
+                    <img class="modal-buy-section-img" src="../img/modal_buy_order/white-choc_@1x.jpg"
+                        alt="white and milk chocolate">
+                </picture>
+
                 <p class="weight-for-order">200 g</p>
             </li>
-            <li class="modal-buy-section-item"><img class="modal-buy-section-img"
-                    src="../img/modal_buy_order/choc_@1x.jpg" alt="chocolate bar">
+
+            <li class="modal-buy-section-item">
+                <picture>
+                    <source srcset="../img/modal_buy_order/choc_@1x.jpg 1x, ../img/modal_buy_order/choc_@2x.jpg 2x" />
+                    <img class="modal-buy-section-img" src="../img/modal_buy_order/choc_@1x.jpg" alt="chocolate bar">
+                </picture>
+
                 <p class="weight-for-order">300 g</p>
             </li>
         </ul>
@@ -971,20 +987,20 @@
             </div>
             <label class="modal-buy-now-label" for=""><span>Email</span></label>
             <div class="">
-                <input class="modal-buy-now-input" type="text" placeholder="Enter your email">
+                <input class="modal-buy-now-input" type="email" placeholder="Enter your email">
             </div>
             <label class="modal-buy-now-label" for=""><span>Phone number</span></label>
             <div class="modal-buy-now-input-wrapper">
-                <input class="modal-buy-now-input modal-phone-input" type="text" placeholder="+380 | Phone number">
+                <input class="modal-buy-now-input modal-phone-input" type="tel" placeholder="+380 | Phone number">
                 <svg class="modal-buy-now-icon-flag" width="32" height="32">
                     <use href="../img/symbol-defs.svg#icon-ukraine"></use>
                 </svg>
             </div>
             <label class="modal-buy-now-label" for=""><span>Card number</span></label>
             <div class="modal-buy-now-input-wrapper">
-                <input class="modal-buy-now-input" type="text" placeholder="Enter  card">
+                <input class="modal-buy-now-input" type="number" placeholder="Enter  card">
                 <svg class="modal-buy-now-icon-mastercard" width="32" height="32">
-                    <use href="../img/symbol-defs.svg#icon-ukraine"></use>
+                    <use href="../img/symbol-defs.svg#mastercard"></use>
                 </svg>
             </div>
             <label class="modal-buy-now-label " for="feedback"><span
@@ -994,20 +1010,30 @@
             <button class="modal-buy-now-btn" type="button">Submit</button>
     </div>
     </form>
+    <script src="../js/buy-now.js"></script>
 </body>
 
 </html>
-    <div class="subscribe-backdrop">
+    <div class="subscribe-backdrop is-hidden" data-modal-explore>
     <div class="subscribe-modal">
         <form class="subscribe-form">
-            <svg><use href="../img/symbol-defs.svg"></use></svg>
+            <svg class="subscribe-modal-svg" width="24" height="24" data-modal-explore-close><use href="../img/symbol-defs.svg#icon-close"></use></svg>
             <img class="subscribe-modal-img" srcset="../img/modal_new_chocolate/mob_@1x.jpg 1x, ../img/modal_new_chocolate/mob_@2x" alt="">
             <h2 class="subscribe-modal-title">EXPLORE OUR <span class="subscribe-orange"><br>NEW CHOCOLATE</span> FIRST!</h2>
             <input class="subcribe-input" type="mail" placeholder="Enter your email">
-            <button class="subscribe-modal-button" type="button">Sumbit</button>
+            <button class="subscribe-modal-button" type="button" data-modal-explore-close>Sumbit</button>
         </form>
     </div>
 </div>
+<script>
+    const button = document.getElementById('subscribe-modal-button');
+    const element = document.getElementById('close-modal');
+  
+    button.addEventListener('click', function() {
+      element.classList.remove('is-hidden');
+      element.classList.add('close-modal');
+    });
+  </script>
     <!-- modal form -->
 <!-- <div class="backdrop is-hidden" review-modal>
   <div class="modal">
@@ -1097,16 +1123,32 @@
             </svg></button>
         <h2 class="section-title modal-buy-section-title"><span style="color: #FD9222;">BUY</span> NOW</h2>
         <ul class="modal-buy-section-list">
-            <li class="modal-buy-section-item"><img class="modal-buy-section-img"
-                    src="../img/modal_buy_order/choc-slice_@1x.jpg" alt="several cubes of chocolate">
+            <li class="modal-buy-section-item">
+                <picture>
+                    <source
+                        srcset="../img/modal_buy_order/choc-slice_@1x.jpg 1x, ../img/modal_buy_order/choc-slice_@2x.jpg 2x" />
+                    <img class="modal-buy-section-img" src="../img/modal_buy_order/choc-slice_@1x.jpg"
+                        alt="several cubes of chocolate">
+                </picture>
                 <p class="weight-for-order">100 g</p>
             </li>
-            <li class="modal-buy-section-item"><img class="modal-buy-section-img"
-                    src="../img/modal_buy_order/white-choc_@1x.jpg" alt="white and milk chocolate">
+            <li class="modal-buy-section-item">
+                <picture>
+                    <source
+                        srcset="../img/modal_buy_order/white-choc_@1x.jpg 1x, ../img/modal_buy_order/white-choc_@2x.jpg 2x" />
+                    <img class="modal-buy-section-img" src="../img/modal_buy_order/white-choc_@1x.jpg"
+                        alt="white and milk chocolate">
+                </picture>
+
                 <p class="weight-for-order">200 g</p>
             </li>
-            <li class="modal-buy-section-item"><img class="modal-buy-section-img"
-                    src="../img/modal_buy_order/choc_@1x.jpg" alt="chocolate bar">
+
+            <li class="modal-buy-section-item">
+                <picture>
+                    <source srcset="../img/modal_buy_order/choc_@1x.jpg 1x, ../img/modal_buy_order/choc_@2x.jpg 2x" />
+                    <img class="modal-buy-section-img" src="../img/modal_buy_order/choc_@1x.jpg" alt="chocolate bar">
+                </picture>
+
                 <p class="weight-for-order">300 g</p>
             </li>
         </ul>
@@ -1118,20 +1160,20 @@
             </div>
             <label class="modal-buy-now-label" for=""><span>Email</span></label>
             <div class="">
-                <input class="modal-buy-now-input" type="text" placeholder="Enter your email">
+                <input class="modal-buy-now-input" type="email" placeholder="Enter your email">
             </div>
             <label class="modal-buy-now-label" for=""><span>Phone number</span></label>
             <div class="modal-buy-now-input-wrapper">
-                <input class="modal-buy-now-input modal-phone-input" type="text" placeholder="+380 | Phone number">
+                <input class="modal-buy-now-input modal-phone-input" type="tel" placeholder="+380 | Phone number">
                 <svg class="modal-buy-now-icon-flag" width="32" height="32">
                     <use href="../img/symbol-defs.svg#icon-ukraine"></use>
                 </svg>
             </div>
             <label class="modal-buy-now-label" for=""><span>Card number</span></label>
             <div class="modal-buy-now-input-wrapper">
-                <input class="modal-buy-now-input" type="text" placeholder="Enter  card">
+                <input class="modal-buy-now-input" type="number" placeholder="Enter  card">
                 <svg class="modal-buy-now-icon-mastercard" width="32" height="32">
-                    <use href="../img/symbol-defs.svg#icon-ukraine"></use>
+                    <use href="../img/symbol-defs.svg#mastercard"></use>
                 </svg>
             </div>
             <label class="modal-buy-now-label " for="feedback"><span
@@ -1141,6 +1183,7 @@
             <button class="modal-buy-now-btn" type="button">Submit</button>
     </div>
     </form>
+    <script src="../js/buy-now.js"></script>
 </body>
 
 </html>
