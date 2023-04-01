@@ -181,12 +181,13 @@
   border-radius: 100px;
   border: 0;
   margin-right: 14px;
+  transition: color 500ms linear, background-color 500ms linear;
 }
 
 .buy-btn:hover,
 .buy-btn:focus {
   color: #fd9222;
-  background: #fcf1e0;
+  background-color: #fcf1e0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -212,6 +213,8 @@
   border: 1px solid #ffffff;
   border-radius: 100px;
   background-color: transparent;
+  transition: color 500ms linear, border 500ms linear,
+    background-color 500ms linear;
 }
 
 .made-btn:hover,
@@ -259,6 +262,7 @@
   color: #ffffff;
   background: transparent;
   max-width: 78px;
+  transition: color 500ms linear;
 }
 
 .scroll-btn:hover .scroll-btn-txt,
@@ -271,9 +275,9 @@
   height: 28px;
   border-radius: 50%;
   padding-top: 5px;
-
   margin-left: 12px;
   padding: 0;
+  transition: var(--color1) 500ms linear, var(--color2) 500ms linear;
 }
 
 @media only screen and (min-width: 768px) {
