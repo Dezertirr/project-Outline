@@ -70,7 +70,7 @@
 
 @media screen and (min-width: 768px) {
   .swiper-slide {
-    width: 270px;
+    max-width: 270px;
     min-width: 270px;
   }
 }
