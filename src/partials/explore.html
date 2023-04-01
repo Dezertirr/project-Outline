@@ -1,11 +1,20 @@
-<div class="subscribe-backdrop">
+<div class="subscribe-backdrop is-hidden" data-modal-explore>
     <div class="subscribe-modal">
         <form class="subscribe-form">
-            <svg><use href="../img/symbol-defs.svg"></use></svg>
+            <svg class="subscribe-modal-svg" width="24" height="24" data-modal-explore-close><use href="../img/symbol-defs.svg#icon-close"></use></svg>
             <img class="subscribe-modal-img" srcset="../img/modal_new_chocolate/mob_@1x.jpg 1x, ../img/modal_new_chocolate/mob_@2x" alt="">
             <h2 class="subscribe-modal-title">EXPLORE OUR <span class="subscribe-orange"><br>NEW CHOCOLATE</span> FIRST!</h2>
             <input class="subcribe-input" type="mail" placeholder="Enter your email">
-            <button class="subscribe-modal-button" type="button">Sumbit</button>
+            <button class="subscribe-modal-button" type="button" data-modal-explore-close>Sumbit</button>
         </form>
     </div>
 </div>
+<script>
+    const button = document.getElementById('subscribe-modal-button');
+    const element = document.getElementById('close-modal');
+  
+    button.addEventListener('click', function() {
+      element.classList.remove('is-hidden');
+      element.classList.add('close-modal');
+    });
+  </script>

@@ -7,7 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('./modern-normalize.css');
 @import url('./reset.css');
-@import url('./vite-promo.css');
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./About.css');
@@ -18,11 +17,11 @@
 @import url('./revives.css');
 @import url('./subscribe.css');
 @import url('./footer.css');
-@import url('./buy-now');
-@import url('./explore');
-@import url('./leave-review');
-@import url('./thank-you');
-@import url('./buy-now');
+@import url('./buy-now.css');
+@import url('./explore.css');
+@import url('./leave-review.css');
+@import url('./thank-you.css');
+@import url('./buy-now.css');
 @import url('./feedback.css');
 @import url('./mobile_menu.css');
 
@@ -97,7 +96,9 @@ body {
 .animation-standart-button {
 }
 
-
+.is-hidden {
+  display: block;
+}
 
 .animation-button-buy {
 	animation: animation-button-buy 0.9s both;
