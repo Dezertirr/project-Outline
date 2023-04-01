@@ -16,8 +16,8 @@
 </head>
 
 <body>
-    <div class="modal-buy-section-container">
-        <button type="button" class="modal-buy-close-btn" data-modal-close>
+    <div class="modal-buy-section-container" sellers-data-modal>
+        <button type="button" class="modal-buy-close-btn" sellers-data-modal-close>
             <svg width="28" height="28" class="modal-close-btn-icon">
                 <use href="../img/symbol-defs.svg#icon-close"></use>
             </svg></button>
@@ -64,10 +64,11 @@
             </div>
             <label class="modal-buy-now-label" for=""><span>Phone number</span></label>
             <div class="modal-buy-now-input-wrapper">
-                <input class="modal-buy-now-input modal-phone-input" type="tel" placeholder="+380 | Phone number">
+                <input class="modal-buy-now-input modal-phone-input" type="tel" placeholder="|     Phone number">
                 <svg class="modal-buy-now-icon-flag" width="32" height="32">
                     <use href="../img/symbol-defs.svg#icon-ukraine"></use>
                 </svg>
+                <span class="code-number">+380</span>
             </div>
             <label class="modal-buy-now-label" for=""><span>Card number</span></label>
             <div class="modal-buy-now-input-wrapper">
