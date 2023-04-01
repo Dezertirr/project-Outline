@@ -34,7 +34,7 @@
 }
 
 .bg-sub-img {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/subscribe/mob_@1x.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/mob_@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -43,29 +43,29 @@
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .bg-sub-img {
-      background-image:linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/subscribe/mob_@2x.jpg); ;
+      background-image:linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/mob_@2x.jpg); ;
     }
   }
 
   @media only screen and (min-width: 376px) {
     .bg-sub-img {
-        background-image:linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/subscribe/tabl_@1x.jpg)
+        background-image:linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/tabl_@1x.jpg)
     }
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         .bg-sub-img {
-            background-image:linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/subscribe/tabl_@2x.jpg)
+            background-image:linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/tabl_@2x.jpg)
   }
 }
   }
 
   @media only screen and (min-width: 768px) {
     .bg-sub-img {
-        background-image:linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/subscribe/desc_@1x.jpg) ;
+        background-image:linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/desc_@1x.jpg) ;
     }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)  {
     .bg-sub-img {
-        background-image:linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./img/subscribe/tabl_@2x.jpg)
+        background-image:linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/tabl_@2x.jpg)
     }
   }
 }
