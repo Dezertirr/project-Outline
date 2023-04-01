@@ -3,6 +3,7 @@
   padding-bottom: 63px;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 @media only screen and (min-width: 768px) {
