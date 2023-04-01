@@ -1,4 +1,4 @@
-// ---------------SUBMIT BUTTON-----------------
+// ---------------BUY NOW BUTTON-----------------
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[sellers-data-modal-open]'),
@@ -13,3 +13,4 @@
     refs.modal.classList.toggle('is-hidden');
   }
 })();
+// ---------------SUBMIT BUTTON-----------------
