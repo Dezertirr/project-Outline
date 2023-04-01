@@ -16,7 +16,7 @@
 }
 
 .header {
-  background-color: #e2e2e2;
+  background-color: #fafafa;
   padding-top: 20px;
   padding-bottom: 14px;
 }
@@ -167,7 +167,7 @@
 .header-burger {
   padding: 0;
   border: none;
-  background-color: #ffffff;
+  background-color: #fafafa;
   /* position: absolute;
   top: 0px;
   right: 0px; */
