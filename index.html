@@ -7,10 +7,10 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/project-Outline/assets/index-b6648f91.js"></script>
-    <link rel="stylesheet" href="/project-Outline/assets/index-34a3c495.css">
+    <link rel="stylesheet" href="/project-Outline/assets/index-635bd54c.css">
   </head>
   <body>
-    <header class="header anchor" id="home">
+    <header class="header" id="home">
   <div class="container mobile-container main-header">
     <nav class="header-nav">
       <a href="./index.html" class="logo"
@@ -74,7 +74,7 @@
 </header>
 
     <main>
-      <section class="hero anchor">
+      <section class="hero">
   <div class="container hero-cont">
     <h1 class="hero-title">
       Treat yourself or a loved one to our finest ingredients for a moment of
@@ -363,7 +363,7 @@
   </div>
 </section>
 
-      <section class="made-section anchor" id="how-made">
+      <section class="made-section" id="how-made">
   <div class="container">
     <h2 class="made-titel">
       how it&#884;s <span class="made-titel-right-part">made?</span>
@@ -435,7 +435,7 @@
   </div>
 </section>
 
-      <section class="products-section anchor" id="our-products">
+      <section class="products-section" id="our-products">
   <div class="container">
     <h2 class="product-tittle">Our <span>pRODUCTS</span></h2>
 
@@ -579,7 +579,7 @@
 </section>
 
       <!-- =========================================SELLERS SECTION========================================= -->
-<section class="container sellers-desktop-container anchor" id="sellers">
+<section class="container sellers-desktop-container" id="sellers">
   <h2 class="sellers-section-title">
     <span style="color: #fd9222">Top</span> Sellers
   </h2>
@@ -693,7 +693,7 @@
 <link rel="stylesheet" href="../css/revives.css" />
 
 <!-- Swiper -->
-<section class="reviews-section anchor" id="reviews">
+<section class="reviews-section" id="reviews">
   <div class="container">
     <div class="rev swiper myswipernav">
       <div class="swiper-wrapper">
@@ -1332,33 +1332,6 @@
   crossorigin="anonymous"
 ></script> -->
 <script defer src="../js/mobile_menu.js"></script>
-
-<!-- скрипт на активное состояние меню при скроле секций -->
-<script>
-  window.addEventListener('scroll', () => {
-    let scrollDistance = window.scrollY;
-
-    if (window.innerWidth > 320) {
-      document.querySelectorAll('.anchor').forEach((el, i) => {
-        if (
-          el.offsetTop - document.querySelector('.nav').clientHeight <=
-          scrollDistance
-        ) {
-          document.querySelectorAll('.nav a').forEach(el => {
-            if (el.classList.contains('active')) {
-              el.classList.remove('active');
-            }
-          });
-
-          document
-            .querySelectorAll('.nav li')
-            [i].querySelector('a')
-            .classList.add('active');
-        }
-      });
-    }
-  });
-</script>
 
     <section>
     
