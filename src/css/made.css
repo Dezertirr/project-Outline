@@ -179,7 +179,7 @@
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid #ffff;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -189,7 +189,7 @@
 
 .play-icon {
   fill: #f5f4f4;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .play-btn:hover,
@@ -213,9 +213,12 @@
   z-index: 3;
   border-radius: 15px;
 
-  transition: z-index 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: top left;
+  scale: 1;
+  transition: scale 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .video-is-hidden {
   z-index: -1;
+  scale: 0;
 }

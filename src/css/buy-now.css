@@ -6,6 +6,7 @@
 .sellers-backdrop {
   position: fixed;
   z-index: 100;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   width: 100%;
@@ -22,12 +23,16 @@
 .modal-buy-section-container {
   position: relative;
   width: 609px;
-  height: 1058px;
+  /* height: 1058px; */
   padding: 48px;
-  margin: 0 auto;
+  margin: 20px auto;
 
   background: #fafafa;
   border-radius: 15px;
+}
+
+.color-top {
+  color: #fd9222;
 }
 .modal-buy-close-btn {
   position: absolute;
@@ -91,6 +96,16 @@
   color: #000000;
 }
 
+.modal-buy-now-input:focus {
+  outline: none;
+  border-color: #fd9222;
+}
+
+.modal-buy-now-textarea:focus {
+  outline: none;
+  border-color: #fd9222;
+}
+
 .modal-phone-input::placeholder {
   color: rgba(64, 64, 64, 0.3);
 }
@@ -146,6 +161,9 @@
   border-color: transparent;
   transition: color 500ms linear, background-color 500ms linear;
 }
+.modal-buy-input-description {
+  margin-bottom: 8px;
+}
 
 .modal-buy-now-btn:hover,
 .modal-buy-now-btn:focus {
@@ -165,6 +183,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* --------------------- M O B I L E --------------------- */
 @media screen and (max-width: 767px) {
   .sellers-swiper-desctop {
     display: none;
@@ -282,6 +301,7 @@
   .modal-buy-now-textarea {
     width: 100%;
     height: 91px;
+    margin-top: 8px;
     margin-bottom: 18px;
     resize: none;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
@@ -289,6 +309,7 @@
     padding: 14px 18px;
     background-color: transparent;
   }
+
   .modal-buy-now-textarea::placeholder {
     font-weight: 400;
     font-size: 14px;
@@ -302,7 +323,7 @@
     padding: 12px 28px;
   }
 }
-
+/* ---------------------T A B L E T // D E S K T O P--------------------- */
 @media screen and (min-width: 768px) {
   .sellers-swiper-mobile {
     display: none;
@@ -354,6 +375,7 @@
   .modal-buy-now-textarea {
     width: 100%;
     height: 137px;
+    margin-top: 8px;
     margin-bottom: 18px;
     resize: none;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
