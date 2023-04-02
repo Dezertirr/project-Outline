@@ -131,7 +131,7 @@ body {
 
 
 .open-modal {
-	animation: open-modal 1s ease-in both;
+	animation: open-modal 1s ease-in 200ms both;
 }
 @keyframes open-modal {
   0% {

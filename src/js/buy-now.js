@@ -10,6 +10,6 @@
   refs.closeModalBtnSellers.addEventListener('click', toggleModalSellers);
 
   function toggleModalSellers() {
-    refs.modalSellers.classList.toggle('is-hidden-sellers');
+    refs.modalSellers.classList.toggle('is-hidden-sellers open-modal');
   }
 })();
