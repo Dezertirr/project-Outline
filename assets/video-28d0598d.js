@@ -1,0 +1,1 @@
+(()=>{const e={openVideoBtn:document.querySelector("[data-video-open]"),video:document.querySelector("[data-video]")};e.openVideoBtn.addEventListener("click",o);function o(){e.video.classList.toggle("video-is-hidden")}})();

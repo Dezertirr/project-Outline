@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/project-Outline/assets/index-a5542aa1.js"></script>
-    <link rel="stylesheet" href="/project-Outline/assets/index-be2141ab.css">
+    <script type="module" crossorigin src="/project-Outline/assets/index-3bcccd4c.js"></script>
+    <link rel="stylesheet" href="/project-Outline/assets/index-8865906c.css">
   </head>
   <body>
     <header class="header" id="home">
   <div class="container mobile-container main-header">
     <nav class="header-nav">
       <a href="./index.html" class="logo"
-        >SIMPLY CHOCOLATE<svg class="logo-icon" width="24" height="24">
+        ><span class="logo-style">SIMPLY</span> CHOCOLATE<svg
+          class="logo-icon"
+          width="24"
+          height="24"
+        >
           <use href="/project-Outline/assets/symbol-defs-67bd1da1.svg#icon-chocolate-header"></use></svg
       ></a>
 
@@ -85,14 +89,14 @@
         <button class="buy-btn" type="button">Buy now</button>
         <button class="made-btn" type="button">How it&#96;s made</button>
       </div>
-      <a href="#scroll">
-        <button class="scroll-btn">
-          <p class="scroll-btn-txt">scroll down</p>
+      <button class="scroll-btn">
+        <a class="scroll-link" href="#scroll">
+          <strong class="scroll-btn-txt">scroll down</strong>
           <svg class="scroll-icon">
             <use href="/project-Outline/assets/symbol-defs-67bd1da1.svg#scroll"></use>
           </svg>
-        </button>
-      </a>
+        </a>
+      </button>
     </div>
   </div>
 </section>
@@ -586,65 +590,64 @@
   </script>
 </section>
 
-      
-<!-- =========================================SELLERS SECTION========================================= -->
-<section class="container  sellers-desktop-container" id="sellers">
-    <h2 class="sellers-section-title"><span class="color-top">Top</span> Sellers</h2>
-    <ul class="sellers-list">
-        <li class="sellers-item">
-            <picture class="sellers-picture">
-                <source srcset="/project-Outline/assets/desc-nuts_@1x-929f9c86.jpg 1x, /project-Outline/assets/desc-nuts_@2x-72b72adf.jpg 2x"
-                    media="(min-width: 1200px)" />
-                <source srcset="/project-Outline/assets/tabl-nuts_@1x-e4582493.jpg 1x, /project-Outline/assets/tabl-nuts_@2x-2f2574d2.jpg 2x"
-                    media="(max-width: 1199px)" />
-                <source srcset="/project-Outline/assets/mob-nuts_@1x-5904e7ba.jpg 1x, /project-Outline/assets/mob-nuts_@2x-03b7138e.jpg 2x"
-                    media="(max-width: 767px)" />
-                <img class="sellers-img" src="/project-Outline/assets/desc-nuts_@1x-929f9c86.jpg" alt="nuts chocolate" width="368"
-                    height="464">
-            </picture>
-            <p class="sellers-text sellers-mobile-tablet-text">Crazy enough chocolate originates from a bean just
-                like the coffee bean called
-                Cacao. Cacao has been around for thousands of years and was first discovered by the Native American
-                tribe called the Mayans.</p>
-        </li>
-        <li class="sellers-item">
-            <picture class="sellers-picture">
-                <source srcset="/project-Outline/assets/desc-milk_@1x-3832478a.jpg 1x, /project-Outline/assets/desc-milk_@2x-47fed82e.jpg 2x"
-                    media="(min-width: 1200px)" />
-                <source srcset="/project-Outline/assets/tabl-milk_@1x-c3cc5d0d.jpg 1x, /project-Outline/assets/tabl-milk_@2x-82e429be.jpg 2x"
-                    media="(max-width: 1199px)" />
-                <source srcset="/project-Outline/assets/mob-milk_@1x-f0b33029.jpg 1x, /project-Outline/assets/mob-milk_@2x-b8186933.jpg 2x"
-                    media="(max-width: 767px)" />
-                <img class="sellers-img" src="/project-Outline/assets/desc-milk_@1x-3832478a.jpg" alt="milk chocolate" width="368"
-                    height="464">
+      <!-- =========================================SELLERS SECTION========================================= -->
 
-            </picture>
-            <button type="button" class="sellers-buy-now-btn tab-mob-btn" sellers-data-modal-open>Buy now</button>
-        </li>
-        <li class="sellers-item">
-            <picture class="sellers-picture">
-                <source srcset="/project-Outline/assets/desc-choc_@1x-3c1c7cc9.jpg 1x, /project-Outline/assets/desc-choc_@2x-3af74369.jpg 2x" />
+<section class=" sellers-desktop-container" id="sellers">
+    <div class="container">
+        <h2 class="sellers-section-title"><span class="color-top">Top</span> Sellers</h2>
+        <ul class="sellers-list">
+            <li class="sellers-item">
+                <picture class="sellers-picture">
+                    <source srcset="/project-Outline/assets/desc-nuts_@1x-929f9c86.jpg 1x, /project-Outline/assets/desc-nuts_@2x-72b72adf.jpg 2x"
+                        media="(min-width: 1200px)" />
+                    <source srcset="/project-Outline/assets/tabl-nuts_@1x-e4582493.jpg 1x, /project-Outline/assets/tabl-nuts_@2x-2f2574d2.jpg 2x"
+                        media="(max-width: 1199px)" />
+                    <source srcset="/project-Outline/assets/mob-nuts_@1x-5904e7ba.jpg 1x, /project-Outline/assets/mob-nuts_@2x-03b7138e.jpg 2x"
+                        media="(max-width: 767px)" />
+                    <img class="sellers-img" src="/project-Outline/assets/desc-nuts_@1x-929f9c86.jpg" alt="nuts chocolate" width="368"
+                        height="464">
+                </picture>
+                <p class="sellers-text sellers-mobile-text">Crazy enough chocolate originates from a bean just
+                    like the coffee bean called
+                    Cacao. Cacao has been around for thousands of years and was first discovered by the Native American
+                    tribe called the Mayans.</p>
+            </li>
+            <li class="sellers-item">
+                <picture class="sellers-picture">
+                    <source srcset="/project-Outline/assets/desc-milk_@1x-3832478a.jpg 1x, /project-Outline/assets/desc-milk_@2x-47fed82e.jpg 2x"
+                        media="(min-width: 1200px)" />
+                    <source srcset="/project-Outline/assets/tabl-milk_@1x-c3cc5d0d.jpg 1x, /project-Outline/assets/tabl-milk_@2x-82e429be.jpg 2x"
+                        media="(max-width: 1199px)" />
+                    <source srcset="/project-Outline/assets/mob-milk_@1x-f0b33029.jpg 1x, /project-Outline/assets/mob-milk_@2x-b8186933.jpg 2x"
+                        media="(max-width: 767px)" />
+                    <img class="sellers-img" src="/project-Outline/assets/desc-milk_@1x-3832478a.jpg" alt="milk chocolate" width="368"
+                        height="464">
+                </picture>
+            </li>
+            <li class="sellers-item">
+                <picture class="sellers-picture">
+                    <source
+                        srcset="/project-Outline/assets/desc-choc_@1x-3c1c7cc9.jpg 1x, /project-Outline/assets/desc-choc_@2x-3af74369.jpg 2x" />
+                    <img class="sellers-img" src="/project-Outline/assets/desc-choc_@1x-3c1c7cc9.jpg" alt="dark chocolate" width="368"
+                        height="464">
+                </picture>
+            </li>
+        </ul>
+        <div class="sellers-text-wrapper container">
+            <p class="sellers-text sellers-desktop-text-hide">Crazy enough chocolate originates from a bean just like
+                the
+                coffee bean called
+                Cacao.
+                Cacao has been around
+                for
+                thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+            <button type="button" class="sellers-buy-now-btn desk-btn" sellers-data-modal-open>Buy now</button>
+        </div>
 
-                <img class="sellers-img" src="/project-Outline/assets/desc-choc_@1x-3c1c7cc9.jpg" alt="dark chocolate" width="368"
-                    height="464">
-            </picture>
-        </li>
-    </ul>
-    <div class="sellers-text-wrapper container">
-        <p class="sellers-text sellers-desktop-text-hide">Crazy enough chocolate originates from a bean just like
-            the
-            coffee bean called
-            Cacao.
-            Cacao has been around
-            for
-            thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
-        <button type="button" class="sellers-buy-now-btn desk-btn" sellers-data-modal-open>Buy now</button>
+
     </div>
 
 </section>
-
-
-
       <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -1006,11 +1009,11 @@
                     <use href="/project-Outline/assets/symbol-defs-67bd1da1.svg#mastercard"></use>
                 </svg>
             </div>
-            <label class="modal-buy-now-label " for="feedback"><span
-                    class="modal-form-input-description">Comment</span></label>
+            <label class="modal-buy-now-label modal-buy-input-description" for="feedback">Comment</label>
             <textarea id="feedback" class="modal-buy-now-textarea " name="message-user"
                 placeholder="Enter text"></textarea>
             <button class="modal-buy-now-btn" type="button" data-thanks-open>Submit</button>
+        </form>
     </div>
 
 </div>
@@ -1026,8 +1029,6 @@
         },
     });
 </script>
-
-</form>
     <div class="subscribe-backdrop is-hidden" data-modal-explore>
     <div class="subscribe-modal">
         <form class="subscribe-form">
@@ -1060,7 +1061,7 @@
           placeholder="Name"
           name="user_name"
           minlength="2"
-          requiered
+          required
         />
       </label>
       <label class="modal-review-field">
@@ -1070,7 +1071,7 @@
           placeholder="Enter your email"
           name="user_email"
           title="example@gmail.com"
-          requiered
+          required
         />
       </label>
       <label class="modal-review-field">
@@ -1082,19 +1083,18 @@
             name="user_number"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
             title="xxx-xxx-xx-xx"
-            requiered
+            required
           />
           <svg class="review-input-icon" width="24px" height="24px">
             <use href="/project-Outline/assets/symbol-defs-67bd1da1.svg#icon-ukraine"></use>
           </svg>
-          <p class="input-numb">+380</p>
+          <span class="input-numb">+380</span>
         </span>
       </label>
       <textarea
         class="user-form-review"
         name="user-review"
         placeholder="Enter text"
-        name="user_text"
       ></textarea>
       <button class="send-btn" type="button" data-feedback-thanks-open>
         Send
@@ -1103,35 +1103,7 @@
   </div>
 </div>
 
-    <!-- ============== HTML Кнопка з атрибутом для відкриття модалки -->
-
-<!-- <button type="button" class="open-thanks-modal" data-thanks-open>
-      Submit
-    </button> -->
-
-<!-- ================CSS для кнопки відкриття модалки без позиціювання -->
-<!-- .open-thanks-modal {
-  width: 133px;
-  height: 45px;
-  background-color: #fd9222;
-  border-radius: 100px;
-  border-color: transparent;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: -0.02em;
-  cursor: pointer;
-}
-
-.open-thanks-modal:hover,
-.open-thanks-modal:focus {
-  background-color: #fcf1e0;
-  color: #fd9222;
-  outline-color: transparent;
-} -->
-
-<div class="thanks-backdrop thanks-is-hidden" data-thanks>
+    <div class="thanks-backdrop thanks-is-hidden" data-thanks>
   <div class="thanks-modal">
     <button
       class="close-thanks-modal-btn"
@@ -1276,11 +1248,11 @@
                     <use href="/project-Outline/assets/symbol-defs-67bd1da1.svg#mastercard"></use>
                 </svg>
             </div>
-            <label class="modal-buy-now-label " for="feedback"><span
-                    class="modal-form-input-description">Comment</span></label>
+            <label class="modal-buy-now-label modal-buy-input-description" for="feedback">Comment</label>
             <textarea id="feedback" class="modal-buy-now-textarea " name="message-user"
                 placeholder="Enter text"></textarea>
             <button class="modal-buy-now-btn" type="button" data-thanks-open>Submit</button>
+        </form>
     </div>
 
 </div>
@@ -1296,8 +1268,6 @@
         },
     });
 </script>
-
-</form>
     <div
   class="feedback-thanks-backdrop feedback-thanks-is-hidden"
   data-feedback-thanks
@@ -1337,72 +1307,14 @@
   </div>
 </div>
 
-    <!--_________________________________________________mobile-menu -->
-
-<div class="mobile-menu js-menu-container">
-  <button class="mobile-menu-close js-close-menu" type="button">
-    <svg class="close-icon" width="14" height="14">
-      <use href="/project-Outline/assets/symbol-defs-67bd1da1.svg#icon-x-close"></use>
-    </svg>
-  </button>
-  <nav class="nav">
-    <ul class="menu-nav-list">
-      <li class="menu-nav-item">
-        <a class="menu-nav-link active" href="#home">Home</a>
-      </li>
-      <li class="menu-nav-item">
-        <a class="menu-nav-link" href="#how-made">How it&apos;s made?</a>
-      </li>
-      <li class="menu-nav-item">
-        <a class="menu-nav-link" href="#our-products">Our products</a>
-      </li>
-      <li class="menu-nav-item">
-        <a class="menu-nav-link" href="#sellers">Top sellers</a>
-      </li>
-      <li class="menu-nav-item">
-        <a class="menu-nav-link" href="#reviews">Chocolate is loved</a>
-      </li>
-    </ul>
-  </nav>
-  <ul class="menu-socials-list">
-    <li class="menu-socials-item">
-      <a
-        class="menu-socials-link"
-        href="https://www.instagram.com/"
-        target="_blank"
-        rel="noopener noreferer"
-        aria-label="link to instagram"
-      >
-        <svg class="menu-socials-icon" width="24" height="24">
-          <use href="/project-Outline/assets/symbol-defs-67bd1da1.svg#icon-instagram"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="menu-socials-item">
-      <a
-        class="menu-socials-link"
-        href="https://twitter.com/i/flow/login"
-        target="_blank"
-        rel="noopener noreferer"
-        aria-label="link to twit"
-      >
-        <svg class="menu-socials-icon" width="24" height="24">
-          <use href="/project-Outline/assets/symbol-defs-67bd1da1.svg#icon-twitter"></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
-</div>
-<!-- не удалять  -->
-<!-- <script
+    ENOENT: no such file or directory, open '/home/runner/work/project-Outline/project-Outline/src/partials/mobile_menu.html'
+    <section>
+    
+    <script
   defer
   src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
   integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
   crossorigin="anonymous"
-></script> -->
-<script defer src="../js/mobile_menu.js"></script>
-
-    <section>
-    
+></script>
   </body>
 </html>
