@@ -1,12 +1,11 @@
-<!-- modal form -->
-<div class="backdrop is-hidden" review-modal>
+<div class="backdrop is-hidden" data-modal="reviews">
   <div class="modal">
-    <button class="review-close-btn" type="button" review-modal-close>
+    <button class="review-close-btn" type="button" data-modal-close="reviews">
       <svg class="review-close-icon" width="24px" height="24px">
         <use href="./img/symbol-defs.svg#icon-x-close"></use>
       </svg>
     </button>
-    <form class="review-form">
+    <form class="review-form" name="reviews_form">
       <strong class="modal-review-title"
         >leave a review about
         <span class="strong-orang">our chocolate</span></strong
@@ -53,9 +52,7 @@
         name="user-review"
         placeholder="Enter text"
       ></textarea>
-      <button class="send-btn" type="button" data-feedback-thanks-open>
-        Send
-      </button>
+      <button class="send-btn" type="submit">Send</button>
     </form>
   </div>
 </div>

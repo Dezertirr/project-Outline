@@ -212,6 +212,7 @@
   transform: translate(-50%, -50%);
   z-index: 3;
   border-radius: 15px;
+  border: none;
 
   transform-origin: top left;
   scale: 1;
