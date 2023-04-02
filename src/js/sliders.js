@@ -30,3 +30,26 @@ const reviewsSlider = new Swiper('.myswipernav', {
     },
   },
 });
+
+var productSlider = new Swiper('.myswwiper', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 18,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 18,
+    },
+  },
+});

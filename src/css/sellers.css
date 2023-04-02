@@ -7,6 +7,8 @@
   color: var(--orange-main);
 }
 .sellers-section-title {
+  margin-bottom: 32px;
+
   font-weight: 600;
   font-size: 24px;
   line-height: 1.16;
@@ -15,51 +17,51 @@
   text-transform: uppercase;
 }
 
+.sellers-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 32px 16px;
+  margin-bottom: 20px;
+}
+
+.sellers-item:last-child {
+  display: none;
+}
+
+.sellers-picture {
+  display: block;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.sellers-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
 .sellers-text {
-  display: inline-block;
   max-width: 407px;
 
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111111;
 }
 
-.sellers-item {
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.sellers-list {
-  display: flex;
-  flex-wrap: wrap;
-
-  margin-bottom: 32px;
-}
-
-.sellers-text-wrapper {
-  display: flex;
-  margin-top: 0;
-
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start;
-}
-
 .sellers-buy-now-btn {
-  justify-content: center;
-  padding: 14px 40px;
-  background: var(--orange-main);
-
   min-width: 109px;
   width: 162px;
-  border-radius: 100px;
-  border-color: transparent;
+  padding: 14px 40px;
+
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
+
+  background: var(--orange-main);
+  border-radius: 100px;
+  border-color: transparent;
   transition: color 500ms linear, background-color 500ms linear;
 }
 
@@ -68,34 +70,13 @@
   background-color: #fcf1e0;
   color: #fd9222;
 }
-
-.sellers-item .sellers-picture .sellers-img {
-  border-radius: 15px;
-}
 /* ---------------------M O B I L E --------------------- */
 @media screen and (max-width: 767px) {
-  .sellers-desktop-text-hide {
-    display: none;
-  }
-
-  .sellers-item:last-child {
-    display: none;
-  }
-
-  .sellers-mobile-text {
-    margin-top: 20px;
-  }
-
   .sellers-item {
     max-width: 335px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .sellers-img {
-    margin-top: 32px;
-    /* margin-bottom: 20px; */
   }
 
   .sellers-text-wrapper {
@@ -104,68 +85,57 @@
     align-items: center;
     text-align: center;
   }
+
+  .sellers-text {
+    margin-top: 20px;
+  }
+
+  .sellers-text-tablet {
+    display: none;
+  }
 }
 /* ---------------------T A B L E T --------------------- */
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .sellers-section-title {
     margin-bottom: 32px;
   }
 
-  .sellers-mobile-text {
+  .sellers-text-mobile {
     display: none;
   }
-  .sellers-item:last-child {
-    display: none;
+  .sellers-list {
+    margin-bottom: 32px;
   }
 
   .sellers-item {
-    display: flex;
-    flex-direction: column;
     max-width: 344px;
   }
 
-  .sellers-item:last-child {
-    align-items: flex-end;
-  }
-
   .sellers-text {
-    width: 306px;
-    font-size: 14px;
-    line-height: 1.28;
+    max-width: 306px;
   }
 
   .sellers-buy-now-btn {
     margin-left: auto;
   }
-
-  .sellers-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
 }
 /* ---------------------D E S K T O P --------------------- */
 @media screen and (min-width: 1200px) {
-  .sellers-mobile-text {
-    display: none;
-  }
-
   .sellers-section-title {
     margin-bottom: 50px;
   }
 
-  .sellers-text {
-    max-width: 407px;
+  .sellers-item {
+    max-width: 368px;
   }
 
-  .sellers-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
+  .sellers-item:last-child {
+    display: block;
   }
-  .tab-mob-btn {
-    display: none;
+
+  .sellers-text {
+    max-width: 407px;
   }
 }
 /* <!-- =========================================/SELLERS SECTION========================================= --> */

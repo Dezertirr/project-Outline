@@ -63,7 +63,7 @@
         </li>
       </ul>
     </div>
-    <!-- ---------------------------------SVIPER----------------------------------------------------------- -->
+    <!-- SVIPER -->
     <div class="sellers-swiper-mobile sellers-swiperbuy">
       <ul class="swiper-wrapper buy">
         <li class="modal-buy-section-item swiper-slide">
@@ -120,30 +120,46 @@
       </ul>
       <div class="sellers-swiper-pagination"></div>
     </div>
-    <!-- ---------------------------------/SVIPER----------------------------------------------------------- -->
+    <!-- /SVIPER -->
 
     <form class="modal-buy-section-form" name="sellers_form">
-      <label class="modal-buy-now-label" for="">
-        <span>Personal information</span>
+      <label class="modal-buy-now-label" for="order_name">
+        Personal information
       </label>
       <div class="modal-buy-now-name">
-        <input class="modal-buy-now-input" type="text" placeholder="Name" />
-        <input class="modal-buy-now-input" type="text" placeholder="Surname" />
+        <input
+          class="modal-buy-now-input"
+          id="order_name"
+          name="order_name"
+          type="text"
+          placeholder="Name"
+        />
+        <input
+          class="modal-buy-now-input"
+          id="order_surname"
+          name="order_surname"
+          type="text"
+          placeholder="Surname"
+        />
       </div>
-      <label class="modal-buy-now-label" for=""><span>Email</span></label>
+      <label class="modal-buy-now-label" for="order_email">Email</label>
       <div class="">
         <input
           class="modal-buy-now-input"
+          id="order_email"
+          name="order_email"
           type="email"
           placeholder="Enter your email"
         />
       </div>
-      <label class="modal-buy-now-label" for="">
-        <span>Phone number</span>
+      <label class="modal-buy-now-label" for="order_phone">
+        Phone number
       </label>
       <div class="modal-buy-now-input-wrapper">
         <input
           class="modal-buy-now-input modal-phone-input"
+          id="order_phone"
+          name="order_phone"
           type="tel"
           placeholder="Phone number"
         />
@@ -152,10 +168,12 @@
         </svg>
         <span class="code-number">+380</span>
       </div>
-      <label class="modal-buy-now-label" for=""><span>Card number</span></label>
+      <label class="modal-buy-now-label" for="order_card">Card number</label>
       <div class="modal-buy-now-input-wrapper">
         <input
           class="modal-buy-now-input"
+          id="order_card"
+          name="order_card"
           type="number"
           placeholder="Enter  card"
         />
@@ -163,13 +181,11 @@
           <use href="./img/symbol-defs.svg#mastercard"></use>
         </svg>
       </div>
-      <label class="modal-buy-now-label" for="feedback">
-        <span class="modal-form-input-description">Comment</span>
-      </label>
+      <label class="modal-buy-now-label" for="order_feedback">Comment</label>
       <textarea
-        id="feedback"
         class="modal-buy-now-textarea"
-        name="message-user"
+        id="order_feedback"
+        name="order_feedback"
         placeholder="Enter text"
       ></textarea>
       <button class="modal-buy-now-btn" type="submit">Submit</button>

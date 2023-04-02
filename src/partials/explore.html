@@ -10,25 +10,41 @@
       </svg>
     </button>
 
-    <form class="subscribe-form" name="explore_form">
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/modal_new_chocolate/tabl-desk_@1x.jpg 1x,
+          ./img/modal_new_chocolate/tabl-desk_@2x.jpg 2x
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./img/modal_new_chocolate/mob_@1x.jpg 1x,
+          ./img/modal_new_chocolate/mob_@2x.jpg 2x
+        "
+      />
       <img
         class="subscribe-modal-img"
-        srcset="
-          /img/modal_new_chocolate/mob_@1x.jpg 1x,
-          /img/modal_new_chocolate/mob_@2x.jpg 2x
-        "
+        src="./img/modal_new_chocolate/mob_@1x.jpg"
         alt=""
       />
-      <h2 class="subscribe-modal-title">
+    </picture>
+
+    <form class="subscribe-form" name="explore_form">
+      <p class="subscribe-modal-title">
         EXPLORE OUR
         <span class="subscribe-orange"><br />NEW CHOCOLATE</span> FIRST!
-      </h2>
-      <input
-        class="subcribe-input"
-        type="mail"
-        placeholder="Enter your email"
-      />
-      <button class="subscribe-modal-button" type="submit">Sumbit</button>
+      </p>
+      <div class="subscribe-form-field">
+        <input
+          class="subcribe-input"
+          type="email"
+          placeholder="Enter your email"
+        />
+        <button class="subscribe-modal-button" type="submit">Sumbit</button>
+      </div>
     </form>
   </div>
 </div>
