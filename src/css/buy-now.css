@@ -30,6 +30,10 @@
   background: #fafafa;
   border-radius: 15px;
 }
+
+.color-top {
+  color: #fd9222;
+}
 .modal-buy-close-btn {
   position: absolute;
 
