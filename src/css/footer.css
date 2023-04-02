@@ -79,6 +79,8 @@
   letter-spacing: -0.02em;
 
   color: #ffffff;
+
+  transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:not(:last-child) {
@@ -123,6 +125,7 @@
 .footer-socials-icon {
   fill: #1e1823;
   stroke: #fafafa;
+  transition: stroke 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socials-link:hover .footer-socials-icon,
@@ -154,6 +157,7 @@
   font-weight: 500;
   line-height: calc(16 / 14);
   color: #ffffff;
+  transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-nav-item:not(:last-child) {
