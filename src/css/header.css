@@ -21,21 +21,26 @@
   padding-bottom: 14px;
 }
 
-@media only screen and (min-width: 1200px) {
-  .header {
-    padding-bottom: 32px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   .header {
     padding-top: 24px;
     padding-bottom: 24px;
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .header {
+    padding-bottom: 32px;
+  }
+}
+
+.logo-style {
+  font-style: italic;
+}
+
 .logo {
   display: flex;
+  align-items: flex-end;
   gap: 4px;
   font-weight: 700;
   font-size: 14px;
@@ -47,8 +52,8 @@
 @media only screen and (min-width: 1200px) {
   .logo {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 36px;
+    /* padding-top: 24px;
+    padding-bottom: 36px; */
     margin-right: 188px;
     font-size: 18px;
     line-height: 1.1;
