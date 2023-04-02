@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/project-Outline/assets/index-3bcccd4c.js"></script>
-    <link rel="stylesheet" href="/project-Outline/assets/index-f7a47215.css">
+    <script type="module" crossorigin src="/project-Outline/assets/index-798e1a09.js"></script>
+    <link rel="stylesheet" href="/project-Outline/assets/index-04baa0e3.css">
   </head>
   <body>
     <header class="header" id="home">
@@ -1025,16 +1025,50 @@
         },
     });
 </script>
-    <div class="subscribe-backdrop is-hidden" data-modal-explore>
-    <div class="subscribe-modal">
-        <form class="subscribe-form">
-            <svg class="subscribe-modal-svg" width="24" height="24" data-modal-explore-close><use href="/project-Outline/assets/symbol-defs-67bd1da1.svg#icon-close"></use></svg>
-            <img class="subscribe-modal-img" srcset="/img/modal_new_chocolate/mob_@1x.jpg 1x, /img/modal_new_chocolate/mob_@2x" alt="">
-            <h2 class="subscribe-modal-title">EXPLORE OUR <span class="subscribe-orange"><br>NEW CHOCOLATE</span> FIRST!</h2>
-            <input class="subcribe-input" type="mail" placeholder="Enter your email">
-            <button class="subscribe-modal-button" type="button" data-modal-explore-close>Sumbit</button>
-        </form>
-    </div>
+    <div class="subscribe-backdrop subscribe-is-hidden" data-modal-explore>
+  <div class="subscribe-modal">
+    <button class="explore-btn-close" type="button" data-modal-explore-close>
+      <svg class="subscribe-modal-svg" width="24" height="24">
+        <use href="/project-Outline/assets/symbol-defs-67bd1da1.svg#icon-close"></use>
+      </svg>
+    </button>
+    <picture>
+      <source
+        srcset="/project-Outline/assets/tabl-desc_@1x-d6d31ff2.jpg 1x, /project-Outline/assets/tabl-desc_@2x-b724a962.jpg 2x"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="/project-Outline/assets/mob_@1x-2772a7dd.jpg 1x, /project-Outline/assets/mob_@2x-d3d4dea8.jpg 2x"
+        media="(max-width:767px)"
+      />
+
+      <img
+        class="subscribe-modal-img"
+        src="/project-Outline/assets/mob_@1x-2772a7dd.jpg"
+        alt="chocolate"
+      />
+    </picture>
+
+    <h2 class="subscribe-modal-title">
+      explore our
+      <span class="subscribe-orange"><br />new chocolate</span> first!
+    </h2>
+    <form class="explore-form" action="input-action">
+      <input
+        class="subcribe-input"
+        type="mail"
+        placeholder="Enter your email"
+      />
+
+      <button
+        class="subscribe-modal-button"
+        type="button"
+        data-modal-explore-close
+      >
+        Sumbit
+      </button>
+    </form>
+  </div>
 </div>
 
     <!-- modal form -->
