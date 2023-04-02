@@ -9,7 +9,7 @@
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
   transform: translate(1);
-  transition: opacity 500ms linear, visibility 500ms linear;
+  transition: opacity 400ms linear, visibility 400ms linear;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -19,17 +19,15 @@
 
 .modal {
   position: absolute;
+  transform: translate(-50%, -50%);
   left: 50%;
-  top: 10%;
-  transform: translateX(-50%);
-
+  top: 50%;
   max-width: 311px;
   width: 100%;
   padding: 32px 24px;
   background: #fafafa;
   border-radius: 15px;
-
-  transition-duration: 500ms;
+  transition-duration: 400ms;
 }
 @media only screen and (min-width: 768px) {
   .modal {
@@ -54,7 +52,7 @@
   padding: 0;
   stroke: #000000;
   background: transparent;
-  transition: stroke 500ms linear;
+  transition: stroke 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .review-close-btn:hover,
 .review-close-btn:focus {
@@ -121,7 +119,7 @@
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
   padding-left: 18px;
-  transition: border-color 500ms linear;
+  transition: border-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (min-width: 768px) {
   .modal-review-input {
@@ -208,7 +206,7 @@
   padding-left: 18px;
   padding-top: 14px;
   outline: 4px solid transparent;
-  transition: border-color 500ms linear;
+  transition: border-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (min-width: 768px) {
   .user-form-review {
@@ -249,7 +247,8 @@
   border-radius: 100px;
   margin-top: 18px;
   outline: transparent;
-  transition: background-color 500ms linear, color 500ms linear;
+  transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (min-width: 768px) {
   .send-btn {

@@ -82,8 +82,8 @@
     display: none;
   }
 
-  .desk-btn {
-    display: none;
+  .sellers-mobile-text {
+    margin-top: 20px;
   }
 
   .sellers-item {
@@ -95,7 +95,7 @@
 
   .sellers-img {
     margin-top: 32px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 
   .sellers-text-wrapper {
@@ -112,14 +112,10 @@
     margin-bottom: 32px;
   }
 
-  .sellers-desktop-text-hide {
+  .sellers-mobile-text {
     display: none;
   }
   .sellers-item:last-child {
-    display: none;
-  }
-
-  .desk-btn {
     display: none;
   }
 
@@ -139,9 +135,6 @@
     line-height: 1.28;
   }
 
-  .sellers-img {
-    margin-bottom: 32px;
-  }
   .sellers-buy-now-btn {
     margin-left: auto;
   }
@@ -154,7 +147,7 @@
 }
 /* ---------------------D E S K T O P --------------------- */
 @media screen and (min-width: 1200px) {
-  .sellers-mobile-tablet-text {
+  .sellers-mobile-text {
     display: none;
   }
 

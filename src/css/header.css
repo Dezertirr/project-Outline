@@ -21,21 +21,26 @@
   padding-bottom: 14px;
 }
 
-@media only screen and (min-width: 1200px) {
-  .header {
-    padding-bottom: 32px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   .header {
     padding-top: 24px;
     padding-bottom: 24px;
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .header {
+    padding-bottom: 32px;
+  }
+}
+
+.logo-style {
+  font-style: italic;
+}
+
 .logo {
   display: flex;
+  align-items: flex-end;
   gap: 4px;
   font-weight: 700;
   font-size: 14px;
@@ -47,8 +52,8 @@
 @media only screen and (min-width: 1200px) {
   .logo {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 36px;
+    /* padding-top: 24px;
+    padding-bottom: 36px; */
     margin-right: 188px;
     font-size: 18px;
     line-height: 1.1;
@@ -93,8 +98,8 @@
   font-weight: 500;
   line-height: calc(16 / 14);
   position: relative;
-
   color: #111111;
+  transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -142,6 +147,8 @@
 .header-socials-icon {
   fill: #fafafa;
   stroke: #111111;
+
+  transition: stroke 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-list-link:hover .header-socials-icon,
@@ -167,14 +174,6 @@
   padding: 0;
   border: none;
   background-color: #fafafa;
-  /* position: absolute;
-  top: 0px;
-  right: 0px; */
-}
-
-@media only screen and (min-width: 768px) {
-  .header-burger {
-  }
 }
 
 @media screen and (min-width: 1200px) {
