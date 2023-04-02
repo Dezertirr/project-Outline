@@ -1,1 +1,0 @@
-(()=>{const t={openthanksBtn:document.querySelector("[data-thanks-open]"),closethanksBtn:document.querySelector("[data-thanks-close]"),thanks:document.querySelector("[data-thanks]")};t.openthanksBtn.addEventListener("click",n),t.closethanksBtn.addEventListener("click",n);function n(){t.thanks.classList.toggle("thanks-is-hidden")}})();
