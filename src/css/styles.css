@@ -23,7 +23,7 @@
 @import url('./thank-you.css');
 @import url('./buy-now.css');
 @import url('./feedback.css');
-@import url('./mobile_menu.css');
+@import url('./mobile-menu.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -102,7 +102,7 @@ body {
 }
 
 .animation-button-buy {
-	animation: animation-button-buy 0.9s both;
+  animation: animation-button-buy 0.9s both;
 }
 /* transition-property: background-color, color; это вставить в кнопку */
 @keyframes animation-button-buy {
@@ -129,9 +129,8 @@ body {
   }
 }
 
-
 .open-modal {
-	animation: open-modal 1s ease-in both;
+  animation: open-modal 1s ease-in both;
 }
 @keyframes open-modal {
   0% {
@@ -146,10 +145,8 @@ body {
   }
 }
 
-
-
 .close-modal {
-	animation: close-modal 1500ms ease-in both;
+  animation: close-modal 1500ms ease-in both;
 }
 @keyframes close-modal {
   0% {
