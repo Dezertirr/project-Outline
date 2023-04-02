@@ -11,13 +11,9 @@
   overflow: hidden;
 }
 
-.advantages {
-  width: 100%;
-  background: #1e1823;
-}
-
 .about {
   padding: 20px 0;
+  background: #1e1823;
 }
 
 .about-title {
@@ -78,10 +74,6 @@
 @media screen and (min-width: 1200px) {
   .about-list {
     justify-content: space-evenly;
-  }
-
-  .about {
-    padding: 50px 0px;
   }
 
   .about-list-item {
