@@ -44,8 +44,18 @@
   width: 14px;
   height: 14px;
 }
+@media only screen and (min-width: 768px) {
+  .close-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .mobile-menu-close {
+    width: 32px;
+    height: 32px;
+  }
+}
 
-.menu-nav-list {
+.close-icon .menu-nav-list {
   position: absolute;
   top: 136px;
   left: 50%;
