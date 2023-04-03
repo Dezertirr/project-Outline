@@ -1,4 +1,4 @@
-/* ==========modal window======= */
+/* ========= modal window ========= */
 .backdrop {
   position: fixed;
   left: 0;
@@ -6,7 +6,8 @@
   z-index: 100;
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
   transform: translate(1);
   transition: opacity 400ms linear, visibility 400ms linear;
 }
@@ -16,9 +17,6 @@
   pointer-events: none;
 }
 
-.backdrop.is-hidden > .modal {
-  transform: translate(-50%, -50%);
-}
 .modal {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -26,7 +24,6 @@
   top: 50%;
   max-width: 311px;
   width: 100%;
-  height: 471px;
   padding: 32px 24px;
   background: #fafafa;
   border-radius: 15px;
@@ -39,6 +36,10 @@
     padding: 40px;
   }
 }
+.backdrop.is-hidden > .modal {
+  transform: translate(-50%, -50%);
+}
+
 .review-close-btn {
   position: absolute;
   top: 14px;

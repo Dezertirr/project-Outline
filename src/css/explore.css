@@ -4,107 +4,80 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: var(--modal-bg);
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
   z-index: 10;
-  animation: open-modal 1500ms ease-in both;
-  background-color: rgba(250, 250, 250, 0.3);
+  transition: opacity 500ms linear, visibility 500ms linear;
 }
 
-.subscribe-backdrop.subscribe-is-hidden {
-  scale: 0;
+.subscribe-backdrop.is-hidden {
+  opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-.explore-btn-close {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 14px;
-  right: 14px;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.explore-btn-close:focus,
-.explore-btn-close:hover {
-  scale: 1.45;
-}
-
-.subscribe-modal-svg {
-  stroke: white;
-}
-
 .subscribe-modal {
-  background-color: white;
-  overflow: hidden;
-  width: 311px;
-  height: 350px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  border-radius: 20px;
-  border-color: black;
+
+  max-width: 311px;
+  width: 100%;
+
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
   .subscribe-modal {
-    width: 538px;
-    height: 412px;
+    max-width: 538px;
   }
 }
 
-.thanks-modal {
-  width: 311px;
-  height: 350px;
+.subscribe-modal-btn {
   position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fd9222;
-  border-radius: 15px;
-  transform-origin: left;
-  scale: 1;
-  visibility: visible;
-  pointer-events: initial;
+  top: 15px;
+  right: 14px;
+
+  width: 24px;
+  height: 24px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  stroke: #fff;
+  background-color: transparent;
+  border: none;
 }
 
-.subscribe-modal-img {
-  margin-bottom: 32px;
-  height: 169px;
+.subscribe-form {
+  padding: 32px 24px;
 }
 
 @media screen and (min-width: 768px) {
-  .subscribe-modal-img {
-    height: 196px;
-    margin-bottom: 40px;
+  .subscribe-form {
+    padding: 40px;
   }
 }
 
 .subscribe-modal-title {
-  color: var(--black-main);
   margin-bottom: 24px;
-  margin-left: 24px;
-  text-align: left;
-  font-family: 'Montserrat';
-  font-style: normal;
+
   font-weight: 600;
   font-size: 20px;
   line-height: calc(24 / 20);
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  color: var(--black-main);
 }
 
 @media screen and (min-width: 768px) {
   .subscribe-modal-title {
     margin-bottom: 28px;
-    margin-left: 40px;
     font-size: 24px;
     line-height: calc(28 / 24);
   }
@@ -118,17 +91,37 @@
   padding: 0 24px;
 }
 
-.subcribe-input {
-  display: block;
-  width: 263px;
-  height: 45px;
-
-  border-radius: 25px;
-  border: 1px solid rgba(17, 17, 17, 0.05);
-  padding: 0 105px 0 18px;
+.subscribe-form-field {
+  display: flex;
 }
 
-::placeholder {
+@media screen and (max-width: 767px) {
+  .subscribe-form-field {
+    border: 1px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 25px;
+  }
+}
+
+.subcribe-input {
+  width: 100%;
+
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+  padding: 14px 18px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subcribe-input {
+    margin-right: 8px;
+    border-radius: 25px;
+    border: 1px solid rgba(17, 17, 17, 0.05);
+    transition: border-color 250ms ease-in;
+  }
+}
+
+.subcribe-input::placeholder {
   color: rgba(64, 64, 64, 0.3);
   font-size: 14px;
   line-height: calc(17 / 14);
@@ -136,14 +129,12 @@
 }
 
 .subcribe-input:focus {
-  outline-color: #fd9222;
+  border-color: #fd9222;
 }
 
 .subscribe-modal-button {
-  position: absolute;
+  flex-shrink: 0;
   width: 100px;
-  top: 0;
-  right: 24px;
   height: 45px;
   border-radius: 100px;
   border: 1px solid transparent;
@@ -156,21 +147,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .explore-form {
-    padding: 0 40px;
-  }
-
-  .subcribe-input {
-    width: 313px;
-    height: 52px;
-    margin-right: 8px;
-    border-radius: 25px;
-    border: 1px solid rgba(17, 17, 17, 0.05);
-    padding: 0 18px;
-  }
-
   .subscribe-modal-button {
-    display: block;
     width: 137px;
     height: 52px;
   }

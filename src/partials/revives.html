@@ -1,10 +1,3 @@
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-/>
-<link rel="stylesheet" href="./css/revives.css" />
-
-<!-- Swiper -->
 <section class="section reviews-section" id="reviews">
   <h2 class="made-titel">
     <span class="made-titel-right-part">chocolate</span> is loved
@@ -12,8 +5,7 @@
   <div class="container">
     <div class="rev swiper myswipernav">
       <div class="swiper-wrapper">
-        <ul></ul>
-        <li class="swiper-slide rev">
+        <div class="swiper-slide rev">
           <img
             class="reviews-photo"
             srcset="./img/review/girl-1_@2x.jpg 2x"
@@ -29,8 +21,8 @@
               wafer, covered in a thin layer chocolate.
             </p>
           </div>
-        </li>
-        <li class="swiper-slide rev">
+        </div>
+        <div class="swiper-slide rev">
           <img
             class="reviews-photo"
             srcset="./img/review/boy_@2x.jpg 2x"
@@ -47,8 +39,8 @@
               is good.
             </p>
           </div>
-        </li>
-        <li class="swiper-slide rev">
+        </div>
+        <div class="swiper-slide rev">
           <img
             class="reviews-photo"
             srcset="./img/review/girl-2_@2x.jpg 2x"
@@ -65,8 +57,8 @@
               crunchy.
             </p>
           </div>
-        </li>
-        <li class="swiper-slide rev">
+        </div>
+        <div class="swiper-slide rev">
           <img
             class="reviews-photo"
             srcset="./img/review/sus_@2x.jpg 2x"
@@ -83,8 +75,8 @@
               level.
             </p>
           </div>
-        </li>
-        <li class="swiper-slide rev">
+        </div>
+        <div class="swiper-slide rev">
           <img
             class="reviews-photo"
             srcset="./img/review/danilo_@2x.jpg 2x"
@@ -101,8 +93,8 @@
               chips for a snack.
             </p>
           </div>
-        </li>
-        <li class="swiper-slide rev">
+        </div>
+        <div class="swiper-slide rev">
           <img
             class="reviews-photo"
             srcset="./img/review/irina_@2x.jpg 2x"
@@ -118,43 +110,14 @@
               support a local company! Best local chocolate - world class :)
             </p>
           </div>
-        </li>
+        </div>
       </div>
       <div class="swiper-pagination rev"></div>
     </div>
     <div class="button-wrapper">
-      <button type="button" class="button-review" review-modal-open>
+      <button type="button" class="button-review" data-modal-open="reviews">
         Leave a review
       </button>
     </div>
   </div>
 </section>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper('.myswipernav', {
-    slidesPerView: 1,
-    spaceBetween: 16,
-
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 18,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 16,
-      },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 28,
-      },
-    },
-  });
-</script>
