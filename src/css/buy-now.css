@@ -1,7 +1,4 @@
-body.sellers-backdrop.is-hidden {
-  overflow: hidden;
-  max-height: 100vh;
-}
+
 
 .sellers-backdrop {
   position: fixed;
