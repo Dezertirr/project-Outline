@@ -27,6 +27,8 @@
           placeholder="Enter your email"
           name="user_email"
           title="example@gmail.com"
+          minlength="2"
+          pattern="^[a-zA-Zа-яА-Я]+$"
           required
         />
       </label>
@@ -40,6 +42,7 @@
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
             title="xxx-xxx-xx-xx"
             required
+            minlength="2"
           />
           <svg class="review-input-icon" width="24px" height="24px">
             <use href="./img/symbol-defs.svg#icon-ukraine"></use>
@@ -51,6 +54,7 @@
         class="user-form-review"
         name="user-review"
         placeholder="Enter text"
+        minlength="2"
       ></textarea>
       <button class="send-btn" type="submit">Send</button>
     </form>
